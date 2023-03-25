@@ -1,0 +1,32 @@
+name: Documentation
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+env:
+  PYTHON_VERSION: 3.x
+
+jobs:
+  docs:
+    name: Deploy Documentation to GitHub Pages
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Install Poetry
+        run: pipx install poetry
+      - id: python
+        name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: poetry
+      - name: Install Dependencies
+        run: poetry install --no-interaction
+      - name: Deploy Documentation to GitHub Pages
+        run: poetry run make docs-gh-deploy

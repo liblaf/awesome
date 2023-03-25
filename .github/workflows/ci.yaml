@@ -1,0 +1,128 @@
+name: CI/CD
+
+on:
+  push:
+    branches:
+      - main
+
+# - [x] Settings > General > Pull Requests > Automatically delete head branches
+# - [x] Settings > Actions > General > Workflow permissions > Allow GitHub Actions to create and approve pull requests
+permissions:
+  contents: write
+  pull-requests: write
+
+env:
+  PYTHON_VERSION: 3.x
+
+jobs:
+  build-pkg:
+    name: Build Package
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Install Poetry
+        run: pipx install poetry
+      - id: python
+        name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: poetry
+      - name: Install Dependencies
+        run: poetry install --no-interaction
+      - name: Build Package
+        run: poetry build --no-interaction
+      - name: Upload Build Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: package
+          path: dist/*
+
+  build-exe:
+    name: Build Executable
+    runs-on: ${{ matrix.os }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Install Poetry
+        run: pipx install poetry
+      - id: python
+        name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: poetry
+      - name: Install Dependencies
+        run: poetry install --no-interaction
+      - name: Build Executable
+        run: poetry run make rename
+        env:
+          RUNNER_OS: ${{ runner.os }}
+          RUNNER_ARCH: ${{ runner.arch }}
+      - name: Upload Build Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: ${{ runner.os }}-${{ runner.arch }}
+          path: dist/*
+    strategy:
+      matrix:
+        os:
+          - macos-latest
+          - ubuntu-latest
+          - windows-latest
+
+  release:
+    name: Create GitHub Release
+    runs-on: ubuntu-latest
+    outputs:
+      releases-created: ${{ steps.release.outputs.releases_created }}
+      tag-name: ${{ steps.release.outputs.tag_name }}
+    steps:
+      - id: release
+        name: Create GitHub Release
+        uses: google-github-actions/release-please-action@v3
+        with:
+          release-type: python
+
+  upload:
+    name: Upload Release Assets
+    needs:
+      - build-exe
+      - build-pkg
+      - release
+    if: always() && needs.release.outputs.releases-created == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download Artifacts
+        uses: actions/download-artifact@v3
+        with:
+          path: artifacts
+      - name: Upload Release Assets
+        uses: svenstaro/upload-release-action@master
+        with:
+          file: artifacts/**/*
+          tag: ${{ needs.release.outputs.tag-name }}
+          file_glob: true
+          overwrite: true
+
+  publish:
+    name: Publish to PyPI
+    needs:
+      - release
+    if: needs.release.outputs.releases-created == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Install Poetry
+        run: pipx install poetry
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: poetry
+      - name: Install Dependencies
+        run: poetry install --no-interaction
+      - name: Publish to PyPI
+        run: poetry publish --username "${{ secrets.PYPI_USERNAME }}" --password "${{ secrets.PYPI_PASSWORD }}" --build --no-interaction
