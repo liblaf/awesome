@@ -1,4 +1,4 @@
-awesome:
+Awesome:
   - Kazhnuz/awesome-gnome
   - agarrharr/awesome-cli-apps
   - avelino/awesome-go
@@ -8,7 +8,9 @@ awesome:
   - sindresorhus/awesome
   - sindresorhus/awesome-nodejs
   - vinta/awesome-python
-awesome-cli-apps:
+C/C++:
+  - microsoft/vcpkg
+CLI:
   - BurntSushi/ripgrep
   - ClementTsang/bottom
   - ImageMagick/ImageMagick
@@ -45,9 +47,7 @@ awesome-cli-apps:
   - tldr-pages/tldr
   - tmux/tmux
   - vercel/serve
-awesome-cpp:
-  - microsoft/vcpkg
-awesome-desktop:
+Desktop:
   - Fndroid/clash_for_windows_pkg
   - TheAssassin/AppImageLauncher
   - YerongAI/Office-Tool
@@ -62,12 +62,12 @@ awesome-desktop:
   - ventoy/Ventoy
   - videolan/vlc
   - zotero/zotero
-awesome-gnome:
+GNOME:
   - micheleg/dash-to-dock
   - paperwm/PaperWM
   - paradoxxxzero/gnome-shell-system-monitor-applet
   - ubuntu/gnome-shell-extension-appindicator
-awesome-go:
+Go:
   - dsnet/try
   - emirpasic/gods
   - go-survey/survey
@@ -79,7 +79,7 @@ awesome-go:
   - sirupsen/logrus
   - spf13/cobra
   - stretchr/testify
-awesome-nodejs:
+Node.js:
   - ant-design/ant-design
   - facebook/react
   - vercel/next.js
@@ -88,7 +88,7 @@ awesome-nodejs:
   - vuejs/vue
   - vuepress-theme-hope/vuepress-theme-hope
   - vuepress/vuepress-next
-awesome-python:
+Python:
   - PyCQA/isort
   - Textualize/rich
   - conda/conda
@@ -110,14 +110,14 @@ awesome-python:
   - taichi-dev/taichi
   - tiangolo/typer
   - tmbo/questionary
-awesome-selfhosted:
+Self-Hosted:
   - bastienwirtz/homer
   - qkqpttgf/OneManager-php
   - spencerwooo/onedrive-vercel-index
   - squidfunk/mkdocs-material
   - upptime/upptime
   - vuepress-theme-hope/vuepress-theme-hope
-awesome-zsh:
+Zsh:
   - Game4Move78/zsh-bitwarden
   - conda-incubator/conda-zsh-completion
   - marlonrichert/zsh-autocomplete

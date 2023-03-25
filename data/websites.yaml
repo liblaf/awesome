@@ -1,0 +1,59 @@
+C/C++:
+  - url: https://en.cppreference.com
+  - url: https://github.com/google/sanitizers
+  - url: https://llvm.org/docs/LangRef.html
+  - url: https://llvm.org/doxygen/classes.html
+  - title: vcpkg - Open source C/C++ dependency manager from Microsoft
+    url: https://vcpkg.io
+Forums:
+  - url: https://stackoverflow.com
+Go:
+  - url: https://pkg.go.dev
+Linux:
+  - url: https://man.archlinux.org
+  - url: https://repology.org
+  - url: https://wiki.archlinux.org
+Python:
+  - url: https://docs.python.org
+  - url: https://pypi.org
+Resources:
+  - title: AlternativeTo - Crowdsourced software recommendations
+    url: https://alternativeto.net
+  - url: https://annas-archive.org
+  - url: https://archive.org
+  - url: https://duyaoss.com
+  - url: https://libraries.io
+  - url: https://scholar.google.com
+  - url: https://steamunlocked.net
+  - title: "@vposy 的个人主页 - 微博"
+    url: https://weibo.com/vposy
+  - title: Website Traffic - Check and Analyze Any Website | Similarweb
+    url: https://www.similarweb.com
+  - url: https://ylibrary.org
+  - url: https://zhelper.net
+Services:
+  - url: https://app.anonaddy.com
+  - url: https://github.com
+  - url: https://mail.proton.me
+  - url: https://vault.bitwarden.com
+  - url: https://vercel.com
+  - url: https://web.telegram.org
+  - url: https://www.cloudflare.com
+  - url: https://www.namecheap.com
+  - title: Digital Wallets, Money Management, and More | PayPal US
+    url: https://www.paypal.com
+  - url: https://www.zotero.org
+Tools:
+  - url: https://chatkit.app
+  - url: https://coolors.co
+  - url: https://draw.io
+  - url: https://ip.sb
+  - title: 查看我的 IP 地址 | 查询本机 IP 地址及归属地 | 查看 DNS 出口 IP | 测试 CDN 命中节点 | Sukka | https://ip.skk.moe
+    url: https://ip.skk.moe
+  - url: https://ipjiance.com
+  - url: https://mermaid.live
+  - url: https://pastebin.com
+  - url: https://regex101.com
+  - url: https://slugify.online
+  - url: https://speed.cloudflare.com
+  - url: https://titlecase.com

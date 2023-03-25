@@ -16,7 +16,13 @@ title: Awesome GitHub
 | [awesome-cli-apps](https://api.github.com/repos/agarrharr/awesome-cli-apps)              | ![GitHub Repo stars](https://img.shields.io/github/stars/agarrharr/awesome-cli-apps) ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/agarrharr/awesome-cli-apps)                       | 🖥 📊 🕹 🛠 A curated list of command line apps                                                                            |
 | [awesome-gnome](https://api.github.com/repos/Kazhnuz/awesome-gnome)                      | ![GitHub Repo stars](https://img.shields.io/github/stars/Kazhnuz/awesome-gnome) ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/Kazhnuz/awesome-gnome)                                 | A curated list of awesome apps, extensions, modules, themes and tools for the Gnome Desktop Environment.                |
 
-## Awesome Cli Apps
+## C/C++
+
+| Name                                                  | Statistics                                                                                                                                                           | Description                                       |
+| ----------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------- |
+| [vcpkg](https://api.github.com/repos/microsoft/vcpkg) | ![GitHub Repo stars](https://img.shields.io/github/stars/microsoft/vcpkg) ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/microsoft/vcpkg) | C++ Library Manager for Windows, Linux, and MacOS |
+
+## CLI
 
 | Name                                                                | Statistics                                                                                                                                                                           | Description                                                                                                                                         |
 | ------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -57,13 +63,7 @@ title: Awesome GitHub
 | [mermaid-cli](https://api.github.com/repos/mermaid-js/mermaid-cli)  | ![GitHub Repo stars](https://img.shields.io/github/stars/mermaid-js/mermaid-cli) ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/mermaid-js/mermaid-cli)   | Command line tool for the Mermaid library                                                                                                           |
 | [toml-sort](https://api.github.com/repos/pappasam/toml-sort)        | ![GitHub Repo stars](https://img.shields.io/github/stars/pappasam/toml-sort) ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/pappasam/toml-sort)           | Toml sorting library                                                                                                                                |
 
-## Awesome Cpp
-
-| Name                                                  | Statistics                                                                                                                                                           | Description                                       |
-| ----------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------- |
-| [vcpkg](https://api.github.com/repos/microsoft/vcpkg) | ![GitHub Repo stars](https://img.shields.io/github/stars/microsoft/vcpkg) ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/microsoft/vcpkg) | C++ Library Manager for Windows, Linux, and MacOS |
-
-## Awesome Desktop
+## Desktop
 
 | Name                                                                                | Statistics                                                                                                                                                                                       | Description                                                                                                         |
 | ----------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------- |
@@ -82,7 +82,7 @@ title: Awesome GitHub
 | [noto-cjk](https://api.github.com/repos/notofonts/noto-cjk)                         | ![GitHub Repo stars](https://img.shields.io/github/stars/notofonts/noto-cjk) ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/notofonts/noto-cjk)                       | Noto CJK fonts                                                                                                      |
 | [ibus-libpinyin](https://api.github.com/repos/libpinyin/ibus-libpinyin)             | ![GitHub Repo stars](https://img.shields.io/github/stars/libpinyin/ibus-libpinyin) ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/libpinyin/ibus-libpinyin)           | None                                                                                                                |
 
-## Awesome Gnome
+## GNOME
 
 | Name                                                                                                              | Statistics                                                                                                                                                                                                                           | Description                                                                                                                                                                                          |
 | ----------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -91,7 +91,7 @@ title: Awesome GitHub
 | [gnome-shell-system-monitor-applet](https://api.github.com/repos/paradoxxxzero/gnome-shell-system-monitor-applet) | ![GitHub Repo stars](https://img.shields.io/github/stars/paradoxxxzero/gnome-shell-system-monitor-applet) ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/paradoxxxzero/gnome-shell-system-monitor-applet) | Display system informations in gnome shell status bar, such as memory usage, cpu usage, network rates…                                                                                               |
 | [gnome-shell-extension-appindicator](https://api.github.com/repos/ubuntu/gnome-shell-extension-appindicator)      | ![GitHub Repo stars](https://img.shields.io/github/stars/ubuntu/gnome-shell-extension-appindicator) ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/ubuntu/gnome-shell-extension-appindicator)             | Adds KStatusNotifierItem support to the Shell                                                                                                                                                        |
 
-## Awesome Go
+## Go
 
 | Name                                                     | Statistics                                                                                                                                                             | Description                                                                                                                                                                                                                  |
 | -------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -107,7 +107,7 @@ title: Awesome GitHub
 | [copy](https://api.github.com/repos/otiai10/copy)        | ![GitHub Repo stars](https://img.shields.io/github/stars/otiai10/copy) ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/otiai10/copy)         | Go copy directory recursively                                                                                                                                                                                                |
 | [try](https://api.github.com/repos/dsnet/try)            | ![GitHub Repo stars](https://img.shields.io/github/stars/dsnet/try) ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/dsnet/try)               | Simplified error handling in Go                                                                                                                                                                                              |
 
-## Awesome Nodejs
+## Node.js
 
 | Name                                                                                        | Statistics                                                                                                                                                                                                           | Description                                                                |
 | ------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
@@ -120,7 +120,7 @@ title: Awesome GitHub
 | [vuepress-next](https://api.github.com/repos/vuepress/vuepress-next)                        | ![GitHub Repo stars](https://img.shields.io/github/stars/vuepress/vuepress-next) ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/vuepress/vuepress-next)                                   | Repo for VuePress 2                                                        |
 | [vuepress-theme-hope](https://api.github.com/repos/vuepress-theme-hope/vuepress-theme-hope) | ![GitHub Repo stars](https://img.shields.io/github/stars/vuepress-theme-hope/vuepress-theme-hope) ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/vuepress-theme-hope/vuepress-theme-hope) | A vuepress theme with tons of features✨                                   |
 
-## Awesome Python
+## Python
 
 | Name                                                                | Statistics                                                                                                                                                                           | Description                                                                                                                                                                    |
 | ------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -146,7 +146,7 @@ title: Awesome GitHub
 | [tetgen](https://api.github.com/repos/pyvista/tetgen)               | ![GitHub Repo stars](https://img.shields.io/github/stars/pyvista/tetgen) ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/pyvista/tetgen)                   | A Python interface to the C++ TetGen library to generate tetrahedral meshes of any 3D polyhedral domains                                                                       |
 | [toml-sort](https://api.github.com/repos/pappasam/toml-sort)        | ![GitHub Repo stars](https://img.shields.io/github/stars/pappasam/toml-sort) ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/pappasam/toml-sort)           | Toml sorting library                                                                                                                                                           |
 
-## Awesome Selfhosted
+## Self-Hosted
 
 | Name                                                                                        | Statistics                                                                                                                                                                                                           | Description                                                                                                                           |
 | ------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
@@ -157,7 +157,7 @@ title: Awesome GitHub
 | [onedrive-vercel-index](https://api.github.com/repos/spencerwooo/onedrive-vercel-index)     | ![GitHub Repo stars](https://img.shields.io/github/stars/spencerwooo/onedrive-vercel-index) ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/spencerwooo/onedrive-vercel-index)             | OneDrive public directory listing, powered by Vercel and Next.js                                                                      |
 | [vuepress-theme-hope](https://api.github.com/repos/vuepress-theme-hope/vuepress-theme-hope) | ![GitHub Repo stars](https://img.shields.io/github/stars/vuepress-theme-hope/vuepress-theme-hope) ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/vuepress-theme-hope/vuepress-theme-hope) | A vuepress theme with tons of features✨                                                                                              |
 
-## Awesome Zsh
+## Zsh
 
 | Name                                                                                      | Statistics                                                                                                                                                                                                     | Description                                                                                                                                                                                                                                                                                                                                              |
 | ----------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

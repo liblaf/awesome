@@ -23,4 +23,11 @@ def sort_list(data: list) -> list:
     result: list = list()
     for value in data:
         result.append(sort(value))
-    return sorted(result)
+    try:
+        result = sorted(result)
+    except:
+        try:
+            result = sorted(result, key=lambda x: x["url"])
+        except:
+            pass
+    return result

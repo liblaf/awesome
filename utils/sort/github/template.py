@@ -21,6 +21,5 @@ def format_item(repo: github.Repository.Repository) -> str:
 def format_section(name: str, repos: list[github.Repository.Repository]) -> str:
     template = string.Template(SECTION_TEMPLATE)
     items = "\n".join([format_item(repo=repo) for repo in repos])
-    name = name.replace("-", " ").title()
-    result = template.substitute({"name": name, "repos": items})
+    result = template.substitute({"name": name, "items": items})
     return result

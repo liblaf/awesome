@@ -12,7 +12,7 @@ app = typer.Typer(name="yaml", invoke_without_command=True)
 def main(filepath: Path) -> None:
     data = yaml.load(filepath.read_text(), Loader=yaml.CLoader)
     data = sort(data)
-    filepath.write_text(yaml.dump(data))
+    filepath.write_text(yaml.dump(data, allow_unicode=True))
 
 
 if __name__ == "__main__":

@@ -26,7 +26,7 @@ clean:
 	$(RM) --recursive $(SITE)
 	$(RM) $(CURDIR)/*.spec
 
-docs: $(DOCS)/awesome-github.md $(DOCS)/index.md
+docs: $(DOCS)/awesome-github.md $(DOCS)/awesome-websites.md $(DOCS)/index.md
 
 docs-build: $(CURDIR)/mkdocs.yaml docs
 	mkdocs build --config-file $< --site-dir $(SITE)
@@ -53,16 +53,23 @@ endif
 $(BIN):
 	mkdir --parents $@
 
+$(DOCS):
+	mkdir --parents $@
+
 ifeq ($(GITHUB_TOKEN),)
   SORT_GITHUB_OPTIONS :=
 else
   SORT_GITHUB_OPTIONS := --token $(GITHUB_TOKEN)
 endif
-$(DOCS)/awesome-github.md: $(DATA)/github.yaml
+$(DOCS)/awesome-github.md: $(DATA)/github.yaml | $(DOCS)
 	poetry run utils.py sort github $(SORT_GITHUB_OPTIONS) $< > $@
 	prettier --write $@
 
-$(DOCS)/index.md: $(CURDIR)/main.py
+$(DOCS)/awesome-websites.md: $(DATA)/websites.yaml | $(DOCS)
+	poetry run utils.py sort url $< > $@
+	prettier --write $@
+
+$(DOCS)/index.md: $(CURDIR)/main.py | $(DOCS)
 	typer $< utils docs --name $(NAME) --output $@
 	prettier --write $@
 
