@@ -3,8 +3,8 @@ import urllib.parse
 
 import urltitle
 
+from ...utils import escape_markdown
 from .constants import ITEM_TEMPLATE, SECTION_TEMPLATE
-from .utils import escape_markdown
 
 
 def format_item(url: dict) -> str:

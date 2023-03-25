@@ -26,8 +26,12 @@ def sort_list(data: list) -> list:
     try:
         result = sorted(result)
     except:
-        try:
-            result = sorted(result, key=lambda x: x["url"])
-        except:
-            pass
+        if isinstance(result[0], dict):
+            for key in sorted(result[0].keys()):
+                try:
+                    result = sorted(result, key=lambda x: x[key])
+                except:
+                    pass
+                else:
+                    break
     return result

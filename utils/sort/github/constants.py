@@ -1,6 +1,10 @@
 FRONTMATTER: str = r"""
 ---
 title: Awesome GitHub
+category:
+  - Awesome
+tag:
+  - GitHub
 ---
 """
 

@@ -2,6 +2,7 @@ import string
 
 import github.Repository
 
+from ...utils import escape_markdown
 from .constants import ITEM_TEMPLATE, SECTION_TEMPLATE
 
 
@@ -9,7 +10,7 @@ def format_item(repo: github.Repository.Repository) -> str:
     template = string.Template(ITEM_TEMPLATE)
     result = template.substitute(
         {
-            "description": repo.description,
+            "description": escape_markdown(repo.description),
             "full_name": repo.full_name,
             "name": repo.name,
             "url": repo.url,

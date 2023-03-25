@@ -1,5 +1,9 @@
 ---
 title: Awesome Websites
+category:
+  - Awesome
+tag:
+  - Website
 ---
 
 ## C/C++

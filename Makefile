@@ -43,7 +43,11 @@ install: $(TARGET) | $(BIN)
 pretty:
 	isort --profile black $(CURDIR)
 	black $(CURDIR)
+
+	poetry run utils.py sort yaml $(DATA)/github.yaml
+	poetry run utils.py sort yaml $(DATA)/websites.yaml
 	prettier --write $(CURDIR)/**/*.md
+	prettier --write $(CURDIR)/**/*.yaml
 
 rename: $(TARGET)
 ifneq ($(and $(OS), $(ARCH)), )
