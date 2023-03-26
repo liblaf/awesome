@@ -10,10 +10,10 @@ def format_item(repo: github.Repository.Repository) -> str:
     template = string.Template(ITEM_TEMPLATE)
     result = template.substitute(
         {
-            "description": escape_markdown(repo.description),
+            "description": escape_markdown(repo.description or ""),
             "full_name": repo.full_name,
             "name": repo.name,
-            "url": repo.url,
+            "url": repo.html_url,
         }
     )
     return result
