@@ -46,6 +46,7 @@ $ utils.py sort [OPTIONS] COMMAND [ARGS]...
 **Commands**:
 
 - `github`: Examples: $ utils.py sort github...
+- `json`
 - `url`: Examples: $ utils.py sort github...
 - `yaml`
 
@@ -67,6 +68,22 @@ $ utils.py sort github [OPTIONS] [FILEPATH] COMMAND [ARGS]...
 **Options**:
 
 - `-t, --token TEXT`
+- `--help`: Show this message and exit.
+
+### `utils.py sort json`
+
+**Usage**:
+
+```console
+$ utils.py sort json [OPTIONS] FILEPATH COMMAND [ARGS]...
+```
+
+**Arguments**:
+
+- `FILEPATH`: [required]
+
+**Options**:
+
 - `--help`: Show this message and exit.
 
 ### `utils.py sort url`
