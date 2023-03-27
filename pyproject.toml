@@ -31,7 +31,7 @@ pyinstaller = "^5.9.0"
 [tool.poetry.group.docs.dependencies]
 lxml = "^4.9.2"
 mkdocs = "^1.4.2"
-mkdocs-git-committers-plugin-2 = "^1.1.1"
+mkdocs-git-committers-plugin-2 = "^1.1.2"
 mkdocs-git-revision-date-localized-plugin = "^1.2.0"
 mkdocs-material = "^9.1.4"
 
