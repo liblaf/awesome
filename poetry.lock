@@ -382,14 +382,14 @@ packaging = "*"
 
 [[package]]
 name = "filelock"
-version = "3.10.6"
+version = "3.10.7"
 description = "A platform independent file lock."
 category = "main"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "filelock-3.10.6-py3-none-any.whl", hash = "sha256:52f119747b2b9c4730dac715a7b1ab34b8ee70fd9259cba158ee53da566387ff"},
-    {file = "filelock-3.10.6.tar.gz", hash = "sha256:409105becd604d6b176a483f855e7e8903c5cb2873e47f2c64f66a370c046aaf"},
+    {file = "filelock-3.10.7-py3-none-any.whl", hash = "sha256:bde48477b15fde2c7e5a0713cbe72721cb5a5ad32ee0b8f419907960b9d75536"},
+    {file = "filelock-3.10.7.tar.gz", hash = "sha256:892be14aa8efc01673b5ed6589dbccb95f9a8596f0507e232626155495c18105"},
 ]
 
 [package.extras]
@@ -732,14 +732,14 @@ min-versions = ["babel (==2.9.0)", "click (==7.0)", "colorama (==0.4)", "ghp-imp
 
 [[package]]
 name = "mkdocs-git-committers-plugin-2"
-version = "1.1.1"
+version = "1.1.2"
 description = "An MkDocs plugin to create a list of contributors on the page"
 category = "dev"
 optional = false
 python-versions = ">=2.7"
 files = [
-    {file = "mkdocs-git-committers-plugin-2-1.1.1.tar.gz", hash = "sha256:4f6eb6137f35967dfa444703b6ea293f05bf2fd183506bc51db8fb21b061d5a3"},
-    {file = "mkdocs_git_committers_plugin_2-1.1.1-py3-none-any.whl", hash = "sha256:14d4a89bf8965ab62ca9b8b0cd90f6c9b421bb89bfedca0d91c5119f18791360"},
+    {file = "mkdocs-git-committers-plugin-2-1.1.2.tar.gz", hash = "sha256:745993c4b486de0023ea4c2758daa7a8790a60ac6e369b55203db165d203be80"},
+    {file = "mkdocs_git_committers_plugin_2-1.1.2-py3-none-any.whl", hash = "sha256:7ffa7c6eaae3ade9eaac625bd7dc155e8a543261c81a0354d12909b49eb48588"},
 ]
 
 [package.dependencies]
