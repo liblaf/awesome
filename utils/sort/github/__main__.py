@@ -21,7 +21,7 @@ def main(
     Examples:
         $ utils.py sort github data/github.yaml > docs/awesome-github.md
     """
-    data: dict = yaml.load(stream=filepath.read_text(), Loader=yaml.CLoader)
+    data: dict = yaml.safe_load(stream=filepath.read_text())
     print(FRONTMATTER)
     for key, value in data.items():
         repos: list[github.Repository.Repository] = sort_repositories(

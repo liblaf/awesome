@@ -24,9 +24,9 @@ tag:
 
 ## Go
 
-|                                                Favicon                                                 | Title                             |
-| :----------------------------------------------------------------------------------------------------: | --------------------------------- |
-| <img src="https://proposed-rose-aardwolf.faviconkit.com/pkg.go.dev/128" alt="pkg.go.dev" width="48" /> | [Go Packages](https://pkg.go.dev) |
+|                                                Favicon                                                 | Title                                           |
+| :----------------------------------------------------------------------------------------------------: | ----------------------------------------------- |
+| <img src="https://proposed-rose-aardwolf.faviconkit.com/pkg.go.dev/128" alt="pkg.go.dev" width="48" /> | [Go Packages - Go Packages](https://pkg.go.dev) |
 
 ## Linux
 

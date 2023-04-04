@@ -16,7 +16,7 @@ def main(filepath: Path = typer.Argument(None)) -> None:
     Examples:
         $ utils.py sort github data/github.yaml > docs/awesome-github.md
     """
-    data: dict = yaml.load(stream=filepath.read_text(), Loader=yaml.CLoader)
+    data: dict = yaml.safe_load(stream=filepath.read_text())
     print(FRONTMATTER)
     for key, value in data.items():
         urls: list[dict] = sort_urls(urls=value)
