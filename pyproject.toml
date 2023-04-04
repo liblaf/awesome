@@ -33,7 +33,7 @@ lxml = "^4.9.2"
 mkdocs = "^1.4.2"
 mkdocs-git-committers-plugin-2 = "^1.1.1"
 mkdocs-git-revision-date-localized-plugin = "^1.2.0"
-mkdocs-material = "^9.1.4"
+mkdocs-material = "^9.1.5"
 
 [tool.poetry.scripts]
 "utils.py" = "utils.__main__:app"
