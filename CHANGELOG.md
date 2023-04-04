@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.1](https://github.com/liblaf/utils.py/compare/v0.2.0...v0.2.1) (2023-04-04)
+
+
+### Documentation
+
+* update README.md ([eaf2a1b](https://github.com/liblaf/utils.py/commit/eaf2a1be6f93e056c4fc81c045a3a49a07c55ecc))
+
 ## [0.2.0](https://github.com/liblaf/utils.py/compare/v0.1.0...v0.2.0) (2023-04-04)
 
 ### Features
