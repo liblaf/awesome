@@ -20,7 +20,7 @@ pygithub = "^1.58.1"
 python = ">=3.10,<3.12"
 pyyaml = "^6.0"
 typer = "^0.7.0"
-tldextract = "^3.4.0"
+tldextract = "^3.4.1"
 urltitle = "^0.3.8"
 
 [tool.poetry.group.dev.dependencies]
