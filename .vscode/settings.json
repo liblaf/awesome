@@ -1,0 +1,7 @@
+{
+  "cSpell.words": ["typer"],
+  "files.associations": {
+    ".envrc": "shellscript",
+    ".envrc.private": "shellscript"
+  }
+}

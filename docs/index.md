@@ -1,42 +1,42 @@
-# `utils.py`
+# `utils`
 
 **Usage**:
 
 ```console
-$ utils.py [OPTIONS] COMMAND [ARGS]...
+$ utils [OPTIONS] COMMAND [ARGS]...
 ```
 
 **Options**:
 
+- `--install-completion`: Install completion for the current shell.
+- `--show-completion`: Show completion for the current shell, to copy it or customize the installation.
 - `--help`: Show this message and exit.
 
 **Commands**:
 
 - `hello`
+- `nginx`
 - `sort`
 
-## `utils.py hello`
+## `utils hello`
 
 **Usage**:
 
 ```console
-$ utils.py hello [OPTIONS] [NAME] COMMAND [ARGS]...
+$ utils hello [OPTIONS]
 ```
-
-**Arguments**:
-
-- `[NAME]`: [default: world]
 
 **Options**:
 
+- `-n, --name TEXT`: [default: world]
 - `--help`: Show this message and exit.
 
-## `utils.py sort`
+## `utils nginx`
 
 **Usage**:
 
 ```console
-$ utils.py sort [OPTIONS] COMMAND [ARGS]...
+$ utils nginx [OPTIONS] COMMAND [ARGS]...
 ```
 
 **Options**:
@@ -45,78 +45,126 @@ $ utils.py sort [OPTIONS] COMMAND [ARGS]...
 
 **Commands**:
 
-- `github`: Examples: $ utils.py sort github...
-- `json`
-- `url`: Examples: $ utils.py sort github...
-- `yaml`
+- `add`
+- `disable`
+- `enable`
+- `list`
 
-### `utils.py sort github`
-
-Examples:
-$ utils.py sort github data/github.yaml > docs/awesome-github.md
+### `utils nginx add`
 
 **Usage**:
 
 ```console
-$ utils.py sort github [OPTIONS] [FILEPATH] COMMAND [ARGS]...
+$ utils nginx add [OPTIONS] DOMAIN
 ```
 
 **Arguments**:
 
-- `[FILEPATH]`
+- `DOMAIN`: [required]
 
 **Options**:
 
-- `-t, --token TEXT`
+- `--port INTEGER`: [default: 8000]
+- `--nginx-dir DIRECTORY`: [default: /etc/nginx]
 - `--help`: Show this message and exit.
 
-### `utils.py sort json`
+### `utils nginx disable`
 
 **Usage**:
 
 ```console
-$ utils.py sort json [OPTIONS] FILEPATH COMMAND [ARGS]...
+$ utils nginx disable [OPTIONS] DOMAIN
 ```
 
 **Arguments**:
 
-- `FILEPATH`: [required]
+- `DOMAIN`: [required]
+
+**Options**:
+
+- `-d, --nginx-dir DIRECTORY`: [default: /etc/nginx]
+- `--help`: Show this message and exit.
+
+### `utils nginx enable`
+
+**Usage**:
+
+```console
+$ utils nginx enable [OPTIONS] DOMAIN
+```
+
+**Arguments**:
+
+- `DOMAIN`: [required]
+
+**Options**:
+
+- `-d, --nginx-dir DIRECTORY`: [default: /etc/nginx]
+- `--help`: Show this message and exit.
+
+### `utils nginx list`
+
+**Usage**:
+
+```console
+$ utils nginx list [OPTIONS]
+```
+
+**Options**:
+
+- `-d, --nginx-dir DIRECTORY`: [default: /etc/nginx]
+- `--help`: Show this message and exit.
+
+## `utils sort`
+
+**Usage**:
+
+```console
+$ utils sort [OPTIONS] COMMAND [ARGS]...
+```
 
 **Options**:
 
 - `--help`: Show this message and exit.
 
-### `utils.py sort url`
+**Commands**:
 
-Examples:
-$ utils.py sort github data/github.yaml > docs/awesome-github.md
+- `github`
+- `website`
+
+### `utils sort github`
 
 **Usage**:
 
 ```console
-$ utils.py sort url [OPTIONS] [FILEPATH] COMMAND [ARGS]...
+$ utils sort github [OPTIONS] DATA_FILEPATH
 ```
 
 **Arguments**:
 
-- `[FILEPATH]`
+- `DATA_FILEPATH`: [required]
 
 **Options**:
 
+- `-i, --in-place`
+- `-m, --markdown FILE`
+- `-t, --token TEXT`: [env var: GITHUB_TOKEN]
 - `--help`: Show this message and exit.
 
-### `utils.py sort yaml`
+### `utils sort website`
 
 **Usage**:
 
 ```console
-$ utils.py sort yaml [OPTIONS] FILEPATH COMMAND [ARGS]...
+$ utils sort website [OPTIONS] DATA_FILEPATH
 ```
 
 **Arguments**:
 
-- `FILEPATH`: [required]
+- `DATA_FILEPATH`: [required]
 
 **Options**:
 
+- `-i, --in-place`
+- `-m, --markdown FILE`
 - `--help`: Show this message and exit.

@@ -1,127 +1,127 @@
 Awesome:
-  - Kazhnuz/awesome-gnome
-  - agarrharr/awesome-cli-apps
-  - avelino/awesome-go
+  - sindresorhus/awesome
+  - vinta/awesome-python
   - awesome-selfhosted/awesome-selfhosted
+  - avelino/awesome-go
+  - sindresorhus/awesome-nodejs
   - fffaraz/awesome-cpp
   - ibraheemdev/modern-unix
-  - sindresorhus/awesome
-  - sindresorhus/awesome-nodejs
-  - vinta/awesome-python
+  - agarrharr/awesome-cli-apps
+  - Kazhnuz/awesome-gnome
 C/C++:
   - microsoft/vcpkg
 CLI:
-  - BurntSushi/ripgrep
-  - ClementTsang/bottom
-  - ImageMagick/ImageMagick
-  - ajeetdsouza/zoxide
-  - bitwarden/clients
-  - boyter/scc
-  - charmbracelet/glow
-  - charmbracelet/gum
-  - charmbracelet/vhs
-  - cli/cli
-  - commitizen/cz-cli
-  - dandavison/delta
-  - dundee/gdu
-  - dylanaraps/neofetch
-  - gokcehan/lf
-  - httpie/httpie
-  - jesseduffield/lazygit
-  - junegunn/fzf
-  - lsd-rs/lsd
-  - mermaid-js/mermaid-cli
-  - muesli/duf
   - neovim/neovim
-  - ogham/dog
-  - orf/gping
-  - pappasam/toml-sort
-  - pre-commit/pre-commit
+  - junegunn/fzf
   - prettier/prettier
-  - rclone/rclone
-  - sharkdp/bat
-  - sharkdp/fd
-  - sharkdp/hyperfine
-  - stedolan/jq
-  - tj/git-extras
   - tldr-pages/tldr
+  - sharkdp/bat
+  - rclone/rclone
+  - BurntSushi/ripgrep
+  - jesseduffield/lazygit
+  - cli/cli
   - tmux/tmux
+  - httpie/httpie
+  - sharkdp/fd
+  - stedolan/jq
+  - dylanaraps/neofetch
+  - dandavison/delta
+  - tj/git-extras
+  - sharkdp/hyperfine
+  - commitizen/cz-cli
+  - charmbracelet/gum
+  - charmbracelet/glow
+  - muesli/duf
+  - charmbracelet/vhs
+  - ajeetdsouza/zoxide
+  - pre-commit/pre-commit
+  - lsd-rs/lsd
+  - ImageMagick/ImageMagick
   - vercel/serve
+  - orf/gping
+  - ClementTsang/bottom
+  - bitwarden/clients
+  - gokcehan/lf
+  - ogham/dog
+  - boyter/scc
+  - dundee/gdu
+  - mermaid-js/mermaid-cli
+  - pappasam/toml-sort
 Desktop:
-  - Fndroid/clash_for_windows_pkg
-  - TheAssassin/AppImageLauncher
-  - YerongAI/Office-Tool
-  - agalwood/Motrix
-  - kovidgoyal/kitty
-  - libpinyin/ibus-libpinyin
-  - microsoft/PowerToys
   - microsoft/vscode
-  - notofonts/noto-cjk
-  - pbatard/rufus
-  - ryanoasis/nerd-fonts
+  - microsoft/PowerToys
   - tonsky/FiraCode
+  - Fndroid/clash_for_windows_pkg
   - ventoy/Ventoy
+  - ryanoasis/nerd-fonts
+  - agalwood/Motrix
+  - pbatard/rufus
+  - kovidgoyal/kitty
   - videolan/vlc
   - zotero/zotero
+  - YerongAI/Office-Tool
+  - TheAssassin/AppImageLauncher
+  - notofonts/noto-cjk
+  - libpinyin/ibus-libpinyin
 GNOME:
   - micheleg/dash-to-dock
   - paperwm/PaperWM
   - paradoxxxzero/gnome-shell-system-monitor-applet
   - ubuntu/gnome-shell-extension-appindicator
 Go:
-  - dsnet/try
-  - emirpasic/gods
-  - go-survey/survey
-  - gosimple/slug
-  - mholt/archiver
-  - mvdan/sh
-  - otiai10/copy
-  - pterm/pterm
-  - sirupsen/logrus
   - spf13/cobra
+  - sirupsen/logrus
   - stretchr/testify
+  - emirpasic/gods
+  - mvdan/sh
+  - mholt/archiver
+  - go-survey/survey
+  - pterm/pterm
+  - gosimple/slug
+  - otiai10/copy
+  - dsnet/try
 Node.js:
-  - ant-design/ant-design
   - facebook/react
-  - vercel/next.js
-  - vercel/serve
-  - vercel/vercel
   - vuejs/vue
-  - vuepress-theme-hope/vuepress-theme-hope
+  - vercel/next.js
+  - ant-design/ant-design
+  - vercel/vercel
+  - vercel/serve
   - vuepress/vuepress-next
+  - vuepress-theme-hope/vuepress-theme-hope
 Python:
-  - PyCQA/isort
-  - Textualize/rich
-  - conda/conda
-  - httpie/httpie
-  - matplotlib/matplotlib
-  - mwaskom/seaborn
-  - numpy/numpy
-  - pandas-dev/pandas
-  - pappasam/toml-sort
-  - pre-commit/pre-commit
-  - psf/black
   - psf/requests
+  - Textualize/rich
+  - pandas-dev/pandas
+  - psf/black
+  - httpie/httpie
+  - python-poetry/poetry
+  - numpy/numpy
+  - taichi-dev/taichi
+  - matplotlib/matplotlib
+  - scipy/scipy
+  - tiangolo/typer
+  - mwaskom/seaborn
+  - pre-commit/pre-commit
   - pyinstaller/pyinstaller
   - pypa/pipx
-  - python-poetry/poetry
+  - PyCQA/isort
+  - conda/conda
   - pyvista/pyvista
-  - pyvista/tetgen
-  - scipy/scipy
-  - taichi-dev/taichi
-  - tiangolo/typer
   - tmbo/questionary
+  - pyvista/tetgen
+  - pappasam/toml-sort
 Self-Hosted:
+  - squidfunk/mkdocs-material
+  - upptime/upptime
   - bastienwirtz/homer
   - qkqpttgf/OneManager-php
   - spencerwooo/onedrive-vercel-index
-  - squidfunk/mkdocs-material
-  - upptime/upptime
   - vuepress-theme-hope/vuepress-theme-hope
 Zsh:
-  - Game4Move78/zsh-bitwarden
-  - conda-incubator/conda-zsh-completion
-  - marlonrichert/zsh-autocomplete
   - ohmyzsh/ohmyzsh
   - starship/starship
   - zsh-users/zsh-syntax-highlighting
+  - marlonrichert/zsh-autocomplete
+  - conda-incubator/conda-zsh-completion
+  - Game4Move78/zsh-bitwarden

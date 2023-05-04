@@ -1,81 +1,73 @@
-NAME := utils.py
+NAME := utils
 
-BIN   := $(HOME)/.local/bin
-BUILD := $(CURDIR)/build
-DATA  := $(CURDIR)/data
-DIST  := $(CURDIR)/dist
-DOCS  := $(CURDIR)/docs
-SITE  := $(CURDIR)/site
+DATA := $(CURDIR)/data
+DIST := $(CURDIR)/dist
+DOCS := $(CURDIR)/docs
 
-OS   := $(shell echo $(RUNNER_OS)   | tr '[:upper:]' '[:lower:]')
-ARCH := $(shell echo $(RUNNER_ARCH) | tr '[:upper:]' '[:lower:]')
+DOCS_SRC_LIST += $(DOCS)/awesome-github.md
+DOCS_SRC_LIST += $(DOCS)/awesome-websites.md
+DOCS_SRC_LIST += $(DOCS)/index.md
+
+OS   != echo $(RUNNER_OS) | tr '[:upper:]' '[:lower:]'
+ARCH != echo $(RUNNER_ARCH) | tr '[:upper:]' '[:lower:]'
+
+ifneq ($(and $(OS), $(ARCH)), )
+	NAME := $(NAME)-$(OS)-$(ARCH)
+endif
+
 ifeq ($(OS), windows)
 	EXE := .exe
 else
 	EXE :=
 endif
-TARGET := $(DIST)/$(NAME)$(EXE)
 
-GITHUB_TOKEN :=
+EXECUTABLE := $(DIST)/$(NAME)$(EXE)
 
-build: $(TARGET)
+all:
 
-clean:
-	$(RM) --recursive $(BUILD)
-	$(RM) --recursive $(DIST)
-	$(RM) --recursive $(SITE)
-	$(RM) $(CURDIR)/*.spec
+dist: $(EXECUTABLE)
 
-docs: $(DOCS)/awesome-github.md $(DOCS)/awesome-websites.md $(DOCS)/index.md
+docs: $(DOCS_SRC_LIST)
 
-docs-build: $(CURDIR)/mkdocs.yaml docs
-	mkdocs build --config-file $< --site-dir $(SITE)
+docs-build: $(DOCS_SRC_LIST)
+	mkdocs build
 
-docs-gh-deploy: $(CURDIR)/mkdocs.yaml docs
-	mkdocs gh-deploy --force --no-history --config-file $< --site-dir $(SITE)
+docs-serve: $(DOCS_SRC_LIST)
+	mkdocs serve
 
-docs-serve: $(CURDIR)/mkdocs.yaml docs
-	mkdocs serve --config-file $<
+docs-gh-deploy: $(DOCS_SRC_LIST)
+	mkdocs gh-deploy
 
-install: $(TARGET) | $(BIN)
-	install --target-directory=$(BIN) $<
+poetry: $(CURDIR)/poetry.lock $(CURDIR)/requirements.txt
 
-pretty:
+pretty: prettier pretty-python
+
+prettier: | $(CURDIR)/.gitignore
+	prettier --write --ignore-path $| $(CURDIR)
+
+pretty-python:
 	isort --profile black $(CURDIR)
 	black $(CURDIR)
 
-	poetry run utils.py sort yaml $(DATA)/github.yaml
-	poetry run utils.py sort yaml $(DATA)/websites.yaml
-	prettier --write $(CURDIR)/**/*.md
-	prettier --write $(CURDIR)/**/*.yaml
+$(CURDIR)/poetry.lock: pyproject.toml
+	poetry lock
 
-rename: $(TARGET)
-ifneq ($(and $(OS), $(ARCH)), )
-	mv $< $(DIST)/$(NAME)-$(OS)-$(ARCH)$(EXE)
-endif
+$(CURDIR)/requirements.txt: $(CURDIR)/poetry.lock
+	poetry export --output requirements.txt --without-hashes --without-urls
 
-$(BIN):
-	mkdir --parents $@
-
-$(DOCS):
-	mkdir --parents $@
-
-ifeq ($(GITHUB_TOKEN),)
-  SORT_GITHUB_OPTIONS :=
-else
-  SORT_GITHUB_OPTIONS := --token $(GITHUB_TOKEN)
-endif
-$(DOCS)/awesome-github.md: $(DATA)/github.yaml | $(DOCS)
-	poetry run utils.py sort github $(SORT_GITHUB_OPTIONS) $< > $@
+$(DOCS)/awesome-github.md: $(DATA)/github.yaml
+	poetry run utils sort github --in-place --markdown $@ $<
+	prettier --write $<
 	prettier --write $@
 
-$(DOCS)/awesome-websites.md: $(DATA)/websites.yaml | $(DOCS)
-	poetry run utils.py sort url $< > $@
+$(DOCS)/awesome-websites.md: $(DATA)/websites.yaml
+	poetry run utils sort website --in-place --markdown $@ $<
+	prettier --write $<
 	prettier --write $@
 
-$(DOCS)/index.md: $(CURDIR)/main.py | $(DOCS)
-	typer $< utils docs --name $(NAME) --output $@
+$(DOCS)/index.md:
+	typer utils.cmd utils docs --output $@
 	prettier --write $@
 
-$(TARGET):
-	pyinstaller --distpath $(DIST) --workpath $(BUILD) --onefile --name $(NAME) $(CURDIR)/main.py
+$(EXECUTABLE): $(CURDIR)/main.py
+	pyinstaller --onefile --name $(NAME) $<

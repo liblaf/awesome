@@ -2,9 +2,6 @@
 build-backend = "poetry.core.masonry.api"
 requires = ["poetry-core"]
 
-[tool.isort]
-profile = "black"
-
 [tool.poetry]
 authors = ["liblaf <i@liblaf.me>"]
 description = ""
@@ -17,23 +14,24 @@ version = "0.2.1"
 
 [tool.poetry.dependencies]
 pygithub = "^1.58.1"
-python = ">=3.10,<3.12"
+python = ">=3.11,<3.12"
 pyyaml = "^6.0"
-typer = "^0.7.0"
-tldextract = "^3.4.0"
+tldextract = "^3.4.1"
+typer = { extras = ["all"], version = "^0.7.0" }
 urltitle = "^0.3.8"
 
 [tool.poetry.group.dev.dependencies]
 black = "^23.3.0"
 isort = "^5.12.0"
-pyinstaller = "^5.9.0"
+pyinstaller = "^5.10.1"
+typer-cli = "^0.0.13"
 
 [tool.poetry.group.docs.dependencies]
 lxml = "^4.9.2"
-mkdocs = "^1.4.2"
-mkdocs-git-committers-plugin-2 = "^1.1.1"
+mkdocs = "^1.4.3"
+mkdocs-git-committers-plugin-2 = "^1.1.2"
 mkdocs-git-revision-date-localized-plugin = "^1.2.0"
-mkdocs-material = "^9.1.5"
+mkdocs-material = "^9.1.9"
 
 [tool.poetry.scripts]
-"utils.py" = "utils.__main__:app"
+utils = "utils.cmd:app"
