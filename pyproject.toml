@@ -10,7 +10,7 @@ name = "utils-py"
 packages = [{ include = "utils" }]
 readme = "README.md"
 repository = "https://github.com/liblaf/utils.py"
-version = "0.2.1"
+version = "0.2.2"
 
 [tool.poetry.dependencies]
 pygithub = "^1.58.1"
