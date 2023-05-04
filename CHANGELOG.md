@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.3](https://github.com/liblaf/utils.py/compare/v0.2.2...v0.2.3) (2023-05-04)
+
+
+### Bug Fixes
+
+* **nginx:** config client_max_body_size ([6b8639f](https://github.com/liblaf/utils.py/commit/6b8639f1b55133c44304c32f3a04dbd960c33034))
+
 ## [0.2.2](https://github.com/liblaf/utils.py/compare/v0.2.1...v0.2.2) (2023-05-04)
 
 ### Bug Fixes
