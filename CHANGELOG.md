@@ -2,15 +2,13 @@
 
 ## [0.2.2](https://github.com/liblaf/utils.py/compare/v0.2.1...v0.2.2) (2023-05-04)
 
-
 ### Bug Fixes
 
-* add nginx utils ([df05e43](https://github.com/liblaf/utils.py/commit/df05e4329d8a5373cbf96b97ea1977305fecc31b))
-
+- add nginx utils ([df05e43](https://github.com/liblaf/utils.py/commit/df05e4329d8a5373cbf96b97ea1977305fecc31b))
 
 ### Documentation
 
-* remove badages ([e734707](https://github.com/liblaf/utils.py/commit/e7347072635b078f09799ba3d87c3d51ac0e8399))
+- remove badages ([e734707](https://github.com/liblaf/utils.py/commit/e7347072635b078f09799ba3d87c3d51ac0e8399))
 
 ## [0.2.1](https://github.com/liblaf/utils.py/compare/v0.2.0...v0.2.1) (2023-04-04)
 
