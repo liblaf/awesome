@@ -12,11 +12,9 @@ tag:
 ---
 """
 
-
 ITEM_TEMPLATE: Template = Template(
     r"| [${name}](${url}) | ![GitHub Repo Stars](https://img.shields.io/github/stars/${full_name}) ![GitHub Commit Activity](https://img.shields.io/github/commit-activity/y/${full_name}) | ${description} |"
 )
-
 
 SECTION_TEMPLATE: Template = Template(
     r"""

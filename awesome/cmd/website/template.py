@@ -5,7 +5,7 @@ from string import Template
 import urltitle
 import urltitle.config
 
-from utils.utils import markdown as markdown_utils
+from awesome.utils import markdown as markdown_utils
 
 FAVICON_KIT_API: str = "https://proposed-rose-aardwolf.faviconkit.com"
 FAVICON_SIZE: int = 256

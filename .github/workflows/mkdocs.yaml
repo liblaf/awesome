@@ -1,4 +1,4 @@
-name: Documentation
+name: MkDocs
 
 on:
   push:
@@ -12,23 +12,20 @@ env:
   PYTHON_VERSION: 3.x
 
 jobs:
-  docs:
-    name: Documentation
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v3
         with:
-          fetch-depth: 0
-      - name: Install Poetry
-        run: pipx install poetry
-      - id: python
-        name: Setup Python
+          submodules: true
+      - name: Setup Python
         uses: actions/setup-python@v4
         with:
           python-version: ${{ env.PYTHON_VERSION }}
-          cache: poetry
+          cache: pip
+          cache-dependency-path: docs/requirements.txt
       - name: Install Dependencies
-        run: poetry install --no-interaction
-      - name: Deploy Documentation to GitHub Pages
-        run: poetry run make docs-gh-deploy
+        run: pip install --requirement docs/requirements.txt
+      - name: Deploy to GitHub Pages
+        run: mkdocs gh-deploy --force --no-history

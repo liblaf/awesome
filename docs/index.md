@@ -1,126 +1,9 @@
-# `utils`
+# `awesome`
 
 **Usage**:
 
 ```console
-$ utils [OPTIONS] COMMAND [ARGS]...
-```
-
-**Options**:
-
-- `--install-completion`: Install completion for the current shell.
-- `--show-completion`: Show completion for the current shell, to copy it or customize the installation.
-- `--help`: Show this message and exit.
-
-**Commands**:
-
-- `hello`
-- `nginx`
-- `sort`
-
-## `utils hello`
-
-**Usage**:
-
-```console
-$ utils hello [OPTIONS]
-```
-
-**Options**:
-
-- `-n, --name TEXT`: [default: world]
-- `--help`: Show this message and exit.
-
-## `utils nginx`
-
-**Usage**:
-
-```console
-$ utils nginx [OPTIONS] COMMAND [ARGS]...
-```
-
-**Options**:
-
-- `--help`: Show this message and exit.
-
-**Commands**:
-
-- `add`
-- `disable`
-- `enable`
-- `list`
-
-### `utils nginx add`
-
-**Usage**:
-
-```console
-$ utils nginx add [OPTIONS] DOMAIN
-```
-
-**Arguments**:
-
-- `DOMAIN`: [required]
-
-**Options**:
-
-- `--port INTEGER`: [default: 8000]
-- `--nginx-dir DIRECTORY`: [default: /etc/nginx]
-- `--help`: Show this message and exit.
-
-### `utils nginx disable`
-
-**Usage**:
-
-```console
-$ utils nginx disable [OPTIONS] DOMAIN
-```
-
-**Arguments**:
-
-- `DOMAIN`: [required]
-
-**Options**:
-
-- `-d, --nginx-dir DIRECTORY`: [default: /etc/nginx]
-- `--help`: Show this message and exit.
-
-### `utils nginx enable`
-
-**Usage**:
-
-```console
-$ utils nginx enable [OPTIONS] DOMAIN
-```
-
-**Arguments**:
-
-- `DOMAIN`: [required]
-
-**Options**:
-
-- `-d, --nginx-dir DIRECTORY`: [default: /etc/nginx]
-- `--help`: Show this message and exit.
-
-### `utils nginx list`
-
-**Usage**:
-
-```console
-$ utils nginx list [OPTIONS]
-```
-
-**Options**:
-
-- `-d, --nginx-dir DIRECTORY`: [default: /etc/nginx]
-- `--help`: Show this message and exit.
-
-## `utils sort`
-
-**Usage**:
-
-```console
-$ utils sort [OPTIONS] COMMAND [ARGS]...
+$ awesome [OPTIONS] COMMAND [ARGS]...
 ```
 
 **Options**:
@@ -132,39 +15,39 @@ $ utils sort [OPTIONS] COMMAND [ARGS]...
 - `github`
 - `website`
 
-### `utils sort github`
+## `awesome github`
 
 **Usage**:
 
 ```console
-$ utils sort github [OPTIONS] DATA_FILEPATH
+$ awesome github [OPTIONS] DATA
 ```
 
 **Arguments**:
 
-- `DATA_FILEPATH`: [required]
+- `DATA`: [required]
 
 **Options**:
 
-- `-i, --in-place`
-- `-m, --markdown FILE`
-- `-t, --token TEXT`: [env var: GITHUB_TOKEN]
+- `--in-place / --no-in-place`: [default: no-in-place]
+- `--markdown PATH`
+- `--token TEXT`
 - `--help`: Show this message and exit.
 
-### `utils sort website`
+## `awesome website`
 
 **Usage**:
 
 ```console
-$ utils sort website [OPTIONS] DATA_FILEPATH
+$ awesome website [OPTIONS] DATA
 ```
 
 **Arguments**:
 
-- `DATA_FILEPATH`: [required]
+- `DATA`: [required]
 
 **Options**:
 
-- `-i, --in-place`
-- `-m, --markdown FILE`
+- `--in-place / --no-in-place`: [default: no-in-place]
+- `--markdown PATH`
 - `--help`: Show this message and exit.
