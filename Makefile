@@ -23,8 +23,9 @@ all:
 dist: $(DIST_TARGET)
 
 docs: $(DOCS_LIST)
+	$(MAKE) pretty
 
-docs-serve: $(DOCS_LIST)
+docs-serve: docs
 	mkdocs serve
 
 pretty: black prettier

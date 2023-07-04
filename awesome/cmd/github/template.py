@@ -30,7 +30,7 @@ ${items}
 def format_item(repo: Repository) -> str:
     return ITEM_TEMPLATE.substitute(
         {
-            "description": repo.description,
+            "description": repo.description or "",
             "full_name": repo.full_name,
             "name": repo.name,
             "url": repo.html_url,
