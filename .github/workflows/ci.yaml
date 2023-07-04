@@ -58,8 +58,7 @@ jobs:
       - name: Install Dependencies
         run: poetry install
       - name: Build Executable
-        run: |-
-          poetry run make dist
+        run: poetry run make dist
       - name: Upload Build Artifact
         uses: actions/upload-artifact@v3
         with:

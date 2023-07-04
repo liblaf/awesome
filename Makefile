@@ -4,6 +4,7 @@ BUILD := $(CURDIR)/build
 DATA  := $(CURDIR)/data
 DIST  := $(CURDIR)/dist
 DOCS  := $(CURDIR)/docs
+SITE  := $(CURDIR)/site
 
 SYSTEM  != python -c 'import platform; print(platform.system().lower())'
 MACHINE != python -c 'import platform; print(platform.machine().lower())'
@@ -19,6 +20,14 @@ DOCS_LIST += $(DOCS)/index.md
 DOCS_LIST += $(DOCS)/websites.md
 
 all:
+
+clean:
+	@ find $(CURDIR) -type d -name '__pycache__' -exec $(RM) --recursive --verbose '{}' +
+	@ find $(CURDIR) -type d -name '.cache'      -exec $(RM) --recursive --verbose '{}' +
+	@ find $(CURDIR) -type f -name '*.spec'      -exec $(RM) --verbose '{}' +
+	$(RM) --recursive $(BUILD)
+	$(RM) --recursive $(DIST)
+	$(RM) --recursive $(SITE)
 
 dist: $(DIST_TARGET)
 
@@ -43,7 +52,7 @@ $(DIST_TARGET): $(CURDIR)/main.py
 ifeq ($(SYSTEM), windows)
 	pyinstaller --distpath=$(@D) --workpath=$(BUILD) --onefile --name=$(NAME)-$(SYSTEM)-$(MACHINE) $<
 else
-	python -m nuitka --standalone --onefile --output-filename=$(@F) --output-dir=$(@D) $<
+	python -m nuitka --standalone --onefile --output-filename=$(@F) --output-dir=$(@D) --remove-output $<
 endif
 
 $(DOCS)/github.md: $(DATA)/github.yaml
