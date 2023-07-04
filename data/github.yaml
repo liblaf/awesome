@@ -76,6 +76,7 @@ GitHub Actions:
   - actions/upload-artifact
   - actions/setup-python
   - actions/download-artifact
+  - google-github-actions/release-please-action
   - pnpm/action-setup
   - FantasticFiasco/action-update-license-year
 Go:
