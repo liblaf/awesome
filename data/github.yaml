@@ -43,6 +43,7 @@ CLI:
   - gokcehan/lf
   - ogham/dog
   - boyter/scc
+  - jlfwong/speedscope
   - TomWright/dasel
   - dundee/gdu
   - pappasam/toml-sort
@@ -112,6 +113,7 @@ Python:
   - scipy/scipy
   - mwaskom/seaborn
   - pre-commit/pre-commit
+  - benfred/py-spy
   - pyinstaller/pyinstaller
   - pytest-dev/pytest
   - Nuitka/Nuitka
