@@ -1,4 +1,5 @@
 C/C++:
+  - url: https://cdecl.org
   - url: https://en.cppreference.com
   - url: https://github.com/google/sanitizers
   - url: https://llvm.org/docs/LangRef.html
@@ -50,9 +51,11 @@ Tools:
   - title: Internet Speed Test - Measure Network Performance | Cloudflare
     url: https://speed.cloudflare.com
   - url: https://coolors.co
+  - url: https://devhints.io
   - url: https://draw.io
   - url: https://ip.sb
   - url: https://ipjiance.com
+  - url: https://www.jsdelivr.com
   - url: https://mermaid.live
   - url: https://pastebin.com
   - url: https://regex101.com
