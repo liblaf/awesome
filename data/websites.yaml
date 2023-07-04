@@ -40,6 +40,7 @@ Services:
   - url: https://www.namecheap.com
   - title: Digital Wallets, Money Management, and More | PayPal US
     url: https://www.paypal.com
+  - url: https://poe.com
   - url: https://mail.proton.me
   - url: https://web.telegram.org
   - url: https://vercel.com

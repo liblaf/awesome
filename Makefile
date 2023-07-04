@@ -23,6 +23,8 @@ all:
 dist: $(DIST_TARGET)
 
 docs: $(DOCS_LIST)
+
+docs-serve: $(DOCS_LIST)
 	mkdocs serve
 
 pretty: black prettier
@@ -44,7 +46,11 @@ else
 endif
 
 $(DOCS)/github.md: $(DATA)/github.yaml
+ifeq ($(GITHUB_TOKEN), )
 	poetry run $(NAME) github --in-place --markdown=$@ $<
+else
+	poetry run $(NAME) github --in-place --markdown=$@ --token=$(GITHUB_TOKEN) $<
+endif
 
 $(DOCS)/index.md: $(CURDIR)/main.py
 	typer $< utils docs --name=$(NAME) --output=$@

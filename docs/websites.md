@@ -41,7 +41,7 @@ tag:
 |                                                     Favicon                                                      | Title                                               |
 | :--------------------------------------------------------------------------------------------------------------: | --------------------------------------------------- |
 |        <img src="https://proposed-rose-aardwolf.faviconkit.com/pypi.org/256" alt="pypi.org" width="32" />        | [PyPI · The Python Package Index](https://pypi.org) |
-| <img src="https://proposed-rose-aardwolf.faviconkit.com/docs.python.org/256" alt="docs.python.org" width="32" /> | [3.11.3 Documentation](https://docs.python.org)     |
+| <img src="https://proposed-rose-aardwolf.faviconkit.com/docs.python.org/256" alt="docs.python.org" width="32" /> | [3.11.4 Documentation](https://docs.python.org)     |
 
 ## Resources
 
@@ -50,7 +50,7 @@ tag:
 |  <img src="https://proposed-rose-aardwolf.faviconkit.com/alternativeto.net/256" alt="alternativeto.net" width="32" />  | [AlternativeTo - Crowdsourced software recommendations](https://alternativeto.net)                                   |
 |  <img src="https://proposed-rose-aardwolf.faviconkit.com/annas-archive.org/256" alt="annas-archive.org" width="32" />  | [Anna's Archive](https://annas-archive.org)                                                                          |
 |        <img src="https://proposed-rose-aardwolf.faviconkit.com/archive.org/256" alt="archive.org" width="32" />        | [Internet Archive: Digital Library of Free & Borrowable Books, Movies, Music & Wayback Machine](https://archive.org) |
-|        <img src="https://proposed-rose-aardwolf.faviconkit.com/duyaoss.com/256" alt="duyaoss.com" width="32" />        | [DuyaoSS-机场测速和简介 [SS/SSR/V2Ray/Trojan]](https://duyaoss.com)                                                  |
+|        <img src="https://proposed-rose-aardwolf.faviconkit.com/duyaoss.com/256" alt="duyaoss.com" width="32" />        | [DuyaoSS-机场测速和简介](https://duyaoss.com)                                                                        |
 | <img src="https://proposed-rose-aardwolf.faviconkit.com/scholar.google.com/256" alt="scholar.google.com" width="32" /> | [Google Scholar](https://scholar.google.com)                                                                         |
 |       <img src="https://proposed-rose-aardwolf.faviconkit.com/libraries.io/256" alt="libraries.io" width="32" />       | [Libraries.io - The Open Source Discovery Service](https://libraries.io)                                             |
 | <img src="https://proposed-rose-aardwolf.faviconkit.com/www.similarweb.com/256" alt="www.similarweb.com" width="32" /> | [Website Traffic - Check and Analyze Any Website \| Similarweb](https://www.similarweb.com)                          |
@@ -70,6 +70,7 @@ tag:
 |          <img src="https://proposed-rose-aardwolf.faviconkit.com/github.com/256" alt="github.com" width="32" />          | [GitHub: Let's build from here · GitHub](https://github.com)                                                      |
 |   <img src="https://proposed-rose-aardwolf.faviconkit.com/www.namecheap.com/256" alt="www.namecheap.com" width="32" />   | [Buy a domain name - Register cheap domain names from $0.99 - Namecheap](https://www.namecheap.com)               |
 |      <img src="https://proposed-rose-aardwolf.faviconkit.com/www.paypal.com/256" alt="www.paypal.com" width="32" />      | [Digital Wallets, Money Management, and More \| PayPal US](https://www.paypal.com)                                |
+|             <img src="https://proposed-rose-aardwolf.faviconkit.com/poe.com/256" alt="poe.com" width="32" />             | [Poe - Fast, Helpful AI Chat](https://poe.com)                                                                    |
 |      <img src="https://proposed-rose-aardwolf.faviconkit.com/mail.proton.me/256" alt="mail.proton.me" width="32" />      | [Proton Mail](https://mail.proton.me)                                                                             |
 |    <img src="https://proposed-rose-aardwolf.faviconkit.com/web.telegram.org/256" alt="web.telegram.org" width="32" />    | [Telegram Web](https://web.telegram.org)                                                                          |
 |          <img src="https://proposed-rose-aardwolf.faviconkit.com/vercel.com/256" alt="vercel.com" width="32" />          | [Vercel: Develop. Preview. Ship. For the best frontend teams](https://vercel.com)                                 |

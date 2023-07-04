@@ -26,6 +26,6 @@ jobs:
           cache: pip
           cache-dependency-path: docs/requirements.txt
       - name: Install Dependencies
-        run: pip install --requirement docs/requirements.txt
+        run: pip install --requirement=docs/requirements.txt
       - name: Deploy to GitHub Pages
         run: mkdocs gh-deploy --force --no-history

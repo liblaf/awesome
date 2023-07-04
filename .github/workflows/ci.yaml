@@ -89,8 +89,8 @@ jobs:
   upload:
     name: Upload Release Assets
     needs:
-      - build-exe
       - build-pkg
+      - build-exe
       - release
     if: needs.release.outputs.releases-created == 'true'
     runs-on: ubuntu-latest

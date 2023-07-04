@@ -1,4 +1,5 @@
 {
+  "cSpell.ignorePaths": ["data/*.yaml"],
   "cSpell.words": ["typer"],
   "files.associations": {
     ".envrc": "shellscript",

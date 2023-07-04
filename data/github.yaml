@@ -23,29 +23,28 @@ CLI:
   - tmux/tmux
   - httpie/httpie
   - sharkdp/fd
-  - stedolan/jq
   - dylanaraps/neofetch
   - dandavison/delta
-  - tj/git-extras
   - sharkdp/hyperfine
+  - tj/git-extras
   - commitizen/cz-cli
   - charmbracelet/gum
   - charmbracelet/glow
-  - muesli/duf
+  - aristocratos/btop
   - charmbracelet/vhs
+  - muesli/duf
   - ajeetdsouza/zoxide
   - pre-commit/pre-commit
   - lsd-rs/lsd
   - ImageMagick/ImageMagick
   - vercel/serve
   - orf/gping
-  - ClementTsang/bottom
   - bitwarden/clients
   - gokcehan/lf
   - ogham/dog
   - boyter/scc
+  - TomWright/dasel
   - dundee/gdu
-  - mermaid-js/mermaid-cli
   - pappasam/toml-sort
 Desktop:
   - microsoft/vscode
@@ -68,6 +67,16 @@ GNOME:
   - paperwm/PaperWM
   - paradoxxxzero/gnome-shell-system-monitor-applet
   - ubuntu/gnome-shell-extension-appindicator
+GitHub Actions:
+  - actions/checkout
+  - JamesIves/github-pages-deploy-action
+  - actions/setup-node
+  - softprops/action-gh-release
+  - actions/upload-artifact
+  - actions/setup-python
+  - actions/download-artifact
+  - pnpm/action-setup
+  - FantasticFiasco/action-update-license-year
 Go:
   - spf13/cobra
   - sirupsen/logrus
@@ -75,8 +84,8 @@ Go:
   - emirpasic/gods
   - mvdan/sh
   - mholt/archiver
-  - go-survey/survey
   - pterm/pterm
+  - go-survey/survey
   - gosimple/slug
   - otiai10/copy
   - dsnet/try
@@ -99,11 +108,13 @@ Python:
   - numpy/numpy
   - taichi-dev/taichi
   - matplotlib/matplotlib
-  - scipy/scipy
   - tiangolo/typer
+  - scipy/scipy
   - mwaskom/seaborn
   - pre-commit/pre-commit
   - pyinstaller/pyinstaller
+  - pytest-dev/pytest
+  - Nuitka/Nuitka
   - pypa/pipx
   - PyCQA/isort
   - conda/conda
