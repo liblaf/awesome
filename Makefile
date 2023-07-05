@@ -25,9 +25,9 @@ clean:
 	@ find $(CURDIR) -type d -name '__pycache__' -exec $(RM) --recursive --verbose '{}' +
 	@ find $(CURDIR) -type d -name '.cache'      -exec $(RM) --recursive --verbose '{}' +
 	@ find $(CURDIR) -type f -name '*.spec'      -exec $(RM) --verbose '{}' +
-	$(RM) --recursive $(BUILD)
-	$(RM) --recursive $(DIST)
-	$(RM) --recursive $(SITE)
+	@ $(RM) --recursive --verbose $(BUILD)
+	@ $(RM) --recursive --verbose $(DIST)
+	@ $(RM) --recursive --verbose $(SITE)
 
 dist: $(DIST_TARGET)
 
