@@ -4,7 +4,7 @@ requires = ["poetry-core"]
 
 [tool.poetry]
 authors = ["liblaf <i@liblaf.me>"]
-description = ""
+description = "My Awesome Lists"
 license = "MIT"
 name = "awesome"
 readme = "README.md"
