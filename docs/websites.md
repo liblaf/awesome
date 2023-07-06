@@ -37,6 +37,17 @@ tag:
 | <img src="https://proposed-rose-aardwolf.faviconkit.com/wiki.archlinux.org/256" alt="wiki.archlinux.org" width="32" /> | [ArchWiki](https://wiki.archlinux.org)         |
 |       <img src="https://proposed-rose-aardwolf.faviconkit.com/repology.org/256" alt="repology.org" width="32" />       | [Repology](https://repology.org)               |
 
+## Network
+
+|                                                          Favicon                                                           | Title                                                                                                                                      |
+| :------------------------------------------------------------------------------------------------------------------------: | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| <img src="https://proposed-rose-aardwolf.faviconkit.com/speed.cloudflare.com/256" alt="speed.cloudflare.com" width="32" /> | [Internet Speed Test - Measure Network Performance \| Cloudflare](https://speed.cloudflare.com)                                            |
+|          <img src="https://proposed-rose-aardwolf.faviconkit.com/duyaoss.com/256" alt="duyaoss.com" width="32" />          | [DuyaoSS-机场测速和简介](https://duyaoss.com)                                                                                              |
+|                <img src="https://proposed-rose-aardwolf.faviconkit.com/ip.sb/256" alt="ip.sb" width="32" />                | [IP Address Lookup / IPv4 / IPv6 - IP.SB](https://ip.sb)                                                                                   |
+|         <img src="https://proposed-rose-aardwolf.faviconkit.com/ipjiance.com/256" alt="ipjiance.com" width="32" />         | [IP 检测](https://ipjiance.com)                                                                                                            |
+|     <img src="https://proposed-rose-aardwolf.faviconkit.com/www.jsdelivr.com/256" alt="www.jsdelivr.com" width="32" />     | [jsDelivr - A free, fast, and reliable CDN for JS and open source](https://www.jsdelivr.com)                                               |
+|           <img src="https://proposed-rose-aardwolf.faviconkit.com/ip.skk.moe/256" alt="ip.skk.moe" width="32" />           | [查看我的 IP 地址 \| 查询本机 IP 地址及归属地 \| 查看 DNS 出口 IP \| 测试 CDN 命中节点 \| Sukka \| https://ip.skk.moe](https://ip.skk.moe) |
+
 ## Python
 
 |                                                     Favicon                                                      | Title                                               |
@@ -51,7 +62,6 @@ tag:
 |  <img src="https://proposed-rose-aardwolf.faviconkit.com/alternativeto.net/256" alt="alternativeto.net" width="32" />  | [AlternativeTo - Crowdsourced software recommendations](https://alternativeto.net)                                   |
 |  <img src="https://proposed-rose-aardwolf.faviconkit.com/annas-archive.org/256" alt="annas-archive.org" width="32" />  | [Anna's Archive](https://annas-archive.org)                                                                          |
 |        <img src="https://proposed-rose-aardwolf.faviconkit.com/archive.org/256" alt="archive.org" width="32" />        | [Internet Archive: Digital Library of Free & Borrowable Books, Movies, Music & Wayback Machine](https://archive.org) |
-|        <img src="https://proposed-rose-aardwolf.faviconkit.com/duyaoss.com/256" alt="duyaoss.com" width="32" />        | [DuyaoSS-机场测速和简介](https://duyaoss.com)                                                                        |
 | <img src="https://proposed-rose-aardwolf.faviconkit.com/scholar.google.com/256" alt="scholar.google.com" width="32" /> | [Google Scholar](https://scholar.google.com)                                                                         |
 |       <img src="https://proposed-rose-aardwolf.faviconkit.com/libraries.io/256" alt="libraries.io" width="32" />       | [Libraries.io - The Open Source Discovery Service](https://libraries.io)                                             |
 | <img src="https://proposed-rose-aardwolf.faviconkit.com/www.similarweb.com/256" alt="www.similarweb.com" width="32" /> | [Website Traffic - Check and Analyze Any Website \| Similarweb](https://www.similarweb.com)                          |
@@ -79,19 +89,20 @@ tag:
 
 ## Tools
 
-|                                                          Favicon                                                           | Title                                                                                                                                      |
-| :------------------------------------------------------------------------------------------------------------------------: | ------------------------------------------------------------------------------------------------------------------------------------------ |
-|          <img src="https://proposed-rose-aardwolf.faviconkit.com/chatkit.app/256" alt="chatkit.app" width="32" />          | [Refined ChatGPT UI with useful features - ChatKit](https://chatkit.app)                                                                   |
-| <img src="https://proposed-rose-aardwolf.faviconkit.com/speed.cloudflare.com/256" alt="speed.cloudflare.com" width="32" /> | [Internet Speed Test - Measure Network Performance \| Cloudflare](https://speed.cloudflare.com)                                            |
-|           <img src="https://proposed-rose-aardwolf.faviconkit.com/coolors.co/256" alt="coolors.co" width="32" />           | [Coolors - The super fast color palettes generator!](https://coolors.co)                                                                   |
-|          <img src="https://proposed-rose-aardwolf.faviconkit.com/devhints.io/256" alt="devhints.io" width="32" />          | [Devhints — TL;DR for developer documentation](https://devhints.io)                                                                        |
-|              <img src="https://proposed-rose-aardwolf.faviconkit.com/draw.io/256" alt="draw.io" width="32" />              | [Flowchart Maker & Online Diagram Software](https://draw.io)                                                                               |
-|                <img src="https://proposed-rose-aardwolf.faviconkit.com/ip.sb/256" alt="ip.sb" width="32" />                | [IP Address Lookup / IPv4 / IPv6 - IP.SB](https://ip.sb)                                                                                   |
-|         <img src="https://proposed-rose-aardwolf.faviconkit.com/ipjiance.com/256" alt="ipjiance.com" width="32" />         | [IP 检测](https://ipjiance.com)                                                                                                            |
-|     <img src="https://proposed-rose-aardwolf.faviconkit.com/www.jsdelivr.com/256" alt="www.jsdelivr.com" width="32" />     | [jsDelivr - A free, fast, and reliable CDN for JS and open source](https://www.jsdelivr.com)                                               |
-|         <img src="https://proposed-rose-aardwolf.faviconkit.com/mermaid.live/256" alt="mermaid.live" width="32" />         | [Online FlowChart & Diagrams Editor - Mermaid Live Editor](https://mermaid.live)                                                           |
-|         <img src="https://proposed-rose-aardwolf.faviconkit.com/pastebin.com/256" alt="pastebin.com" width="32" />         | [Pastebin.com - #1 paste tool since 2002!](https://pastebin.com)                                                                           |
-|         <img src="https://proposed-rose-aardwolf.faviconkit.com/regex101.com/256" alt="regex101.com" width="32" />         | [regex101: build, test, and debug regex](https://regex101.com)                                                                             |
-|           <img src="https://proposed-rose-aardwolf.faviconkit.com/ip.skk.moe/256" alt="ip.skk.moe" width="32" />           | [查看我的 IP 地址 \| 查询本机 IP 地址及归属地 \| 查看 DNS 出口 IP \| 测试 CDN 命中节点 \| Sukka \| https://ip.skk.moe](https://ip.skk.moe) |
-|       <img src="https://proposed-rose-aardwolf.faviconkit.com/slugify.online/256" alt="slugify.online" width="32" />       | [URL Slug Generator - slugify.online](https://slugify.online)                                                                              |
-|        <img src="https://proposed-rose-aardwolf.faviconkit.com/titlecase.com/256" alt="titlecase.com" width="32" />        | [TitleCase - Text Conversion Solutions](https://titlecase.com)                                                                             |
+|                                                    Favicon                                                     | Title                                                                            |
+| :------------------------------------------------------------------------------------------------------------: | -------------------------------------------------------------------------------- |
+|    <img src="https://proposed-rose-aardwolf.faviconkit.com/chatkit.app/256" alt="chatkit.app" width="32" />    | [Refined ChatGPT UI with useful features - ChatKit](https://chatkit.app)         |
+|     <img src="https://proposed-rose-aardwolf.faviconkit.com/coolors.co/256" alt="coolors.co" width="32" />     | [Coolors - The super fast color palettes generator!](https://coolors.co)         |
+|    <img src="https://proposed-rose-aardwolf.faviconkit.com/devhints.io/256" alt="devhints.io" width="32" />    | [Devhints — TL;DR for developer documentation](https://devhints.io)              |
+|        <img src="https://proposed-rose-aardwolf.faviconkit.com/draw.io/256" alt="draw.io" width="32" />        | [Flowchart Maker & Online Diagram Software](https://draw.io)                     |
+|   <img src="https://proposed-rose-aardwolf.faviconkit.com/mermaid.live/256" alt="mermaid.live" width="32" />   | [Online FlowChart & Diagrams Editor - Mermaid Live Editor](https://mermaid.live) |
+|   <img src="https://proposed-rose-aardwolf.faviconkit.com/pastebin.com/256" alt="pastebin.com" width="32" />   | [Pastebin.com - #1 paste tool since 2002!](https://pastebin.com)                 |
+|   <img src="https://proposed-rose-aardwolf.faviconkit.com/regex101.com/256" alt="regex101.com" width="32" />   | [regex101: build, test, and debug regex](https://regex101.com)                   |
+| <img src="https://proposed-rose-aardwolf.faviconkit.com/slugify.online/256" alt="slugify.online" width="32" /> | [URL Slug Generator - slugify.online](https://slugify.online)                    |
+|  <img src="https://proposed-rose-aardwolf.faviconkit.com/titlecase.com/256" alt="titlecase.com" width="32" />  | [TitleCase - Text Conversion Solutions](https://titlecase.com)                   |
+
+## Windows
+
+|                                                  Favicon                                                   | Title                                                              |
+| :--------------------------------------------------------------------------------------------------------: | ------------------------------------------------------------------ |
+| <img src="https://proposed-rose-aardwolf.faviconkit.com/winstall.app/256" alt="winstall.app" width="32" /> | [winstall - GUI for Windows Package Manager](https://winstall.app) |

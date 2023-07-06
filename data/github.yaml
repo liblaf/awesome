@@ -10,6 +10,8 @@ Awesome:
   - Kazhnuz/awesome-gnome
 C/C++:
   - microsoft/vcpkg
+  - doxygen/doxygen
+  - rizsotto/Bear
 CLI:
   - neovim/neovim
   - junegunn/fzf
@@ -21,6 +23,7 @@ CLI:
   - jesseduffield/lazygit
   - cli/cli
   - tmux/tmux
+  - jgm/pandoc
   - httpie/httpie
   - sharkdp/fd
   - dylanaraps/neofetch
@@ -34,8 +37,10 @@ CLI:
   - charmbracelet/vhs
   - muesli/duf
   - ajeetdsouza/zoxide
+  - direnv/direnv
   - pre-commit/pre-commit
   - lsd-rs/lsd
+  - twpayne/chezmoi
   - ImageMagick/ImageMagick
   - vercel/serve
   - orf/gping
@@ -46,23 +51,24 @@ CLI:
   - jlfwong/speedscope
   - TomWright/dasel
   - dundee/gdu
+  - XuehaiPan/nvitop
+  - WayneD/rsync
+  - walles/moar
   - pappasam/toml-sort
+Computer Graphics:
+  - cnr-isti-vclab/meshlab
 Desktop:
   - microsoft/vscode
-  - microsoft/PowerToys
   - tonsky/FiraCode
   - Fndroid/clash_for_windows_pkg
   - ventoy/Ventoy
+  - obsproject/obs-studio
   - ryanoasis/nerd-fonts
   - agalwood/Motrix
   - pbatard/rufus
-  - kovidgoyal/kitty
   - videolan/vlc
   - zotero/zotero
-  - YerongAI/Office-Tool
-  - TheAssassin/AppImageLauncher
   - notofonts/noto-cjk
-  - libpinyin/ibus-libpinyin
 GNOME:
   - micheleg/dash-to-dock
   - paperwm/PaperWM
@@ -91,11 +97,20 @@ Go:
   - gosimple/slug
   - otiai10/copy
   - dsnet/try
+LaTeX:
+  - plk/biber
+Linux:
+  - kovidgoyal/kitty
+  - Jguer/yay
+  - TheAssassin/AppImageLauncher
+  - linrunner/TLP
+  - libpinyin/ibus-libpinyin
 Node.js:
   - facebook/react
   - vuejs/vue
   - vercel/next.js
   - ant-design/ant-design
+  - pnpm/pnpm
   - vercel/vercel
   - vercel/serve
   - vuepress/vuepress-next
@@ -113,14 +128,15 @@ Python:
   - tiangolo/typer
   - scipy/scipy
   - mwaskom/seaborn
-  - pre-commit/pre-commit
   - benfred/py-spy
   - pyinstaller/pyinstaller
   - pytest-dev/pytest
   - Nuitka/Nuitka
   - pypa/pipx
+  - PyGithub/PyGithub
   - PyCQA/isort
   - conda/conda
+  - jd/tenacity
   - pyvista/pyvista
   - tmbo/questionary
   - pyvista/tetgen
@@ -132,10 +148,16 @@ Self-Hosted:
   - qkqpttgf/OneManager-php
   - spencerwooo/onedrive-vercel-index
   - vuepress-theme-hope/vuepress-theme-hope
+Shell:
+  - mvdan/sh
+Windows:
+  - microsoft/PowerToys
+  - YerongAI/Office-Tool
 Zsh:
   - ohmyzsh/ohmyzsh
   - starship/starship
   - zsh-users/zsh-syntax-highlighting
   - marlonrichert/zsh-autocomplete
   - conda-incubator/conda-zsh-completion
+  - g-plane/pnpm-shell-completion
   - Game4Move78/zsh-bitwarden
