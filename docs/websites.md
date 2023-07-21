@@ -10,7 +10,7 @@ tag:
 
 |                                                         Favicon                                                          | Title                                                                                                                  |
 | :----------------------------------------------------------------------------------------------------------------------: | ---------------------------------------------------------------------------------------------------------------------- |
-|           <img src="https://proposed-rose-aardwolf.faviconkit.com/cdecl.org/256" alt="cdecl.org" width="32" />           | [cdecl: C gibberish ↔ English](https://cdecl.org)                                                                      |
+|           <img src="https://proposed-rose-aardwolf.faviconkit.com/cdecl.org/256" alt="cdecl.org" width="32" />           | [cdecl: C gibberish ↔ English](https://cdecl.org)                                                                     |
 | <img src="https://proposed-rose-aardwolf.faviconkit.com/en.cppreference.com/256" alt="en.cppreference.com" width="32" /> | [cppreference.com](https://en.cppreference.com)                                                                        |
 |          <img src="https://proposed-rose-aardwolf.faviconkit.com/github.com/256" alt="github.com" width="32" />          | [GitHub - google/sanitizers: AddressSanitizer, ThreadSanitizer, MemorySanitizer](https://github.com/google/sanitizers) |
 |            <img src="https://proposed-rose-aardwolf.faviconkit.com/llvm.org/256" alt="llvm.org" width="32" />            | [LLVM Language Reference Manual — LLVM 17.0.0git documentation](https://llvm.org/docs/LangRef.html)                    |

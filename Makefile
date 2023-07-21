@@ -15,6 +15,7 @@ else
 endif
 DIST_TARGET := $(DIST)/$(NAME)-$(SYSTEM)-$(MACHINE)$(EXE)
 
+DOCS_LIST += $(DOCS)/colors.md
 DOCS_LIST += $(DOCS)/github.md
 DOCS_LIST += $(DOCS)/index.md
 DOCS_LIST += $(DOCS)/websites.md
@@ -54,6 +55,9 @@ ifeq ($(SYSTEM), windows)
 else
 	python -m nuitka --standalone --onefile --output-filename=$(@F) --output-dir=$(@D) --remove-output $<
 endif
+
+$(DOCS)/colors.md: $(DATA)/colors.yaml
+	poetry run $(NAME) color --data=$< --format=markdown > $@
 
 $(DOCS)/github.md: $(DATA)/github.yaml
 ifeq ($(GITHUB_TOKEN), )

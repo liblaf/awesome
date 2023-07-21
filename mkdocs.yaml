@@ -58,6 +58,10 @@ plugins:
   #   cache: true
   #   cache_dir: .cache/plugins/optimize
 
+markdown_extensions:
+  - footnotes
+  - md_in_html
+
 repo_url: https://github.com/liblaf/awesome
 
 edit_uri: edit/main/docs/

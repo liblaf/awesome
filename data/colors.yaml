@@ -1,0 +1,179 @@
+red:
+  name: Dust Red / 薄暮
+  description: 斗志、奔放
+  hex:
+    - 0xFFF1F0
+    - 0xFFCCC7
+    - 0xFFA39E
+    - 0xFF7875
+    - 0xFF4D4F
+    - 0xF5222D
+    - 0xCF1322
+    - 0xA8071A
+    - 0x820014
+    - 0x5C0011
+
+volcano:
+  name: Volcano / 火山
+  description: 醒目、澎湃
+  hex:
+    - 0xFFF2E8
+    - 0xFFD8BF
+    - 0xFFBB96
+    - 0xFF9C6E
+    - 0xFF7A45
+    - 0xFA541C
+    - 0xD4380D
+    - 0xAD2102
+    - 0x871400
+    - 0x610B00
+
+orange:
+  name: Sunset Orange / 日暮
+  description: 温暖、欢快
+  hex:
+    - 0xFFF7E6
+    - 0xFFE7BA
+    - 0xFFD591
+    - 0xFFC069
+    - 0xFFA940
+    - 0xFA8C16
+    - 0xD46B08
+    - 0xAD4E00
+    - 0x873800
+    - 0x612500
+
+gold:
+  name: Calendula Gold / 金盏花
+  description: 活力、积极
+  hex:
+    - 0xFFFBE6
+    - 0xFFF1B8
+    - 0xFFE58F
+    - 0xFFD666
+    - 0xFFC53D
+    - 0xFAAD14
+    - 0xD48806
+    - 0xAD6800
+    - 0x874D00
+    - 0x613400
+
+yellow:
+  name: Sunrise Yellow / 日出
+  description: 出生、阳光
+  hex:
+    - 0xFEFFE6
+    - 0xFFFFB8
+    - 0xFFFB8F
+    - 0xFFF566
+    - 0xFFEC3D
+    - 0xFADB14
+    - 0xD4B106
+    - 0xAD8B00
+    - 0x876800
+    - 0x614700
+
+lime:
+  name: Lime / 青柠
+  description: 自然、生机
+  hex:
+    - 0xFCFFE6
+    - 0xF4FFB8
+    - 0xEAFF8F
+    - 0xD3F261
+    - 0xBAE637
+    - 0xA0D911
+    - 0x7CB305
+    - 0x5B8C00
+    - 0x3F6600
+    - 0x254000
+
+green:
+  name: Polar Green / 极光绿
+  description: 健康、创新
+  hex:
+    - 0xF6FFED
+    - 0xD9F7BE
+    - 0xB7EB8F
+    - 0x95DE64
+    - 0x73D13D
+    - 0x52C41A
+    - 0x389E0D
+    - 0x237804
+    - 0x135200
+    - 0x092B00
+
+cyan:
+  name: Cyan / 明青
+  description: 希望、坚强
+  hex:
+    - 0xE6FFFB
+    - 0xB5F5EC
+    - 0x87E8DE
+    - 0x5CDBD3
+    - 0x36CFC9
+    - 0x13C2C2
+    - 0x08979C
+    - 0x006D75
+    - 0x00474F
+    - 0x002329
+
+blue:
+  name: Daybreak Blue / 拂晓蓝
+  description: 包容、科技、普惠
+  hex:
+    - 0xE6F4FF
+    - 0xBAE0FF
+    - 0x91CAFF
+    - 0x69B1FF
+    - 0x4096FF
+    - 0x1677FF
+    - 0x0958D9
+    - 0x003EB3
+    - 0x002C8C
+    - 0x001D66
+
+geekblue:
+  name: Geek Blue / 极客蓝
+  description: 探索、钻研
+  hex:
+    - 0xF0F5FF
+    - 0xD6E4FF
+    - 0xADC6FF
+    - 0x85A5FF
+    - 0x597EF7
+    - 0x2F54EB
+    - 0x1D39C4
+    - 0x10239E
+    - 0x061178
+    - 0x030852
+
+purple:
+  name: Golden Purple / 酱紫
+  description: 优雅、浪漫
+  hex:
+    - 0xF9F0FF
+    - 0xEFDBFF
+    - 0xD3ADF7
+    - 0xB37FEB
+    - 0x9254DE
+    - 0x722ED1
+    - 0x531DAB
+    - 0x391085
+    - 0x22075E
+    - 0x120338
+
+magenta:
+  name: Magenta / 法式洋红
+  description: 明快、感性
+  hex:
+    - 0xFFF0F6
+    - 0xFFD6E7
+    - 0xFFADD2
+    - 0xFF85C0
+    - 0xF759AB
+    - 0xEB2F96
+    - 0xC41D7F
+    - 0x9E1068
+    - 0x780650
+    - 0x520339
