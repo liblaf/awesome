@@ -84,7 +84,7 @@ repos:
           - --profile
           - black
   - repo: https://github.com/commitizen-tools/commitizen
-    rev: "3.5.3"
+    rev: "3.6.0"
     hooks:
       - id: commitizen
       # - id: commitizen-branch
