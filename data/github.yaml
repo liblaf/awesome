@@ -24,7 +24,7 @@ CLI:
   - cli/cli
   - tmux/tmux
   - jgm/pandoc
-  - httpie/httpie
+  - httpie/cli
   - sharkdp/fd
   - dylanaraps/neofetch
   - dandavison/delta
@@ -35,15 +35,15 @@ CLI:
   - charmbracelet/glow
   - aristocratos/btop
   - charmbracelet/vhs
-  - muesli/duf
   - ajeetdsouza/zoxide
-  - direnv/direnv
+  - muesli/duf
   - pre-commit/pre-commit
+  - direnv/direnv
   - lsd-rs/lsd
   - twpayne/chezmoi
   - ImageMagick/ImageMagick
-  - vercel/serve
   - orf/gping
+  - vercel/serve
   - bitwarden/clients
   - gokcehan/lf
   - ogham/dog
@@ -120,7 +120,7 @@ Python:
   - Textualize/rich
   - pandas-dev/pandas
   - psf/black
-  - httpie/httpie
+  - httpie/cli
   - python-poetry/poetry
   - numpy/numpy
   - taichi-dev/taichi
@@ -142,11 +142,13 @@ Python:
   - pyvista/tetgen
   - pappasam/toml-sort
 Self-Hosted:
+  - alist-org/alist
   - squidfunk/mkdocs-material
   - upptime/upptime
   - bastienwirtz/homer
   - qkqpttgf/OneManager-php
   - spencerwooo/onedrive-vercel-index
+  - MauriceNino/dashdot
   - vuepress-theme-hope/vuepress-theme-hope
 Shell:
   - mvdan/sh
