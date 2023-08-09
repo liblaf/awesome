@@ -125,6 +125,7 @@ Python:
   - numpy/numpy
   - taichi-dev/taichi
   - matplotlib/matplotlib
+  - pydantic/pydantic
   - tiangolo/typer
   - scipy/scipy
   - mwaskom/seaborn
