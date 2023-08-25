@@ -13,7 +13,7 @@ license = "MIT"
 name = "awesome"
 readme = "README.md"
 repository = "https://github.com/liblaf/awesome"
-version = "0.2.3"
+version = "0.3.0"
 
 [tool.poetry.dependencies]
 pygithub = "^1.59.0"
