@@ -1,14 +1,20 @@
 from collections.abc import Iterable
+from enum import StrEnum
 from pathlib import Path
 from typing import Annotated, Optional
 
-import click
 import typer
 
 from .data import crawler, yaml
 from .format.latex import format_doc as format_latex
 from .format.markdown import format_doc as format_markdown
 from .format.scss import format_doc as format_scss
+
+
+class Format(StrEnum):
+    LATEX = "latex"
+    MARKDOWN = "markdown"
+    SCSS = "scss"
 
 
 def main(
@@ -24,16 +30,13 @@ def main(
         ),
     ] = None,
     format: Annotated[
-        str,
+        Format,
         typer.Option(
             "-f",
             "--format",
-            click_type=click.Choice(
-                choices=["markdown", "latex", "scss"], case_sensitive=False
-            ),
             case_sensitive=False,
         ),
-    ] = "markdown",
+    ] = Format.MARKDOWN,
 ) -> None:
     palettes: Iterable[tuple[str, str, Iterable[tuple[str, int, int, int]]]]
     if data:
@@ -41,11 +44,11 @@ def main(
     else:
         palettes = crawler.get_palettes()
     match format:
-        case "markdown":
-            print(format_markdown(palettes))
-        case "latex":
+        case Format.LATEX:
             print(format_latex(palettes))
-        case "scss":
+        case Format.MARKDOWN:
+            print(format_markdown(palettes))
+        case Format.SCSS:
             print(format_scss(palettes))
 
 

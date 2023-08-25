@@ -37,15 +37,6 @@ DOC_TEMPLATE: Template = Template(
     r"""
 ---
 title: Awesome Colors
-icon: palette
-category:
-  - Demo
-  - Design
-tag:
-  - Color
-  - Palette
-  - Style
-  - Theme
 ---
 
 ## Color Palettes[^1]

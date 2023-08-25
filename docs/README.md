@@ -12,8 +12,23 @@ $ awesome [OPTIONS] COMMAND [ARGS]...
 
 **Commands**:
 
+- `color`
 - `github`
 - `website`
+
+## `awesome color`
+
+**Usage**:
+
+```console
+$ awesome color [OPTIONS]
+```
+
+**Options**:
+
+- `--data PATH`
+- `--format [latex|markdown|scss]`: [default: markdown]
+- `--help`: Show this message and exit.
 
 ## `awesome github`
 

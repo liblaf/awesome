@@ -14,10 +14,6 @@ FAVICON_SIZE: int = 256
 FRONTMATTER: str = r"""
 ---
 title: Awesome Websites
-category:
-  - Awesome
-tag:
-  - Website
 ---
 """
 

@@ -6,18 +6,14 @@ DIST  := $(CURDIR)/dist
 DOCS  := $(CURDIR)/docs
 SITE  := $(CURDIR)/site
 
-SYSTEM  != python -c 'import platform; print(platform.system().lower())'
-MACHINE != python -c 'import platform; print(platform.machine().lower())'
-ifeq ($(SYSTEM), windows)
-  EXE := .exe
-else
-  EXE :=
-endif
+SYSTEM      != python -c 'import platform; print(platform.system().lower())'
+MACHINE     != python -c 'import platform; print(platform.machine().lower())'
+EXE         := $(if $(filter windows,$(SYSTEM)),.exe,)
 DIST_TARGET := $(DIST)/$(NAME)-$(SYSTEM)-$(MACHINE)$(EXE)
 
 DOCS_LIST += $(DOCS)/colors.md
 DOCS_LIST += $(DOCS)/github.md
-DOCS_LIST += $(DOCS)/index.md
+DOCS_LIST += $(DOCS)/README.md
 DOCS_LIST += $(DOCS)/websites.md
 
 all:
@@ -41,8 +37,8 @@ docs-serve: docs
 pretty: black prettier
 
 setup: $(DOCS)/requirements.txt
-	poetry install
 	conda install --yes libpython-static
+	poetry install
 	pip install --requirement=$<
 
 #####################
@@ -50,7 +46,7 @@ setup: $(DOCS)/requirements.txt
 #####################
 
 $(DIST_TARGET): $(CURDIR)/main.py
-ifeq ($(SYSTEM), windows)
+ifeq ($(SYSTEM),windows)
 	pyinstaller --distpath=$(@D) --workpath=$(BUILD) --onefile --name=$(NAME)-$(SYSTEM)-$(MACHINE) $<
 else
 	python -m nuitka --standalone --onefile --output-filename=$(@F) --output-dir=$(@D) --remove-output $<
@@ -60,21 +56,17 @@ $(DOCS)/colors.md: $(DATA)/colors.yaml
 	poetry run $(NAME) color --data=$< --format=markdown > $@
 
 $(DOCS)/github.md: $(DATA)/github.yaml
-ifeq ($(GITHUB_TOKEN), )
-	poetry run $(NAME) github --in-place --markdown=$@ $<
-else
-	poetry run $(NAME) github --in-place --markdown=$@ --token=$(GITHUB_TOKEN) $<
-endif
+	poetry run $(NAME) github --in-place --markdown=$@ $(if $(GITHUB_TOKEN),--token=$(GITHUB_TOKEN),) $<
 
-$(DOCS)/index.md: $(CURDIR)/main.py
+$(DOCS)/README.md: $(CURDIR)/main.py
 	typer $< utils docs --name=$(NAME) --output=$@
 
 $(DOCS)/websites.md: $(DATA)/websites.yaml
 	poetry run $(NAME) website --in-place --markdown=$@ $<
 
 black:
-	isort --profile black $(CURDIR)
+	isort --profile=black $(CURDIR)
 	black $(CURDIR)
 
-prettier: $(CURDIR)/.gitignore
-	prettier --write --ignore-path=$< $(CURDIR)
+prettier:
+	prettier --write $(CURDIR)

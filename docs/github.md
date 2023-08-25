@@ -1,9 +1,5 @@
 ---
 title: Awesome GitHub
-category:
-  - Awesome
-tag:
-  - GitHub
 ---
 
 ## Awesome

@@ -1,9 +1,5 @@
 ---
 title: Awesome Websites
-category:
-  - Awesome
-tag:
-  - Website
 ---
 
 ## C/C++
@@ -13,7 +9,7 @@ tag:
 |           <img src="https://proposed-rose-aardwolf.faviconkit.com/cdecl.org/256" alt="cdecl.org" width="32" />           | [cdecl: C gibberish ↔ English](https://cdecl.org)                                                                     |
 | <img src="https://proposed-rose-aardwolf.faviconkit.com/en.cppreference.com/256" alt="en.cppreference.com" width="32" /> | [cppreference.com](https://en.cppreference.com)                                                                        |
 |          <img src="https://proposed-rose-aardwolf.faviconkit.com/github.com/256" alt="github.com" width="32" />          | [GitHub - google/sanitizers: AddressSanitizer, ThreadSanitizer, MemorySanitizer](https://github.com/google/sanitizers) |
-|            <img src="https://proposed-rose-aardwolf.faviconkit.com/llvm.org/256" alt="llvm.org" width="32" />            | [LLVM Language Reference Manual — LLVM 17.0.0git documentation](https://llvm.org/docs/LangRef.html)                    |
+|            <img src="https://proposed-rose-aardwolf.faviconkit.com/llvm.org/256" alt="llvm.org" width="32" />            | [LLVM Language Reference Manual — LLVM 18.0.0git documentation](https://llvm.org/docs/LangRef.html)                    |
 |            <img src="https://proposed-rose-aardwolf.faviconkit.com/llvm.org/256" alt="llvm.org" width="32" />            | [LLVM: Class Index](https://llvm.org/doxygen/classes.html)                                                             |
 |            <img src="https://proposed-rose-aardwolf.faviconkit.com/vcpkg.io/256" alt="vcpkg.io" width="32" />            | [vcpkg - Open source C/C++ dependency manager from Microsoft](https://vcpkg.io)                                        |
 
@@ -44,7 +40,7 @@ tag:
 | <img src="https://proposed-rose-aardwolf.faviconkit.com/speed.cloudflare.com/256" alt="speed.cloudflare.com" width="32" /> | [Internet Speed Test - Measure Network Performance \| Cloudflare](https://speed.cloudflare.com)                                            |
 |          <img src="https://proposed-rose-aardwolf.faviconkit.com/duyaoss.com/256" alt="duyaoss.com" width="32" />          | [DuyaoSS-机场测速和简介](https://duyaoss.com)                                                                                              |
 |                <img src="https://proposed-rose-aardwolf.faviconkit.com/ip.sb/256" alt="ip.sb" width="32" />                | [IP Address Lookup / IPv4 / IPv6 - IP.SB](https://ip.sb)                                                                                   |
-|         <img src="https://proposed-rose-aardwolf.faviconkit.com/ipjiance.com/256" alt="ipjiance.com" width="32" />         | [IP 检测](https://ipjiance.com)                                                                                                            |
+|         <img src="https://proposed-rose-aardwolf.faviconkit.com/ipjiance.com/256" alt="ipjiance.com" width="32" />         | [IP检测](https://ipjiance.com)                                                                                                             |
 |     <img src="https://proposed-rose-aardwolf.faviconkit.com/www.jsdelivr.com/256" alt="www.jsdelivr.com" width="32" />     | [jsDelivr - A free, fast, and reliable CDN for JS and open source](https://www.jsdelivr.com)                                               |
 |           <img src="https://proposed-rose-aardwolf.faviconkit.com/ip.skk.moe/256" alt="ip.skk.moe" width="32" />           | [查看我的 IP 地址 \| 查询本机 IP 地址及归属地 \| 查看 DNS 出口 IP \| 测试 CDN 命中节点 \| Sukka \| https://ip.skk.moe](https://ip.skk.moe) |
 
@@ -60,7 +56,7 @@ tag:
 |                                                        Favicon                                                         | Title                                                                                                                |
 | :--------------------------------------------------------------------------------------------------------------------: | -------------------------------------------------------------------------------------------------------------------- |
 |  <img src="https://proposed-rose-aardwolf.faviconkit.com/alternativeto.net/256" alt="alternativeto.net" width="32" />  | [AlternativeTo - Crowdsourced software recommendations](https://alternativeto.net)                                   |
-|  <img src="https://proposed-rose-aardwolf.faviconkit.com/annas-archive.org/256" alt="annas-archive.org" width="32" />  | [Anna's Archive](https://annas-archive.org)                                                                          |
+|  <img src="https://proposed-rose-aardwolf.faviconkit.com/annas-archive.org/256" alt="annas-archive.org" width="32" />  | [New search - Anna's Archive](https://annas-archive.org)                                                             |
 |        <img src="https://proposed-rose-aardwolf.faviconkit.com/archive.org/256" alt="archive.org" width="32" />        | [Internet Archive: Digital Library of Free & Borrowable Books, Movies, Music & Wayback Machine](https://archive.org) |
 | <img src="https://proposed-rose-aardwolf.faviconkit.com/scholar.google.com/256" alt="scholar.google.com" width="32" /> | [Google Scholar](https://scholar.google.com)                                                                         |
 |       <img src="https://proposed-rose-aardwolf.faviconkit.com/libraries.io/256" alt="libraries.io" width="32" />       | [Libraries.io - The Open Source Discovery Service](https://libraries.io)                                             |
@@ -103,6 +99,6 @@ tag:
 
 ## Windows
 
-|                                                  Favicon                                                   | Title                                                              |
-| :--------------------------------------------------------------------------------------------------------: | ------------------------------------------------------------------ |
-| <img src="https://proposed-rose-aardwolf.faviconkit.com/winstall.app/256" alt="winstall.app" width="32" /> | [winstall - GUI for Windows Package Manager](https://winstall.app) |
+|                                                  Favicon                                                   | Title                                                               |
+| :--------------------------------------------------------------------------------------------------------: | ------------------------------------------------------------------- |
+| <img src="https://proposed-rose-aardwolf.faviconkit.com/winstall.app/256" alt="winstall.app" width="32" /> | [Find and install winget packages - winstall](https://winstall.app) |

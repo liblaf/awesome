@@ -5,10 +5,6 @@ from github.Repository import Repository
 FRONTMATTER: str = r"""
 ---
 title: Awesome GitHub
-category:
-  - Awesome
-tag:
-  - GitHub
 ---
 """
 
