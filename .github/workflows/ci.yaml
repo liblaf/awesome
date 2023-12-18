@@ -31,7 +31,7 @@ jobs:
       - name: Build Package
         run: poetry build
       - name: Upload Build Artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: package
           path: dist/*
@@ -60,7 +60,7 @@ jobs:
       - name: Build Executable
         run: poetry run make dist
       - name: Upload Build Artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: ${{ runner.os }}-${{ runner.arch }}
           path: dist/*
