@@ -9,7 +9,7 @@ exclude: .*.pdf
 
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: "v4.4.0"
+    rev: "v4.5.0"
     hooks:
       - id: check-added-large-files
       - id: check-ast
@@ -45,14 +45,14 @@ repos:
       # - id: sort-simple-yaml
       - id: trailing-whitespace
   - repo: https://github.com/pre-commit/mirrors-clang-format
-    rev: "v16.0.6"
+    rev: "v17.0.6"
     hooks:
       - id: clang-format
         types_or:
           - c
           - c++
   - repo: https://github.com/pre-commit/mirrors-prettier
-    rev: "v3.0.2"
+    rev: "v4.0.0-alpha.7"
     hooks:
       - id: prettier
   - repo: https://github.com/dnephin/pre-commit-golang
@@ -72,18 +72,18 @@ repos:
       - id: go-mod-tidy
         files: go.mod
   - repo: https://github.com/psf/black
-    rev: "23.7.0"
+    rev: "23.12.0"
     hooks:
       - id: black
       - id: black-jupyter
   - repo: https://github.com/PyCQA/isort
-    rev: "5.12.0"
+    rev: "5.13.2"
     hooks:
       - id: isort
         args:
           - --profile=black
   - repo: https://github.com/commitizen-tools/commitizen
-    rev: "3.6.0"
+    rev: "v3.13.0"
     hooks:
       - id: commitizen
       # - id: commitizen-branch
@@ -93,7 +93,7 @@ repos:
       - id: cmake-format
       - id: cmake-lint
   - repo: https://github.com/python-jsonschema/check-jsonschema
-    rev: "0.25.0"
+    rev: "0.27.3"
     hooks:
       # - id: check-jsonschema
       # - id: check-metaschema
@@ -108,7 +108,7 @@ repos:
       - id: check-renovate
       - id: check-travis
   - repo: https://github.com/sirosen/texthooks
-    rev: "0.5.0"
+    rev: "0.6.3"
     hooks:
       - id: fix-smartquotes
       - id: fix-ligatures
@@ -116,7 +116,7 @@ repos:
       - id: forbid-bidi-controls
       - id: macro-expand
   - repo: https://github.com/scop/pre-commit-shfmt
-    rev: "v3.7.0-1"
+    rev: "v3.7.0-4"
     hooks:
       - id: shfmt
         files: (.sh|.zsh|.zsh-theme|envrc|zshrc)(.tmpl)?$
@@ -130,7 +130,7 @@ repos:
           - --space-redirects
       # - id: shfmt-docker
   - repo: https://github.com/cmhughes/latexindent.pl
-    rev: "V3.22.2"
+    rev: "V3.23.3"
     hooks:
       - id: latexindent
         files: .(tex|sty|cls|bib)$
@@ -146,7 +146,7 @@ repos:
       # - id: latexindent-docker
 
   - repo: https://github.com/python-poetry/poetry
-    rev: "1.6.0"
+    rev: "1.7.0"
     hooks:
       - id: poetry-check
       - id: poetry-lock
