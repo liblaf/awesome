@@ -1,6 +1,23 @@
-# Awesome
+# Nextra Docs Template
 
-My Awesome Lists
+This is a template for creating documentation with [Nextra](https://nextra.site).
 
-[![Build Status](https://img.shields.io/github/actions/workflow/status/liblaf/awesome/ci.yaml)](https://github.com/liblaf/awesome/actions/workflows/ci.yaml)
-[![Website](https://img.shields.io/website?url=https%3A%2F%2Fliblaf.github.io%2Fawesome%2F)](https://liblaf.github.io/awesome/)
+[**Live Demo →**](https://nextra-docs-template.vercel.app)
+
+[![](.github/screenshot.png)](https://nextra-docs-template.vercel.app)
+
+## Quick Start
+
+Click the button to clone this repository and deploy it on Vercel:
+
+[![](https://vercel.com/button)](https://vercel.com/new/clone?s=https%3A%2F%2Fgithub.com%2Fshuding%2Fnextra-docs-template&showOptionalTeamCreation=false)
+
+## Local Development
+
+First, run `pnpm i` to install the dependencies.
+
+Then, run `pnpm dev` to start the development server and visit localhost:3000.
+
+## License
+
+This project is licensed under the MIT License.

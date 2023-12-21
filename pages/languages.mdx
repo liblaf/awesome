@@ -1,0 +1,74 @@
+---
+title: Languages
+---
+
+import { useData } from "nextra/data";
+import { websites } from "@/lib/websites";
+
+export const getStaticProps = async ({ params }) => {
+  const GROUPS = {
+    "C/C++": [
+      { url: "https://cdecl.org" },
+      { url: "https://en.cppreference.com" },
+      { url: "https://github.com/google/sanitizers" },
+      { url: "https://llvm.org/docs/LangRef.html" },
+      { url: "https://llvm.org/doxygen/classes.html" },
+      { url: "https://vcpkg.io" },
+    ],
+    Go: [{ url: "https://pkg.go.dev" }],
+    Python: [{ url: "https://docs.python.org" }, { url: "https://pypi.org" }],
+    Rust: [
+      { url: "https://crates.io" },
+      { url: "https://docs.rs" },
+      { url: "https://lib.rs" },
+      { url: "https://rust-lang.org" },
+      { url: "https://rustwiki.org" },
+    ],
+  };
+  const groups = await websites(GROUPS);
+  return { props: { ssg: { groups: groups } }, revalidate: 86400 };
+};
+
+export const Websites = ({ group }) => {
+  const { groups } = useData();
+  return (
+    <table>
+      <thead>
+        <tr>
+          <th> Favicon </th>
+          <th> Title </th>
+        </tr>
+      </thead>
+      <tbody>
+        {groups[group].map((website) => (
+          <tr>
+            <td align="center">
+              <a href={website.url}>
+                <img src={website.favicon} width="32" />
+              </a>
+            </td>
+            <td>
+              <a href={website.url}> {website.title} </a>
+            </td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  );
+};
+
+## C/C++
+
+<Websites group="C/C++" />
+
+## Go
+
+<Websites group="Go" />
+
+## Python
+
+<Websites group="Python" />
+
+## Rust
+
+<Websites group="Rust" />
