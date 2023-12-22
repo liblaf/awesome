@@ -9,7 +9,14 @@ import { formatNumber } from "@/lib/format";
 
 export const getStaticProps = async ({ params }) => {
   const GROUPS = {
-    "C/C++": ["doxygen/doxygen", "microsoft/vcpkg", "rizsotto/Bear"],
+    "C/C++": [
+      "doxygen/doxygen",
+      "google/sanitizers",
+      "microsoft/vcpkg",
+      "rizsotto/Bear",
+      "TheLartians/ModernCppStarter",
+      "ttroy50/cmake-examples",
+    ],
     Go: [
       "dsnet/try",
       "emirpasic/gods",
@@ -26,6 +33,7 @@ export const getStaticProps = async ({ params }) => {
     Javascript: [
       "ant-design/ant-design",
       "facebook/react",
+      "Harry-Chen/thu-learn-lib",
       "pnpm/pnpm",
       "vercel/next.js",
       "vercel/vercel",
@@ -33,7 +41,12 @@ export const getStaticProps = async ({ params }) => {
       "vuepress-theme-hope/vuepress-theme-hope",
       "vuepress/vuepress-next",
     ],
-    LaTeX: ["plk/biber"],
+    LaTeX: [
+      "plk/biber",
+      "posquit0/Awesome-CV",
+      "tectonic-typesetting/tectonic",
+      "typst/typst",
+    ],
     Python: [
       "benfred/py-spy",
       "conda/conda-lock",
