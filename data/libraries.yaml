@@ -39,7 +39,11 @@ Python:
   - benfred/py-spy
   - conda/conda
   - conda/conda-lock
+  - Delgan/loguru
+  - encode/httpx
+  - impredicative/urltitle
   - jd/tenacity
+  - kornia/kornia
   - mamba-org/mamba
   - matplotlib/matplotlib
   - mikedh/trimesh
@@ -48,6 +52,7 @@ Python:
   - numpy/numpy
   - openai/openai-python
   - openai/tiktoken
+  - opencv/opencv
   - pandas-dev/pandas
   - Patarimi/typer-cli
   - psf/requests
@@ -63,24 +68,25 @@ Python:
   - Textualize/rich
   - tiangolo/typer
   - tmbo/questionary
+  - yaml/pyyaml
 
 Rust:
   - ardaku/whoami
   - chronotope/chrono
   - clap-rs/clap
   - clap-rs/clap-verbosity-flag
+  - colored-rs/colored
   - ConnorGray/clap-markdown
   - console-rs/indicatif
+  - dirs-dev/directories-rs
   - dtolnay/anyhow
   - dtolnay/async-trait
   - EstebanBorai/local-ip-address
-  - mackwic/colored
   - mikaelmello/inquire
   - rust-lang/futures-rs
   - seanmonstar/reqwest
   - serde-rs/json
   - serde-rs/serde
-  - soc/directories-rs
   - tokio-rs/tokio
   - tokio-rs/tracing
   - zhiburt/tabled

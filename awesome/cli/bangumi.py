@@ -2,7 +2,7 @@ import asyncio
 import datetime
 import pathlib
 from collections.abc import Mapping, Sequence
-from typing import Annotated
+from typing import Annotated, Optional
 
 import httpx
 import loguru
@@ -11,6 +11,8 @@ import tenacity
 import typer
 import yaml
 from tenacity import stop, wait
+
+USER_AGENT: Optional[str] = "liblaf/awesome (https://github.com/liblaf/awesome)"
 
 
 class Index(pydantic.BaseModel):
@@ -50,7 +52,9 @@ class GetIndexSubjectsResponse(pydantic.BaseModel):
 
 @tenacity.retry(stop=stop.stop_after_attempt(4), wait=wait.wait_random_exponential())
 async def get_subject(id: int) -> Subject:
-    async with httpx.AsyncClient() as client:
+    async with httpx.AsyncClient(
+        headers={"User-Agent": USER_AGENT} if USER_AGENT else None
+    ) as client:
         response: httpx.Response = await client.get(
             f"https://api.bgm.tv/v0/subjects/{id}"
         )
@@ -62,7 +66,9 @@ async def get_subject(id: int) -> Subject:
 
 @tenacity.retry(stop=stop.stop_after_attempt(4), wait=wait.wait_random_exponential())
 async def get_index(id: int) -> Index:
-    async with httpx.AsyncClient() as client:
+    async with httpx.AsyncClient(
+        headers={"User-Agent": USER_AGENT} if USER_AGENT else None
+    ) as client:
         response: httpx.Response = await client.get(
             f"https://api.bgm.tv/v0/indices/{id}"
         )
@@ -74,7 +80,9 @@ async def get_index(id: int) -> Index:
 
 @tenacity.retry(stop=stop.stop_after_attempt(4), wait=wait.wait_random_exponential())
 async def get_index_subjects(id: int) -> Sequence[Subject]:
-    async with httpx.AsyncClient() as client:
+    async with httpx.AsyncClient(
+        headers={"User-Agent": USER_AGENT} if USER_AGENT else None
+    ) as client:
         response: httpx.Response = await client.get(
             f"https://api.bgm.tv/v0/indices/{id}/subjects"
         )
@@ -86,9 +94,11 @@ async def get_index_subjects(id: int) -> Sequence[Subject]:
             loguru.logger.warning(
                 "Limit ({}) < Total ({})", response_body.limit, response_body.total
             )
-        return await asyncio.gather(
+        results: Sequence[Subject] = await asyncio.gather(
             *[get_subject(id=subject.id) for subject in response_body.data]
         )
+        results.sort(key=lambda subject: subject.date, reverse=True)
+        return results
 
 
 async def get_all(ids: Sequence[int]) -> Mapping[str, Sequence[Subject]]:
@@ -110,17 +120,17 @@ def main(
             f"""
 ## {category}
 
-<div class="cards grid links" markdown>
+<div class="cards col-5 grid links" markdown>
 """
         )
         for subject in subjects:
             print(
                 f"""- <a href="https://bgm.tv/subject/{subject.id}">
     <figure>
-      <img alt="{subject.name_cn or subject.name}" src="{subject.images.grid}" />
+      <img alt="{subject.name_cn or subject.name}" src="{subject.images.large}" />
       <figcaption>
         <span> {subject.name_cn or subject.name} </span> <br />
-        <span class="acg-info"> {subject.date} / {subject.rating.score} </span>
+        <span class="acg small"> {subject.date} / {subject.rating.score} </span>
       </figcaption>
     </figure>
   </a>"""

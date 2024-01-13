@@ -1,6 +1,6 @@
-article {
-  .cards.grid.links {
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 8rem), 1fr));
+article.md-typeset {
+  .cards.col-5.grid.links {
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 8em), 1fr));
 
     figure {
       margin: 0 auto;
@@ -8,10 +8,10 @@ article {
       figcaption {
         line-height: 1.1;
         margin: 0 auto;
-        padding: 0.5em 0;
+        padding: 0.5em 0 0 0;
 
-        span.acg-info {
-          font-size: 0.6em;
+        span.small {
+          font-size: 80%;
         }
       }
 
@@ -26,15 +26,34 @@ article {
       a {
         display: block;
         height: 100%;
+        padding: 0.5em;
+        width: 100%;
+      }
+    }
+  }
+
+  .cards.grid.links {
+    li {
+      padding: 0;
+
+      a {
+        display: block;
+        height: 100%;
         padding: 0.8em;
         width: 100%;
       }
     }
   }
 
-  table {
+  table:not([class]) {
     img {
       width: 32px;
+    }
+
+    td,
+    th {
+      padding: 0.5em 1em;
+      vertical-align: middle;
     }
   }
 }
