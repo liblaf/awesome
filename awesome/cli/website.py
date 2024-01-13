@@ -63,5 +63,5 @@ def main(
             f"""
 ## {category}
 
-{{{{ read_csv("{output_path}", intfmt=",") }}}}"""
+{{{{ read_csv("{output_path}", colalign=("center",), intfmt=",") }}}}"""
         )

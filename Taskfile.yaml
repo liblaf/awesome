@@ -33,12 +33,15 @@ tasks:
     - micromamba run --name="awesome" pip install poetry
     - micromamba run --name="awesome" poetry install
 
+  ###############
+  # Auxiliaries #
+  ###############
+
   docs:acg:
     cmds:
       - awesome bangumi --title="ACG" data/acg.yaml > docs/acg.md
     generates:
       - docs/acg.md
-    internal: true
 
   docs:github:
     cmds:
@@ -46,7 +49,6 @@ tasks:
     generates:
       - data/github/*.csv
       - docs/github.md
-    internal: true
 
   docs:languages:
     cmds:
@@ -54,7 +56,6 @@ tasks:
     generates:
       - data/languages/*.csv
       - docs/languages.md
-    internal: true
 
   docs:libraries:
     cmds:
@@ -62,7 +63,6 @@ tasks:
     generates:
       - data/libraries/*.csv
       - docs/libraries.md
-    internal: true
 
   docs:websites:
     cmds:
@@ -70,4 +70,3 @@ tasks:
     generates:
       - data/websites/*.csv
       - docs/websites.md
-    internal: true

@@ -9,7 +9,6 @@ C/C++:
 Go:
   - dsnet/try
   - emirpasic/gods
-  - go-survey/survey
   - gosimple/slug
   - mholt/archiver
   - mvdan/sh
@@ -28,7 +27,7 @@ Javascript:
   - vercel/vercel
   - vuejs/vue
   - vuepress-theme-hope/vuepress-theme-hope
-  - vuepress/vuepress-next
+  - vuepress/core
 
 LaTeX:
   - plk/biber

@@ -99,7 +99,7 @@ def main(
                     f"[{repo.name}]({repo.html_url})",
                     repo.stargazers_count,
                     repo.commits,
-                    repo.description or "",
+                    repo.description or " ",
                 )
                 for repo in repos
             ],
