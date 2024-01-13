@@ -2,29 +2,44 @@ name: Documentation
 
 on:
   push:
+  schedule:
+    - cron: 0 0 * * *
+
+permissions:
+  contents: write
+
+env:
+  PYTHON_VERSION: 3.x
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
 
 jobs:
   docs:
-    name: Documentation
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v2
+      - name: Install poetry
+        run: pipx install poetry
+      - name: Setup Python
+        uses: actions/setup-python@v5
         with:
-          version: latest
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: lts/*
-          cache: pnpm
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: poetry
       - name: Install Dependencies
-        run: pnpm install
-      - name: Build
-        run: pnpm run build
+        run: poetry install
+      - name: Install Task
+        uses: arduino/setup-task@v1
+        with:
+          repo-token: ${{ github.token }}
+      - if: github.ref != 'refs/heads/main'
+        name: Build Documentation
+        run: poetry run task docs:build
+        env:
+          GH_TOKEN: ${{ github.token }}
+      - if: github.ref == 'refs/heads/main'
+        name: Deploy to GitHub Pages
+        run: poetry run task docs:gh-deploy
         env:
           GH_TOKEN: ${{ github.token }}

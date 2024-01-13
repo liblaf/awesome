@@ -1,0 +1,73 @@
+version: "3"
+
+tasks:
+  docs:
+    deps:
+      - docs:acg
+      - docs:github
+      - docs:languages
+      - docs:libraries
+      - docs:websites
+
+  docs:build:
+    cmds:
+      - mkdocs build
+    deps:
+      - docs
+
+  docs:gh-deploy:
+    cmds:
+      - mkdocs gh-deploy --force --no-history
+    deps:
+      - docs
+
+  docs:serve:
+    cmds:
+      - mkdocs serve
+    deps:
+      - docs
+    interactive: true
+
+  setup:
+    - micromamba create --yes --name="awesome" python=3.12
+    - micromamba run --name="awesome" pip install poetry
+    - micromamba run --name="awesome" poetry install
+
+  docs:acg:
+    cmds:
+      - awesome bangumi --title="ACG" data/acg.yaml > docs/acg.md
+    generates:
+      - docs/acg.md
+    internal: true
+
+  docs:github:
+    cmds:
+      - awesome github --title="GitHub" data/github.yaml data/github > docs/github.md
+    generates:
+      - data/github/*.csv
+      - docs/github.md
+    internal: true
+
+  docs:languages:
+    cmds:
+      - awesome website --title="Languages" data/languages.yaml data/languages > docs/languages.md
+    generates:
+      - data/languages/*.csv
+      - docs/languages.md
+    internal: true
+
+  docs:libraries:
+    cmds:
+      - awesome github --title="Libraries" data/libraries.yaml data/libraries > docs/libraries.md
+    generates:
+      - data/libraries/*.csv
+      - docs/libraries.md
+    internal: true
+
+  docs:websites:
+    cmds:
+      - awesome website --title="Websites" data/websites.yaml data/websites > docs/websites.md
+    generates:
+      - data/websites/*.csv
+      - docs/websites.md
+    internal: true

@@ -1,0 +1,94 @@
+C/C++:
+  - doxygen/doxygen
+  - google/sanitizers
+  - microsoft/vcpkg
+  - rizsotto/Bear
+  - TheLartians/ModernCppStarter
+  - ttroy50/cmake-examples
+
+Go:
+  - dsnet/try
+  - emirpasic/gods
+  - go-survey/survey
+  - gosimple/slug
+  - mholt/archiver
+  - mvdan/sh
+  - otiai10/copy
+  - pterm/pterm
+  - sirupsen/logrus
+  - spf13/cobra
+  - stretchr/testify
+
+Javascript:
+  - ant-design/ant-design
+  - facebook/react
+  - Harry-Chen/thu-learn-lib
+  - pnpm/pnpm
+  - vercel/next.js
+  - vercel/vercel
+  - vuejs/vue
+  - vuepress-theme-hope/vuepress-theme-hope
+  - vuepress/vuepress-next
+
+LaTeX:
+  - plk/biber
+  - posquit0/Awesome-CV
+  - tectonic-typesetting/tectonic
+  - typst/typst
+
+Python:
+  - benfred/py-spy
+  - conda/conda
+  - conda/conda-lock
+  - jd/tenacity
+  - mamba-org/mamba
+  - matplotlib/matplotlib
+  - mikedh/trimesh
+  - mwaskom/seaborn
+  - Nuitka/Nuitka
+  - numpy/numpy
+  - openai/openai-python
+  - openai/tiktoken
+  - pandas-dev/pandas
+  - Patarimi/typer-cli
+  - psf/requests
+  - pydantic/pydantic
+  - pyinstaller/pyinstaller
+  - pypa/pipx
+  - pytest-dev/pytest
+  - python-poetry/poetry
+  - pyvista/pyvista
+  - pyvista/tetgen
+  - scipy/scipy
+  - taichi-dev/taichi
+  - Textualize/rich
+  - tiangolo/typer
+  - tmbo/questionary
+
+Rust:
+  - ardaku/whoami
+  - chronotope/chrono
+  - clap-rs/clap
+  - clap-rs/clap-verbosity-flag
+  - ConnorGray/clap-markdown
+  - console-rs/indicatif
+  - dtolnay/anyhow
+  - dtolnay/async-trait
+  - EstebanBorai/local-ip-address
+  - mackwic/colored
+  - mikaelmello/inquire
+  - rust-lang/futures-rs
+  - seanmonstar/reqwest
+  - serde-rs/json
+  - serde-rs/serde
+  - soc/directories-rs
+  - tokio-rs/tokio
+  - tokio-rs/tracing
+  - zhiburt/tabled
+
+Shell:
+  - charmbracelet/gum
+  - charmbracelet/vhs
+  - fish-shell/fish-shell
+  - jorgebucaran/fisher
+  - mvdan/sh

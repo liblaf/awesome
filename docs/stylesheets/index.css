@@ -1,0 +1,40 @@
+article {
+  .cards.grid.links {
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 8rem), 1fr));
+
+    figure {
+      margin: 0 auto;
+
+      figcaption {
+        line-height: 1.1;
+        margin: 0 auto;
+        padding: 0.5em 0;
+
+        span.acg-info {
+          font-size: 0.6em;
+        }
+      }
+
+      img {
+        margin: 0 auto;
+      }
+    }
+
+    li {
+      padding: 0;
+
+      a {
+        display: block;
+        height: 100%;
+        padding: 0.8em;
+        width: 100%;
+      }
+    }
+  }
+
+  table {
+    img {
+      width: 32px;
+    }
+  }
+}

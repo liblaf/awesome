@@ -1,0 +1,140 @@
+Awesome:
+  - agarrharr/awesome-cli-apps
+  - avelino/awesome-go
+  - awesome-selfhosted/awesome-selfhosted
+  - fffaraz/awesome-cpp
+  - ibraheemdev/modern-unix
+  - Kazhnuz/awesome-gnome
+  - public-apis/public-apis
+  - rust-unofficial/awesome-rust
+  - sindresorhus/awesome
+  - sindresorhus/awesome-nodejs
+  - trackawesomelist/trackawesomelist
+  - vinta/awesome-python
+
+Browser:
+  - Get-Tech-Stack/TechStack
+
+CLI:
+  - ajeetdsouza/zoxide
+  - aristocratos/btop
+  - bitwarden/clients
+  - BurntSushi/ripgrep
+  - charmbracelet/gum
+  - charmbracelet/vhs
+  - cli/cli
+  - commitizen/cz-cli
+  - dandavison/delta
+  - direnv/direnv
+  - dundee/gdu
+  - dylanaraps/neofetch
+  - gokcehan/lf
+  - helix-editor/helix
+  - httpie/cli
+  - ImageMagick/ImageMagick
+  - jesseduffield/lazygit
+  - jgm/pandoc
+  - Jguer/yay
+  - jlfwong/speedscope
+  - junegunn/fzf
+  - lsd-rs/lsd
+  - mr-karan/doggo
+  - muesli/duf
+  - Nukesor/pueue
+  - orf/gping
+  - pappasam/toml-sort
+  - pre-commit/pre-commit
+  - prettier/prettier
+  - rclone/rclone
+  - sharkdp/bat
+  - sharkdp/fd
+  - sharkdp/hyperfine
+  - starship/starship
+  - svenstaro/miniserve
+  - tj/git-extras
+  - tldr-pages/tldr
+  - tmux/tmux
+  - TomWright/dasel
+  - twpayne/chezmoi
+  - WayneD/rsync
+  - XAMPPRocky/tokei
+  - XuehaiPan/nvitop
+
+Computer Graphics:
+  - cnr-isti-vclab/meshlab
+  - Slicer/Slicer
+
+Desktop:
+  - githubnext/monaspace
+  - kovidgoyal/kitty
+  - libpinyin/ibus-libpinyin
+  - microsoft/vscode
+  - notofonts/noto-cjk
+  - obsproject/obs-studio
+  - ryanoasis/nerd-fonts
+  - tonsky/FiraCode
+  - ventoy/Ventoy
+  - videolan/vlc
+  - zotero/zotero
+
+Gaming:
+  - babalae/better-genshin-impact
+  - lmintlcx/pvztoolkit
+  - Scighost/Starward
+  - TeamFlos/phira
+
+GitHub Actions:
+  - actions/checkout
+  - actions/download-artifact
+  - actions/setup-node
+  - actions/setup-python
+  - actions/upload-artifact
+  - arduino/setup-task
+  - google-github-actions/release-please-action
+  - JamesIves/github-pages-deploy-action
+  - pnpm/action-setup
+
+GNOME:
+  - corecoding/Vitals
+  - micheleg/dash-to-dock
+  - paperwm/PaperWM
+  - ubuntu/gnome-shell-extension-appindicator
+
+Learn:
+  - 996icu/996.ICU
+  - banach-space/llvm-tutor
+  - EbookFoundation/free-programming-books
+  - Hansimov/csapp
+  - microsoft/ML-For-Beginners
+  - practical-tutorials/project-based-learning
+  - shimohq/chinese-programmer-wrong-pronunciation
+  - sysprog21/lkmpg
+  - The-Run-Philosophy-Organization/run
+  - xinychen/latex-cookbook
+
+Self-Hosted:
+  - alist-org/alist
+  - anuraghazra/github-readme-stats
+  - binary-husky/gpt_academic
+  - ChatGPTNextWeb/ChatGPT-Next-Web
+  - immich-app/immich
+  - jellyfin/jellyfin
+  - lmc999/RegionRestrictionCheck
+  - lowlighter/metrics
+  - shuding/nextra
+  - squidfunk/mkdocs-material
+  - vuepress-theme-hope/vuepress-theme-hope
+
+THU:
+  - libthu/reserves-lib-tsinghua-downloader
+  - PKUanonym/REKCARC-TSC-UHT
+  - stellarkey/912_project
+  - thu-cs-lab/HPC-Lab-Docs
+  - THU-feiyue/THU-feiyue
+  - Trinkle23897/learn2018-autodown
+  - ZenithalHourlyRate/thuservices
+
+Windows:
+  - massgravel/Microsoft-Activation-Scripts
+  - microsoft/PowerToys
+  - YerongAI/Office-Tool
