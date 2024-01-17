@@ -39,7 +39,7 @@ tasks:
 
   docs:acg:
     cmds:
-      - awesome bangumi --title="ACG" data/acg.yaml > docs/acg.md
+      - awesome bangumi --title="ACG" > docs/acg.md
     generates:
       - docs/acg.md
 

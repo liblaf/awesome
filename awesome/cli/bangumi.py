@@ -1,136 +1,145 @@
 import asyncio
 import datetime
-import pathlib
-from collections.abc import Mapping, Sequence
+import enum
+from collections import defaultdict
+from collections.abc import Mapping, MutableMapping, MutableSequence, Sequence
 from typing import Annotated, Optional
 
 import httpx
-import loguru
 import pydantic
 import tenacity
 import typer
-import yaml
 from tenacity import stop, wait
 
+RATE: Mapping[int, str] = {
+    0: "未定",
+    1: "不忍直视",
+    2: "很差",
+    3: "差",
+    4: "较差",
+    5: "不过不失",
+    6: "还行",
+    7: "推荐",
+    8: "力荐",
+    9: "神作",
+    10: "超神作",
+}
 USER_AGENT: Optional[str] = "liblaf/awesome (https://github.com/liblaf/awesome)"
 
 
-class Index(pydantic.BaseModel):
+class CollectionType(enum.IntEnum):
+    想看 = 1
+    看过 = 2
+    在看 = 3
+    搁置 = 4
+    抛弃 = 5
+
+
+class Images(pydantic.BaseModel):
+    large: str
+    common: str
+    medium: str
+    small: str
+    grid: str
+
+
+class SlimSubject(pydantic.BaseModel):
     id: int
-    title: str
-
-
-class Subject(pydantic.BaseModel):
-    class Images(pydantic.BaseModel):
-        common: str
-        grid: str
-        large: str
-        medium: str
-        small: str
-
-    class Rating(pydantic.BaseModel):
-        score: float
-
-    date: datetime.date
-    id: int
-    images: Images
-    name_cn: str
     name: str
-    rating: Rating
-    summary: str
+    name_cn: str
+    date: datetime.date
+    images: Images
+    score: float
 
 
-class GetIndexSubjectsResponse(pydantic.BaseModel):
-    class Subject(pydantic.BaseModel):
-        id: int
+class UserSubjectCollection(pydantic.BaseModel):
+    subject_id: int
+    rate: int
+    type_: CollectionType = pydantic.Field(alias="type")
+    subject: SlimSubject
 
-    data: Sequence[Subject]
+
+class PagedUserCollection(pydantic.BaseModel):
+    total: int
     limit: int
     offset: int
-    total: int
+    data: Sequence[UserSubjectCollection]
 
 
-@tenacity.retry(stop=stop.stop_after_attempt(4), wait=wait.wait_random_exponential())
-async def get_subject(id: int) -> Subject:
+@tenacity.retry(
+    stop=stop.stop_after_attempt(4), wait=wait.wait_random_exponential(min=1)
+)
+async def get_user_collection_paged(user: str, offset: int = 0) -> PagedUserCollection:
     async with httpx.AsyncClient(
         headers={"User-Agent": USER_AGENT} if USER_AGENT else None
     ) as client:
         response: httpx.Response = await client.get(
-            f"https://api.bgm.tv/v0/subjects/{id}"
+            f"https://api.bgm.tv/v0/users/{user}/collections", params={"offset": offset}
         )
         response.raise_for_status()
-        result: Subject = Subject(**response.json())
-        assert result.id == id
-        return result
+        response_body: PagedUserCollection = PagedUserCollection(**response.json())
+        return response_body
 
 
-@tenacity.retry(stop=stop.stop_after_attempt(4), wait=wait.wait_random_exponential())
-async def get_index(id: int) -> Index:
-    async with httpx.AsyncClient(
-        headers={"User-Agent": USER_AGENT} if USER_AGENT else None
-    ) as client:
-        response: httpx.Response = await client.get(
-            f"https://api.bgm.tv/v0/indices/{id}"
+@tenacity.retry(
+    stop=stop.stop_after_attempt(4), wait=wait.wait_random_exponential(min=1)
+)
+async def get_user_collection(
+    user: str,
+) -> Sequence[UserSubjectCollection]:
+    data: Sequence[UserSubjectCollection] = []
+    while True:
+        response_body: PagedUserCollection = await get_user_collection_paged(
+            user=user, offset=len(data)
         )
-        response.raise_for_status()
-        result: Index = Index(**response.json())
-        assert result.id == id
-        return result
-
-
-@tenacity.retry(stop=stop.stop_after_attempt(4), wait=wait.wait_random_exponential())
-async def get_index_subjects(id: int) -> Sequence[Subject]:
-    async with httpx.AsyncClient(
-        headers={"User-Agent": USER_AGENT} if USER_AGENT else None
-    ) as client:
-        response: httpx.Response = await client.get(
-            f"https://api.bgm.tv/v0/indices/{id}/subjects"
-        )
-        response.raise_for_status()
-        response_body: GetIndexSubjectsResponse = GetIndexSubjectsResponse(
-            **response.json()
-        )
-        if response_body.limit < response_body.total:
-            loguru.logger.warning(
-                "Limit ({}) < Total ({})", response_body.limit, response_body.total
-            )
-        results: Sequence[Subject] = await asyncio.gather(
-            *[get_subject(id=subject.id) for subject in response_body.data]
-        )
-        results.sort(key=lambda subject: subject.date, reverse=True)
-        return results
-
-
-async def get_all(ids: Sequence[int]) -> Mapping[str, Sequence[Subject]]:
-    return {
-        (await get_index(id=id)).title: await get_index_subjects(id=id) for id in ids
-    }
+        data.extend(response_body.data)
+        if len(data) >= response_body.total:
+            break
+    return data
 
 
 def main(
-    data_path: Annotated[pathlib.Path, typer.Argument(exists=True, dir_okay=False)],
-    *,
     title: Annotated[str, typer.Option()] = "ACG",
+    user: Annotated[str, typer.Option()] = "liblaf",
 ) -> None:
-    lists: Sequence[int] = yaml.safe_load(data_path.read_text())
-    data: Mapping[str, Sequence[Subject]] = asyncio.run(get_all(ids=lists))
-    print(f"# {title}")
-    for category, subjects in data.items():
+    collections: Sequence[UserSubjectCollection] = asyncio.run(
+        get_user_collection(user=user)
+    )
+    data: MutableMapping[int, MutableSequence[UserSubjectCollection]] = defaultdict(
+        list
+    )
+    for collection in collections:
+        data[collection.rate].append(collection)
+
+    print(
+        f"""# {title}
+
+!!! note
+
+    本列表仅代表个人观感"""
+    )
+    for rate, collections in sorted(data.items(), reverse=True):
+        collections = sorted(collections, key=lambda x: x.subject.date, reverse=True)
         print(
             f"""
-## {category}
+## {RATE[rate]} {rate}
 
 <div class="cards col-5 grid links" markdown>
 """
         )
-        for subject in subjects:
+        for collection in collections:
+            name: str = collection.subject.name_cn or collection.subject.name
+            if collection.type_ != CollectionType.看过:
+                name += f" ({collection.type_.name})"
             print(
-                f"""- <a href="https://bgm.tv/subject/{subject.id}">
+                f"""- <a href="https://bgm.tv/subject/{collection.subject.id}">
     <figure>
-      <img alt="{subject.name_cn or subject.name}" src="{subject.images.large}" />
+      <img alt="{name}" src="{collection.subject.images.large}" />
       <figcaption>
-        <span> {subject.name_cn or subject.name} </span> <br />
-        <span class="acg small"> {subject.date} / {subject.rating.score} </span>
+        <span> {name} </span> <br />
+        <span class="acg small">
+          {collection.subject.date} / {collection.subject.score}
+        </span>
       </figcaption>
     </figure>
   </a>"""

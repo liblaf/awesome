@@ -4,9 +4,7 @@ on:
   push:
   schedule:
     - cron: 0 0 * * *
-
-permissions:
-  contents: write
+  workflow_dispatch:
 
 env:
   PYTHON_VERSION: 3.x
@@ -17,6 +15,8 @@ concurrency:
 jobs:
   docs:
     name: Documentation
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
