@@ -46,29 +46,28 @@ async def handle_rate_limit(client: httpx.AsyncClient) -> None:
     raise tenacity.TryAgain()
 
 
-@tenacity.retry(stop=stop.stop_after_attempt(4), wait=wait.wait_random_exponential())
+@tenacity.retry(
+    stop=stop.stop_after_attempt(32), wait=wait.wait_random_exponential(min=1)
+)
 async def get_commits(repo: str, token: Optional[str] = None) -> int:
     async with httpx.AsyncClient(
         headers={"Authorization": f"Bearer {token}"} if token else None,
         follow_redirects=True,
     ) as client:
-        for attempt in tenacity.AsyncRetrying(
-            stop=stop.stop_after_attempt(32), wait=wait.wait_random_exponential()
-        ):
-            with attempt:
-                response: httpx.Response = await client.get(
-                    f"https://api.github.com/repos/{repo}/stats/commit_activity"
-                )
-                if response.status_code == 403:
-                    await handle_rate_limit(client=client)
-                response.raise_for_status()
-                if response.status_code == 202:
-                    raise tenacity.TryAgain()
-                return sum(week["total"] for week in response.json())
-        raise RuntimeError("Unreachable")
+        response: httpx.Response = await client.get(
+            f"https://api.github.com/repos/{repo}/stats/commit_activity"
+        )
+        if response.status_code == 403:
+            await handle_rate_limit(client=client)
+        response.raise_for_status()
+        if response.status_code == 202:
+            raise tenacity.TryAgain()
+        return sum(week["total"] for week in response.json())
 
 
-@tenacity.retry(stop=stop.stop_after_attempt(4), wait=wait.wait_random_exponential())
+@tenacity.retry(
+    stop=stop.stop_after_attempt(4), wait=wait.wait_random_exponential(min=1)
+)
 async def get_repo(repo: str, token: Optional[str] = None) -> Repository:
     async with httpx.AsyncClient(
         headers={"Authorization": f"Bearer {token}"} if token else None,
