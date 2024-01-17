@@ -36,10 +36,14 @@ class RateLimit(pydantic.BaseModel):
 
 
 async def handle_rate_limit(client: httpx.AsyncClient) -> None:
-    loguru.logger.warning("Rate Limit Exceeded")
     response: httpx.Response = await client.get("https://api.github.com/rate_limit")
     response.raise_for_status()
     rate_limit: RateLimit = RateLimit(**response.json())
+    loguru.logger.error(
+        "Rate Limit Exceeded: Reset at {} after {} seconds",
+        rate_limit.rate.reset,
+        rate_limit.rate.reset.timestamp() - datetime.datetime.now().timestamp(),
+    )
     await asyncio.sleep(
         rate_limit.rate.reset.timestamp() - datetime.datetime.now().timestamp()
     )
