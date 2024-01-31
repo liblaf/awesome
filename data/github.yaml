@@ -26,6 +26,7 @@ CLI:
   - commitizen/cz-cli
   - dandavison/delta
   - direnv/direnv
+  - ducaale/xh
   - dundee/gdu
   - dylanaraps/neofetch
   - gokcehan/lf
@@ -51,6 +52,7 @@ CLI:
   - sharkdp/hyperfine
   - starship/starship
   - svenstaro/miniserve
+  - sxyazi/yazi
   - tj/git-extras
   - tldr-pages/tldr
   - tmux/tmux
@@ -93,6 +95,7 @@ GitHub Actions:
   - google-github-actions/release-please-action
   - JamesIves/github-pages-deploy-action
   - pnpm/action-setup
+  - xu-cheng/latex-action
 
 GNOME:
   - corecoding/Vitals
@@ -114,15 +117,15 @@ Learn:
 
 Self-Hosted:
   - alist-org/alist
-  - anuraghazra/github-readme-stats
   - binary-husky/gpt_academic
   - ChatGPTNextWeb/ChatGPT-Next-Web
+  - dani-garcia/vaultwarden
   - immich-app/immich
   - jellyfin/jellyfin
-  - lmc999/RegionRestrictionCheck
-  - lowlighter/metrics
+  - movie-web/movie-web
   - shuding/nextra
   - squidfunk/mkdocs-material
+  - Stirling-Tools/Stirling-PDF
   - vuepress-theme-hope/vuepress-theme-hope
 
 THU:
@@ -133,6 +136,14 @@ THU:
   - THU-feiyue/docs
   - Trinkle23897/learn2018-autodown
   - ZenithalHourlyRate/thuservices
+
+Tools:
+  - AmruthPillai/Reactive-Resume
+  - anuraghazra/github-readme-stats
+  - BartoszJarocki/cv
+  - lmc999/RegionRestrictionCheck
+  - lowlighter/metrics
+  - nkeonkeo/MediaUnlockTest
 
 Windows:
   - massgravel/Microsoft-Activation-Scripts
