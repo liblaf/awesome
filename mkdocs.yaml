@@ -44,16 +44,13 @@ theme:
     - toc.follow
 
 extra_css:
-  - stylesheets/index.css
-
-extra_javascript:
-  - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
-  - javascripts/tablesort.js
+  - styles/index.css
 
 watch:
   - includes
 
 markdown_extensions:
+  - abbr
   - admonition
   - attr_list
   - md_in_html
@@ -65,7 +62,6 @@ markdown_extensions:
       auto_append:
         - includes/abbreviations.md
   - pymdownx.superfences
-  - abbr
   - tables
 
 plugins:
@@ -78,4 +74,3 @@ plugins:
       fallback_to_build_date: true
   # - optimize # sponsors only
   - search
-  - table-reader

@@ -1,0 +1,32 @@
+article.md-typeset {
+  .cards.grid.favicon.links {
+    img {
+      height: 1.25em;
+      margin-right: 0.5em;
+      vertical-align: text-top;
+    }
+  }
+  .cards.grid.gallery.links {
+    grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
+    a {
+      padding: 0.5rem;
+      figure {
+        margin: 0;
+        figcaption {
+          font-style: normal;
+          line-height: 1.2;
+          margin: 0.5rem 0 0 0;
+        }
+      }
+    }
+  }
+  .cards.grid.links {
+    li {
+      padding: 0;
+      a {
+        display: block;
+        padding: 0.8rem;
+      }
+    }
+  }
+}

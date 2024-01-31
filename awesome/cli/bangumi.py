@@ -34,6 +34,18 @@ class CollectionType(enum.IntEnum):
     搁置 = 4
     抛弃 = 5
 
+    def __str__(self) -> str:
+        return COLLECTIONS[self]
+
+
+COLLECTIONS: Mapping[CollectionType, str] = {
+    CollectionType.想看: ":star: 想看",
+    CollectionType.看过: ":thumbsup: 看过",
+    CollectionType.在看: ":eyes: 在看",
+    CollectionType.搁置: ":person_shrugging: 搁置",
+    CollectionType.抛弃: ":thumbsdown: 抛弃",
+}
+
 
 class Images(pydantic.BaseModel):
     large: str
@@ -112,37 +124,41 @@ def main(
         data[collection.rate].append(collection)
 
     print(
-        f"""# {title}
-
+        f"""\
+---
+hide:
+  - navigation
+---
+# {title}
 !!! note
-
-    本列表仅代表个人观感"""
+    本列表仅代表个人观感\
+"""
     )
     for rate, collections in sorted(data.items(), reverse=True):
         collections = sorted(collections, key=lambda x: x.subject.date, reverse=True)
         print(
-            f"""
+            f"""\
 ## {RATE[rate]} {rate}
-
-<div class="cards col-5 grid links" markdown>
+<div class="cards grid gallery links" markdown>\
 """
         )
         for collection in collections:
             name: str = collection.subject.name_cn or collection.subject.name
             if collection.type_ != CollectionType.看过:
-                name += f" ({collection.type_.name})"
+                name += f" | {collection.type_}"
             print(
-                f"""- <a href="https://bgm.tv/subject/{collection.subject.id}">
+                f"""\
+- <a href="https://bgm.tv/subject/{collection.subject.id}">
     <figure>
-      <img alt="{name}" src="{collection.subject.images.large}" />
+      <img src="{collection.subject.images.large}" />
       <figcaption>
-        <span> {name} </span> <br />
-        <span class="acg small">
+        <span markdown> {name} </span> <br />
+        <small>
           {collection.subject.date} / {collection.subject.score}
-        </span>
+        </small>
       </figcaption>
     </figure>
-  </a>"""
+  </a>\
+"""
             )
-        print()
         print("</div>")
