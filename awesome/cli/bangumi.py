@@ -41,9 +41,9 @@ class CollectionType(enum.IntEnum):
 COLLECTIONS: Mapping[CollectionType, str] = {
     CollectionType.想看: ":star: 想看",
     CollectionType.看过: ":thumbsup: 看过",
-    CollectionType.在看: ":eyes: 在看",
-    CollectionType.搁置: ":person_shrugging: 搁置",
-    CollectionType.抛弃: ":thumbsdown: 抛弃",
+    CollectionType.在看: ":material-play: 在看",
+    CollectionType.搁置: ":material-archive: 搁置",
+    CollectionType.抛弃: ":material-trash-can: 抛弃",
 }
 
 
