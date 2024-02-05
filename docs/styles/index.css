@@ -19,9 +19,6 @@ article.md-typeset {
         }
       }
     }
-    a:not([class]) {
-      color: var(--md-typeset-color);
-    }
   }
   .cards.grid.links {
     li {
@@ -44,6 +41,7 @@ article.md-typeset {
     background-color: #9333ea;
   }
   .看过 {
+    color: var(--md-typeset-color);
     background-color: var(--md-default-bg-color);
   }
   .在看 {
