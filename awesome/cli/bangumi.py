@@ -35,15 +35,19 @@ class CollectionType(enum.IntEnum):
     抛弃 = 5
 
     def __str__(self) -> str:
+        return self.name
+
+    @property
+    def emoji(self) -> str:
         return COLLECTIONS[self]
 
 
 COLLECTIONS: Mapping[CollectionType, str] = {
-    CollectionType.想看: ":star: 想看",
-    CollectionType.看过: ":thumbsup: 看过",
-    CollectionType.在看: ":material-play: 在看",
-    CollectionType.搁置: ":material-archive: 搁置",
-    CollectionType.抛弃: ":material-trash-can: 抛弃",
+    CollectionType.想看: ":star:",
+    CollectionType.看过: ":thumbsup:",
+    CollectionType.在看: ":material-play:",
+    CollectionType.搁置: ":material-archive:",
+    CollectionType.抛弃: ":material-trash-can:",
 }
 
 
@@ -122,7 +126,6 @@ def main(
     )
     for collection in collections:
         data[collection.rate].append(collection)
-
     print(
         f"""\
 ---
@@ -132,8 +135,13 @@ hide:
 # {title}
 !!! note
     本列表仅代表个人观感\
-"""
+""",
+        end="",
     )
+    print('   <div class="legends">')
+    for type_ in CollectionType:
+        print(f'        <span class="{type_}" markdown> {type_.emoji} {type_} </span>')
+    print("    </div>")
     for rate, collections in sorted(data.items(), reverse=True):
         collections = sorted(collections, key=lambda x: x.subject.date, reverse=True)
         print(
@@ -145,10 +153,10 @@ hide:
         for collection in collections:
             name: str = collection.subject.name_cn or collection.subject.name
             if collection.type_ != CollectionType.看过:
-                name += f" | {collection.type_}"
+                name = f"{collection.type_.emoji} {name}"
             print(
                 f"""\
-- <a href="https://bgm.tv/subject/{collection.subject.id}">
+- <a class="{collection.type_}" href="https://bgm.tv/subject/{collection.subject.id}" title="{collection.type_}">
     <figure>
       <img src="{collection.subject.images.large}" />
       <figcaption>
@@ -159,6 +167,6 @@ hide:
       </figcaption>
     </figure>
   </a>\
-"""
+"""  # noqa: E501
             )
         print("</div>")
