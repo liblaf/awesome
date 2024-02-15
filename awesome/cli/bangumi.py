@@ -11,19 +11,6 @@ import tenacity
 import typer
 from tenacity import stop, wait
 
-RATE: Mapping[int, str] = {
-    0: "未定",
-    1: "不忍直视",
-    2: "很差",
-    3: "差",
-    4: "较差",
-    5: "不过不失",
-    6: "还行",
-    7: "推荐",
-    8: "力荐",
-    9: "神作",
-    10: "超神作",
-}
 USER_AGENT: Optional[str] = "liblaf/awesome (https://github.com/liblaf/awesome)"
 
 
@@ -51,27 +38,44 @@ COLLECTIONS: Mapping[CollectionType, str] = {
 }
 
 
-class Images(pydantic.BaseModel):
-    large: str
-    common: str
-    medium: str
-    small: str
-    grid: str
+class Rate(enum.IntEnum):
+    未定 = 0
+    不忍直视 = 1
+    很差 = 2
+    差 = 3
+    较差 = 4
+    不过不失 = 5
+    还行 = 6
+    推荐 = 7
+    力荐 = 8
+    神作 = 9
+    超神作 = 10
 
-
-class SlimSubject(pydantic.BaseModel):
-    id: int
-    name: str
-    name_cn: str
-    date: datetime.date
-    images: Images
-    score: float
+    def __str__(self) -> str:
+        return self.name
 
 
 class UserSubjectCollection(pydantic.BaseModel):
     subject_id: int
-    rate: int
+    rate: Rate
     type_: CollectionType = pydantic.Field(alias="type")
+
+    class SlimSubject(pydantic.BaseModel):
+        id: int
+        name: str
+        name_cn: str
+        date: datetime.date
+
+        class Images(pydantic.BaseModel):
+            large: str
+            common: str
+            medium: str
+            small: str
+            grid: str
+
+        images: Images
+        score: float
+
     subject: SlimSubject
 
 
@@ -121,7 +125,7 @@ def main(
     collections: Sequence[UserSubjectCollection] = asyncio.run(
         get_user_collection(user=user)
     )
-    data: MutableMapping[int, MutableSequence[UserSubjectCollection]] = defaultdict(
+    data: MutableMapping[Rate, MutableSequence[UserSubjectCollection]] = defaultdict(
         list
     )
     for collection in collections:
@@ -140,13 +144,13 @@ hide:
     )
     print('   <div class="legends">')
     for type_ in CollectionType:
-        print(f'        <span class="{type_}" markdown> {type_.emoji} {type_} </span>')
+        print(f'        <div class="{type_}" markdown> {type_.emoji} {type_} </div>')
     print("    </div>")
     for rate, collections in sorted(data.items(), reverse=True):
         collections = sorted(collections, key=lambda x: x.subject.date, reverse=True)
         print(
             f"""\
-## {RATE[rate]} {rate}
+## {rate} {rate.value}
 <div class="cards grid gallery links" markdown>\
 """
         )

@@ -23,11 +23,10 @@ Javascript:
   - facebook/react
   - Harry-Chen/thu-learn-lib
   - pnpm/pnpm
+  - shadcn-ui/ui
   - vercel/next.js
   - vercel/vercel
   - vuejs/vue
-  - vuepress-theme-hope/vuepress-theme-hope
-  - vuepress/core
 
 LaTeX:
   - plk/biber
@@ -36,12 +35,12 @@ LaTeX:
   - typst/typst
 
 Python:
+  - astral-sh/ruff
   - benfred/py-spy
   - conda/conda
   - conda/conda-lock
   - Delgan/loguru
   - encode/httpx
-  - impredicative/urltitle
   - jd/tenacity
   - kornia/kornia
   - mamba-org/mamba
@@ -72,17 +71,15 @@ Python:
 
 Rust:
   - ardaku/whoami
+  - baoyachi/shadow-rs
   - chronotope/chrono
   - clap-rs/clap
   - clap-rs/clap-verbosity-flag
-  - colored-rs/colored
   - ConnorGray/clap-markdown
+  - console-rs/console
   - console-rs/indicatif
   - dirs-dev/directories-rs
   - dtolnay/anyhow
-  - dtolnay/async-trait
-  - EstebanBorai/local-ip-address
-  - mikaelmello/inquire
   - rust-lang/futures-rs
   - seanmonstar/reqwest
   - serde-rs/json
@@ -96,4 +93,5 @@ Shell:
   - charmbracelet/vhs
   - fish-shell/fish-shell
   - jorgebucaran/fisher
+  - koalaman/shellcheck
   - mvdan/sh

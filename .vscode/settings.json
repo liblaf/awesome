@@ -1,4 +1,6 @@
 {
+  "python.analysis.diagnosticMode": "workspace",
+  "python.analysis.typeCheckingMode": "strict",
   "yaml.customTags": [
     "!ENV scalar",
     "!ENV sequence",

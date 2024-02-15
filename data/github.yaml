@@ -13,6 +13,7 @@ Awesome:
   - vinta/awesome-python
 
 Browser:
+  - darkreader/darkreader
   - Get-Tech-Stack/TechStack
 
 CLI:
@@ -43,6 +44,7 @@ CLI:
   - muesli/duf
   - Nukesor/pueue
   - orf/gping
+  - PaddiM8/kalker
   - pappasam/toml-sort
   - pre-commit/pre-commit
   - prettier/prettier
@@ -77,6 +79,7 @@ Desktop:
   - tonsky/FiraCode
   - ventoy/Ventoy
   - videolan/vlc
+  - Zettlr/Zettlr
   - zotero/zotero
 
 Gaming:
@@ -117,9 +120,11 @@ Learn:
 
 Self-Hosted:
   - alist-org/alist
+  - BartoszJarocki/cv
   - binary-husky/gpt_academic
   - ChatGPTNextWeb/ChatGPT-Next-Web
   - dani-garcia/vaultwarden
+  - facebook/docusaurus
   - immich-app/immich
   - jellyfin/jellyfin
   - movie-web/movie-web
@@ -129,18 +134,19 @@ Self-Hosted:
   - vuepress-theme-hope/vuepress-theme-hope
 
 THU:
+  - Harry-Chen/Learn-Helper
   - libthu/reserves-lib-tsinghua-downloader
   - PKUanonym/REKCARC-TSC-UHT
   - stellarkey/912_project
   - thu-cs-lab/HPC-Lab-Docs
   - THU-feiyue/docs
   - Trinkle23897/learn2018-autodown
+  - z4yx/GoAuthing
   - ZenithalHourlyRate/thuservices
 
 Tools:
   - AmruthPillai/Reactive-Resume
   - anuraghazra/github-readme-stats
-  - BartoszJarocki/cv
   - lmc999/RegionRestrictionCheck
   - lowlighter/metrics
   - nkeonkeo/MediaUnlockTest
