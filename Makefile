@@ -1,4 +1,4 @@
-default: ruff mypy stub
+default: fmt mypy ruff stub
 
 build: docs
 	mkdocs build
@@ -6,8 +6,14 @@ build: docs
 .PHONY: docs
 docs: docs/acg.md docs/alternatives.md docs/github.md docs/languages.md docs/websites.md
 
+fmt: pyproject.toml
+	taplo format --option "reorder_keys=true" --option "reorder_arrays=true" pyproject.toml
+
+get-deps: mkdocs.yaml
+	mkdocs get-deps | xargs poetry add --group="docs"
+
 gh-deploy: docs
-	mkdocs gh-deploy
+	mkdocs gh-deploy --force --no-history
 
 mypy:
 	mypy --strict --package "awesome"
