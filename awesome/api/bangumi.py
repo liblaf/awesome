@@ -6,7 +6,6 @@ from typing import LiteralString
 import httpx
 import pydantic
 import tenacity
-from tenacity import stop, wait
 
 # https://bangumi.github.io/api/
 _USER_AGENT: str = "liblaf/awesome (https://github.com/liblaf/awesome)"
@@ -79,7 +78,7 @@ class _PagedUserCollection(pydantic.BaseModel):
 
 
 @tenacity.retry(
-    stop=stop.stop_after_attempt(4), wait=wait.wait_random_exponential(min=1)
+    stop=tenacity.stop_after_attempt(4), wait=tenacity.wait_random_exponential(min=1)
 )
 async def _get_user_collection_paged(
     user: str, offset: int = 0
@@ -95,9 +94,6 @@ async def _get_user_collection_paged(
         return response_body
 
 
-@tenacity.retry(
-    stop=stop.stop_after_attempt(4), wait=wait.wait_random_exponential(min=1)
-)
 async def get_user_collection(
     user: str,
 ) -> Sequence[UserSubjectCollection]:

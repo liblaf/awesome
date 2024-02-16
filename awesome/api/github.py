@@ -6,7 +6,6 @@ import httpx
 import pydantic
 import tenacity
 from loguru import logger
-from tenacity import stop, wait
 
 
 class _RateLimit(pydantic.BaseModel):
@@ -41,7 +40,7 @@ async def _handle_rate_limit(client: httpx.AsyncClient) -> None:
 
 
 @tenacity.retry(
-    stop=stop.stop_after_attempt(4), wait=wait.wait_random_exponential(min=1)
+    stop=tenacity.stop_after_attempt(4), wait=tenacity.wait_random_exponential(min=1)
 )
 async def _get_commits(repo: str, token: str | None = None) -> int:
     """https://github.com/badges/shields/blob/master/services/github/github-commit-activity.service.js"""
@@ -108,7 +107,7 @@ class Repository(pydantic.BaseModel):
 
 
 @tenacity.retry(
-    stop=stop.stop_after_attempt(4), wait=wait.wait_random_exponential(min=1)
+    stop=tenacity.stop_after_attempt(4), wait=tenacity.wait_random_exponential(min=1)
 )
 async def get_repo(repo: str, token: str | None = None) -> Repository:
     async with httpx.AsyncClient(

@@ -1,4 +1,4 @@
-default: ruff stub
+default: ruff mypy stub
 
 build: docs
 	mkdocs build
@@ -8,6 +8,9 @@ docs: docs/acg.md docs/alternatives.md docs/github.md docs/languages.md docs/web
 
 gh-deploy: docs
 	mkdocs gh-deploy
+
+mypy:
+	mypy --strict --package "awesome"
 
 ruff:
 	ruff format

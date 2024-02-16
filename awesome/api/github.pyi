@@ -1,10 +1,9 @@
 import datetime
 from collections.abc import Mapping, Sequence
 
-import httpx
 import pydantic
 
-class RateLimit(pydantic.BaseModel):
+class _RateLimit(pydantic.BaseModel):
     class Rate(pydantic.BaseModel):
         limit: pydantic.NonNegativeInt
         used: pydantic.NonNegativeInt
@@ -12,10 +11,6 @@ class RateLimit(pydantic.BaseModel):
         reset: datetime.datetime
     resources: Mapping[str, Rate]
     rate: Rate
-
-async def handle_rate_limit(client: httpx.AsyncClient) -> None: ...
-async def get_commits(repo: str, token: str | None = None) -> int:
-    """https://github.com/badges/shields/blob/master/services/github/github-commit-activity.service.js"""
 
 class Repository(pydantic.BaseModel):
     commits: pydantic.NonNegativeInt | None

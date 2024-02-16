@@ -4,8 +4,12 @@ from urllib import parse
 from venv import logger
 
 import bs4
+import fake_useragent  # type: ignore
 import httpx
 import pydantic
+import tenacity
+
+ua = fake_useragent.UserAgent()
 
 
 class Website(pydantic.BaseModel):
@@ -23,9 +27,17 @@ def _favicon(url: str) -> str:
     return f"https://icons.bitwarden.net/{result.netloc}/icon.png"
 
 
+@tenacity.retry(
+    stop=tenacity.stop_after_attempt(4), wait=tenacity.wait_random_exponential(min=1)
+)
 async def _title(url: str) -> str:
     try:
-        async with httpx.AsyncClient(follow_redirects=True) as client:
+        async with httpx.AsyncClient(
+            headers={
+                "User-Agent": ua.random  # type: ignore
+            },
+            follow_redirects=True,
+        ) as client:
             response: httpx.Response = await client.get(url)
             response = response.raise_for_status()
             soup: bs4.BeautifulSoup = bs4.BeautifulSoup(response.text, "html.parser")
