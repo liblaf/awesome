@@ -1,0 +1,59 @@
+cat:
+  - sharkdp/bat
+
+curl:
+  - curl/curl
+  - ducaale/xh
+  - httpie/cli
+
+df:
+  - muesli/duf
+
+diff:
+  - dandavison/delta
+
+dig:
+  - mr-karan/doggo
+
+du:
+  - dundee/gdu
+
+Editor:
+  - helix-editor/helix
+  - neovim/neovim
+  - vim/vim
+
+File Manager:
+  - gokcehan/lf
+  - jarun/nnn
+  - ranger/ranger
+  - sxyazi/yazi
+
+find:
+  - sharkdp/fd
+
+grep:
+  - BurntSushi/ripgrep
+
+jq:
+  - jqlang/jq
+  - mikefarah/yq
+  - TomWright/dasel
+
+ls:
+  - lsd-rs/lsd
+  - ogham/exa
+
+man:
+  - tldr-pages/tldr
+
+time:
+  - sharkdp/hyperfine
+
+top:
+  - aristocratos/btop
+  - ClementTsang/bottom
+  - htop-dev/htop
+  - nicolargo/glances
+  - Syllo/nvtop
+  - XuehaiPan/nvitop

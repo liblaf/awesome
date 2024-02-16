@@ -30,17 +30,13 @@ jobs:
           cache: poetry
       - name: Install Dependencies
         run: poetry install
-      - name: Install Task
-        uses: arduino/setup-task@v2
-        with:
-          repo-token: ${{ github.token }}
       - if: github.ref != 'refs/heads/main'
         name: Build Documentation
-        run: poetry run task docs:build
+        run: poetry run make build --jobs
         env:
           GH_TOKEN: ${{ github.token }}
       - if: github.ref == 'refs/heads/main'
         name: Deploy to GitHub Pages
-        run: poetry run task docs:gh-deploy
+        run: poetry run make gh-deploy --jobs
         env:
           GH_TOKEN: ${{ github.token }}

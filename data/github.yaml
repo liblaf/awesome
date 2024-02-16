@@ -2,6 +2,7 @@ Awesome:
   - agarrharr/awesome-cli-apps
   - avelino/awesome-go
   - awesome-selfhosted/awesome-selfhosted
+  - bestofjs/javascript-risingstars
   - fffaraz/awesome-cpp
   - ibraheemdev/modern-unix
   - Kazhnuz/awesome-gnome
@@ -30,11 +31,8 @@ CLI:
   - ducaale/xh
   - dundee/gdu
   - dylanaraps/neofetch
-  - gokcehan/lf
   - helix-editor/helix
-  - httpie/cli
   - ImageMagick/ImageMagick
-  - jesseduffield/lazygit
   - jgm/pandoc
   - Jguer/yay
   - jlfwong/speedscope
@@ -43,9 +41,7 @@ CLI:
   - mr-karan/doggo
   - muesli/duf
   - Nukesor/pueue
-  - orf/gping
   - PaddiM8/kalker
-  - pappasam/toml-sort
   - pre-commit/pre-commit
   - prettier/prettier
   - rclone/rclone
@@ -55,6 +51,7 @@ CLI:
   - starship/starship
   - svenstaro/miniserve
   - sxyazi/yazi
+  - tamasfe/taplo
   - tj/git-extras
   - tldr-pages/tldr
   - tmux/tmux
@@ -80,7 +77,6 @@ Desktop:
   - ventoy/Ventoy
   - videolan/vlc
   - Zettlr/Zettlr
-  - zotero/zotero
 
 Gaming:
   - babalae/better-genshin-impact
@@ -155,3 +151,10 @@ Windows:
   - massgravel/Microsoft-Activation-Scripts
   - microsoft/PowerToys
   - YerongAI/Office-Tool
+
+Zotero:
+  - MuiseDestiny/zotero-reference
+  - retorquere/zotero-open-pdf
+  - tefkah/zotero-night
+  - windingwind/zotero-pdf-translate
+  - zotero/zotero
