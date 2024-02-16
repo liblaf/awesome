@@ -89,5 +89,7 @@ hide:
                 print(website_.markdown)
             print("</div>")
         if collection.repos:
-            for repo in collection.repos:
+            for repo in sorted(
+                collection.repos, key=lambda r: r.stargazers_count, reverse=True
+            ):
                 print(repo.markdown)
