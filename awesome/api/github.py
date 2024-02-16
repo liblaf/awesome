@@ -34,7 +34,7 @@ async def _handle_rate_limit(client: httpx.AsyncClient) -> None:
         key=lambda item: item[1].reset,
     )
     delay: datetime.timedelta = reset.reset - datetime.datetime.now(datetime.UTC)
-    logger.error("Rate limit exceeded: %s, reset in %s", name, delay.total_seconds())
+    logger.error("Rate limit exceeded: {}, reset in {}", name, delay)
     await asyncio.sleep(delay.total_seconds())
     raise tenacity.TryAgain()
 
@@ -124,7 +124,7 @@ async def get_repo(repo: str, token: str | None = None) -> Repository:
             **response.json(), commits=await _get_commits(repo=repo, token=token)
         )
         if result.full_name != repo:
-            logger.warning("Moved: %s -> %s", repo, result.full_name)
+            logger.warning("Moved: {} -> {}", repo, result.full_name)
         return result
 
 
