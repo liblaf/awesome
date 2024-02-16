@@ -49,5 +49,5 @@ docs/languages.md: data/languages.yaml
 docs/languages.md: TITLE := Languages
 docs/websites.md: data/websites.yaml
 docs/websites.md: TITLE := Websites
-docs/github.md docs/languages.md docs/websites.md:
+docs/alternatives.md docs/github.md docs/languages.md docs/websites.md:
 	awesome mixed --title "$(TITLE)" "$<" > "$@"
