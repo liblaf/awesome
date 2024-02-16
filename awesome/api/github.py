@@ -33,7 +33,7 @@ async def _handle_rate_limit(client: httpx.AsyncClient) -> None:
         [(name, reset) for name, reset in resources.items() if reset.remaining == 0],
         key=lambda item: item[1].reset,
     )
-    delay: datetime.timedelta = reset.reset - datetime.datetime.now()
+    delay: datetime.timedelta = reset.reset - datetime.datetime.now(datetime.UTC)
     logger.error("Rate limit exceeded: %s, reset in %s", name, delay.total_seconds())
     await asyncio.sleep(delay.total_seconds())
     raise tenacity.TryAgain()
