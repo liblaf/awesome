@@ -111,14 +111,14 @@ async def get_website(url: str) -> Website:
             if image and not image.startswith("http"):
                 image = parse.urljoin(url, image)
             return Website(
-                url=url,
+                url=url,  # pyright: ignore
                 title=_get_title(soup),
-                image=image,
+                image=image,  # pyright: ignore
                 description=_get_description(soup),
             )
     except Exception as e:
-        logger.error(e)
-        return Website(url=url)
+        logger.error("{}: {}", url, e)
+        return Website(url=url)  # pyright: ignore
 
 
 async def get_websites(urls: Iterable[str]) -> Sequence[Website]:
