@@ -1,13 +1,13 @@
 import asyncio
 from collections.abc import Iterable, Sequence
 from urllib import parse
-from venv import logger
 
 import bs4
 import fake_useragent  # type: ignore
 import httpx
 import pydantic
 import typeguard
+from loguru import logger
 
 ua = fake_useragent.UserAgent()
 
@@ -28,14 +28,11 @@ class Website(pydantic.BaseModel):
         result: str = f'<li><a href="{self.url}" markdown>'
         result += f'<img alt="Favicon" class="favicon" src="{self.favicon}" />'
         if self.title:
-            result += self.title
+            result += f"<strong>{self.title}</strong>"
         else:
-            result += str(self.url)
-        if self.image:
-            result += f'<img class="og" src="{self.image}" />'
+            result += f"<strong>{self.url}</strong>"
         if self.description:
-            if not self.image:
-                result += "<hr/>"
+            result += "<hr />"
             result += f"<p>{self.description}</p>"
         result += "</a></li>"
         return result
@@ -117,7 +114,6 @@ async def get_website(url: str) -> Website:
                 description=_get_description(soup),
             )
     except Exception as e:
-        logger.error(url)
         logger.error(e)
         return Website(url=url)  # pyright: ignore
 

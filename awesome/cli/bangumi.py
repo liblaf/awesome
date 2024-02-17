@@ -52,19 +52,5 @@ hide:
             name: str = collection.subject.name_cn or collection.subject.name
             if collection.type_ != bangumi.CollectionType.看过:
                 name = f"{collection.type_.emoji} {name}"
-            print(
-                f"""\
-- <a class="{collection.type_.name}" href="https://bgm.tv/subject/{collection.subject.id}" title="{collection.type_.name}">
-    <figure>
-      <img src="{collection.subject.images.large}" />
-      <figcaption>
-        <span markdown> {name} </span> <br />
-        <small>
-          {collection.subject.date} / {collection.subject.score}
-        </small>
-      </figcaption>
-    </figure>
-  </a>\
-"""  # noqa: E501
-            )
+            print(collection.markdown)
         print("</div>")

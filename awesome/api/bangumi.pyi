@@ -44,6 +44,8 @@ class UserSubjectCollection(pydantic.BaseModel):
         images: Images
         score: pydantic.PositiveFloat
     subject: SlimSubject
+    @property
+    def markdown(self) -> str: ...
 
 class _PagedUserCollection(pydantic.BaseModel):
     total: int

@@ -69,6 +69,24 @@ class UserSubjectCollection(pydantic.BaseModel):
 
     subject: SlimSubject
 
+    @property
+    def markdown(self) -> str:
+        name: str = self.subject.name_cn or self.subject.name
+        if self.type_ != CollectionType.看过:
+            name = f"{self.type_.emoji} {name}"
+        return f"""\
+- <a class="{self.type_.name}" href="https://bgm.tv/subject/{self.subject.id}" title="{self.type_.name}">
+    <figure>
+      <img src="{self.subject.images.large}" />
+      <figcaption>
+        <strong markdown> {name} </strong>
+        <br />
+        <small> {self.subject.date} / {self.subject.score} </small>
+      </figcaption>
+    </figure>
+  </a>\
+"""  # noqa: E501
+
 
 class _PagedUserCollection(pydantic.BaseModel):
     total: int
