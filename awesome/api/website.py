@@ -117,7 +117,8 @@ async def get_website(url: str) -> Website:
                 description=_get_description(soup),
             )
     except Exception as e:
-        logger.error("{}: {}", url, e)
+        logger.error(url)
+        logger.error(e)
         return Website(url=url)  # pyright: ignore
 
 
