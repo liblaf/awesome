@@ -28,7 +28,7 @@ class _CollectionRaw:
                 else:
                     self.repos.append(s)
         else:
-            raise NotImplementedError()
+            raise NotImplementedError
 
 
 class _Collection(pydantic.BaseModel):
@@ -84,10 +84,10 @@ hide:
     for category, collection in collections.items():
         print(f"## {category}")
         if collection.websites:
-            print('<div class="cards grid favicon links" markdown>')
+            print('<div class="cards grid links websites" markdown><ul>')
             for website_ in collection.websites:
                 print(website_.markdown)
-            print("</div>")
+            print("</ul></div>")
         if collection.repos:
             for repo in sorted(
                 collection.repos, key=lambda r: r.stargazers_count, reverse=True

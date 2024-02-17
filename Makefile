@@ -1,4 +1,6 @@
-default: fmt mypy ruff stub
+NAME := awesome
+
+default: fmt mypy ruff
 
 build: docs
 	mkdocs build
@@ -6,8 +8,7 @@ build: docs
 .PHONY: docs
 docs: docs/acg.md docs/alternatives.md docs/github.md docs/languages.md docs/websites.md
 
-fmt: pyproject.toml
-	taplo format --option "reorder_keys=true" --option "reorder_arrays=true" pyproject.toml
+fmt: fmt/pyproject.toml
 
 get-deps: mkdocs.yaml
 	mkdocs get-deps | xargs poetry add --group="docs"
@@ -16,7 +17,7 @@ gh-deploy: docs
 	mkdocs gh-deploy --force --no-history
 
 mypy:
-	mypy --strict --package "awesome"
+	mypy --strict --package "$(NAME)"
 
 ruff:
 	ruff format
@@ -26,13 +27,13 @@ serve: docs
 	mkdocs serve
 
 setup:
-	micromamba create --yes --name "awesome" python poetry
-	micromamba run --name "awesome" poetry install
+	micromamba create --yes --name "$(NAME)" python poetry
+	micromamba run --name "$(NAME)" poetry install
 
 stub:
-	stubgen --include-docstrings --output "." --package "awesome"
+	stubgen --include-docstrings --output "." --package "$(NAME)"
+	stubtest "$(NAME)"
 	$(MAKE) ruff
-	stubtest "awesome"
 
 ###############
 # Auxiliaries #
@@ -51,3 +52,7 @@ docs/websites.md: data/websites.yaml
 docs/websites.md: TITLE := Websites
 docs/alternatives.md docs/github.md docs/languages.md docs/websites.md:
 	awesome mixed --title "$(TITLE)" "$<" > "$@"
+
+fmt/pyproject.toml: pyproject.toml
+	toml-sort --in-place --all "$<"
+	taplo format --option "reorder_keys=true" --option "reorder_arrays=true" "$<"

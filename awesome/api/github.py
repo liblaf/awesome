@@ -36,7 +36,7 @@ async def _handle_rate_limit(client: httpx.AsyncClient) -> None:
     delay: datetime.timedelta = reset.reset - datetime.datetime.now(datetime.UTC)
     logger.error("Rate limit exceeded: {}, reset in {}", name, delay)
     await asyncio.sleep(delay.total_seconds())
-    raise tenacity.TryAgain()
+    raise tenacity.TryAgain
 
 
 @tenacity.retry(
@@ -50,7 +50,7 @@ async def _get_commits(repo: str, token: str | None = None) -> int:
     ) as client:
         user: str
         user, _, repo = repo.partition("/")
-        since: datetime.datetime = datetime.datetime.now()
+        since: datetime.datetime = datetime.datetime.now(datetime.UTC)
         since = since.replace(year=since.year - 1)
         response: httpx.Response = await client.post(
             "https://api.github.com/graphql",

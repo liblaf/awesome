@@ -1,5 +1,5 @@
 from typing import TypeVar
 
-T = TypeVar("T")
+_T = TypeVar("_T")
 
-def check_type(value: object, expected_type: type[T]) -> T | None: ...
+def check_type(value: object, expected_type: type[_T]) -> _T | None: ...

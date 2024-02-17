@@ -1,11 +1,13 @@
 import asyncio
 from collections import defaultdict
-from collections.abc import MutableMapping, MutableSequence, Sequence
-from typing import Annotated
+from typing import TYPE_CHECKING, Annotated
 
 import typer
 
 from awesome.api import bangumi
+
+if TYPE_CHECKING:
+    from collections.abc import MutableMapping, MutableSequence, Sequence
 
 
 def main(

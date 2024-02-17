@@ -1,9 +1,14 @@
 article.md-typeset {
-  .cards.grid.favicon.links {
-    img {
+  .cards.grid.links.websites {
+    img.favicon {
       height: 1.25em;
       margin-right: 0.5em;
       vertical-align: text-top;
+    }
+    img.og {
+      display: block;
+      margin-inline: auto;
+      margin-top: 0.5em;
     }
   }
   .cards.grid.gallery.links {

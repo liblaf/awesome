@@ -1,5 +1,6 @@
 import inspect
 import logging
+import os
 
 from loguru import logger
 
@@ -24,5 +25,9 @@ class InterceptHandler(logging.Handler):
         )
 
 
-def init(level: int | str = logging.INFO) -> None:
+def init(level: int | str = logging.NOTSET) -> None:
+    if level == logging.NOTSET:
+        level = os.getenv("LOG_LEVEL", logging.NOTSET)
+    if level == logging.NOTSET:
+        level = logging.INFO
     logging.basicConfig(handlers=[InterceptHandler()], level=level, force=True)

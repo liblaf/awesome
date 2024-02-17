@@ -7,8 +7,11 @@ ua: Incomplete
 
 class Website(pydantic.BaseModel):
     url: pydantic.HttpUrl
-    favicon: pydantic.HttpUrl
-    title: str
+    title: str | None
+    image: pydantic.HttpUrl | None
+    description: str | None
+    @property
+    def favicon(self) -> str: ...
     @property
     def markdown(self) -> str: ...
 

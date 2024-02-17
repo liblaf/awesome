@@ -7,55 +7,118 @@ import bs4
 import fake_useragent  # type: ignore
 import httpx
 import pydantic
-import tenacity
+import typeguard
 
 ua = fake_useragent.UserAgent()
 
 
 class Website(pydantic.BaseModel):
     url: pydantic.HttpUrl
-    favicon: pydantic.HttpUrl
-    title: str
+    title: str | None = None
+    image: pydantic.HttpUrl | None = None
+    description: str | None = None
+
+    @property
+    def favicon(self) -> str:
+        result: parse.ParseResult = parse.urlparse(str(self.url))
+        return f"https://icons.bitwarden.net/{result.netloc}/icon.png"
 
     @property
     def markdown(self) -> str:
-        return f"- [![Favicon]({self.favicon}) {self.title}]({self.url})"
+        result: str = f'<li><a href="{self.url}" markdown>'
+        result += f'<img alt="Favicon" class="favicon" src="{self.favicon}" />'
+        if self.title:
+            result += self.title
+        else:
+            result += str(self.url)
+        if self.image:
+            result += f'<img class="og" src="{self.image}" />'
+        if self.description:
+            if not self.image:
+                result += "<hr/>"
+            result += f"<p>{self.description}</p>"
+        result += "</a></li>"
+        return result
 
 
-def _favicon(url: str) -> str:
-    result: parse.ParseResult = parse.urlparse(url)
-    return f"https://icons.bitwarden.net/{result.netloc}/icon.png"
+@typeguard.typechecked()
+def _get_title(soup: bs4.BeautifulSoup) -> str | None:
+    tag: bs4.Tag | bs4.NavigableString | None = soup.find(name="title")
+    if tag:
+        return tag.get_text(strip=True)
+    tag = soup.find(name="meta", property="og:title")
+    if isinstance(tag, bs4.Tag) and isinstance(content := tag.get("content"), str):
+        return content
+    tag = soup.find(name="meta", attrs={"name": "twitter:title"})
+    if isinstance(tag, bs4.Tag) and isinstance(content := tag.get("content"), str):
+        return content
+    return None
 
 
-@tenacity.retry(
-    stop=tenacity.stop_after_attempt(4), wait=tenacity.wait_random_exponential(min=1)
-)
-async def _title(url: str) -> str:
+@typeguard.typechecked()
+def _get_image(soup: bs4.BeautifulSoup) -> str | None:
+    tag: bs4.Tag | bs4.NavigableString | None = soup.find(
+        name="meta", property="og:image"
+    )
+    if (
+        isinstance(tag, bs4.Tag)
+        and isinstance(content := tag.get("content"), str)
+        and content
+    ):
+        return content
+    tag = soup.find(name="meta", attrs={"name": "twitter:image"})
+    if (
+        isinstance(tag, bs4.Tag)
+        and isinstance(content := tag.get("content"), str)
+        and content
+    ):
+        return content
+    return None
+
+
+@typeguard.typechecked()
+def _get_description(soup: bs4.BeautifulSoup) -> str | None:
+    tag: bs4.Tag | bs4.NavigableString | None = soup.find(
+        name="meta", property="og:description"
+    )
+    if (
+        isinstance(tag, bs4.Tag)
+        and isinstance(content := tag.get("content"), str)
+        and content
+    ):
+        return content
+    tag = soup.find(name="meta", attrs={"name": "twitter:description"})
+    if (
+        isinstance(tag, bs4.Tag)
+        and isinstance(content := tag.get("content"), str)
+        and content
+    ):
+        return content
+    return None
+
+
+@typeguard.typechecked()
+async def get_website(url: str) -> Website:
     try:
         async with httpx.AsyncClient(
-            headers={
-                "User-Agent": ua.random  # type: ignore
-            },
+            headers={"User-Agent": ua.random},  # pyright: ignore
             follow_redirects=True,
         ) as client:
             response: httpx.Response = await client.get(url)
             response = response.raise_for_status()
-            soup: bs4.BeautifulSoup = bs4.BeautifulSoup(response.text, "html.parser")
-            tag: bs4.Tag | bs4.NavigableString | None = soup.find(name="title")
-            if not tag:
-                return url
-            return tag.get_text(strip=True)
+            soup: bs4.BeautifulSoup = bs4.BeautifulSoup(response.text)
+            image: str | None = _get_image(soup)
+            if image and not image.startswith("http"):
+                image = parse.urljoin(url, image)
+            return Website(
+                url=url,
+                title=_get_title(soup),
+                image=image,
+                description=_get_description(soup),
+            )
     except Exception as e:
         logger.error(e)
-        return url
-
-
-async def get_website(url: str) -> Website:
-    return Website(
-        url=url,  # type: ignore
-        favicon=_favicon(url),  # type: ignore
-        title=await _title(url),
-    )
+        return Website(url=url)
 
 
 async def get_websites(urls: Iterable[str]) -> Sequence[Website]:
