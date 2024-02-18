@@ -3,7 +3,7 @@ from collections.abc import Iterable, Sequence
 from urllib import parse
 
 import bs4
-import fake_useragent  # type: ignore
+import fake_useragent  # pyright: ignore
 import httpx
 import pydantic
 import typeguard
@@ -98,7 +98,7 @@ def _get_description(soup: bs4.BeautifulSoup) -> str | None:
 async def get_website(url: str) -> Website:
     try:
         async with httpx.AsyncClient(
-            headers={"User-Agent": ua.random},  # pyright: ignore
+            headers={"User-Agent": ua.chrome},  # pyright: ignore
             follow_redirects=True,
         ) as client:
             response: httpx.Response = await client.get(url)

@@ -117,7 +117,7 @@ async def get_repo(repo: str, token: str | None = None) -> Repository:
         response: httpx.Response = await client.get(
             f"https://api.github.com/repos/{repo}"
         )
-        if response.status_code == 403:
+        if response.status_code == httpx.codes.FORBIDDEN:
             await _handle_rate_limit(client=client)
         response.raise_for_status()
         result: Repository = Repository(

@@ -33,7 +33,6 @@ setup:
 stub:
 	stubgen --include-docstrings --output "." --package "$(NAME)"
 	stubtest "$(NAME)"
-	$(MAKE) ruff
 
 ###############
 # Auxiliaries #
