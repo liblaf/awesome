@@ -47,6 +47,10 @@ ls:
 man:
   - tldr-pages/tldr
 
+Markdown:
+  - vnotex/vnote
+  - Zettlr/Zettlr
+
 time:
   - sharkdp/hyperfine
 
