@@ -13,7 +13,7 @@ version = "0.0.0"
 [tool.poetry.dependencies]
 beautifulsoup4 = "^4.12.3"
 fake-useragent = "^1.4.0"
-httpx = { extras = ["socks"], version = "^0.26.0" }
+httpx = { extras = ["socks"], version = "^0.27.0" }
 loguru = "^0.7.2"
 pydantic = "^2.6.1"
 python = "^3.11"
@@ -34,7 +34,7 @@ mkdocs = "^1.5.3"
 mkdocs-git-authors-plugin = "^0.7.2"
 mkdocs-git-committers-plugin-2 = "^2.2.3"
 mkdocs-git-revision-date-localized-plugin = "^1.2.4"
-mkdocs-material = "^9.5.9"
+mkdocs-material = "^9.5.10"
 pymdown-extensions = "^10.7"
 
 [tool.poetry.scripts]
