@@ -15,7 +15,7 @@ beautifulsoup4 = "^4.12.3"
 fake-useragent = "^1.4.0"
 httpx = { extras = ["socks"], version = "^0.27.0" }
 loguru = "^0.7.2"
-pydantic = "^2.6.1"
+pydantic = "^2.6.2"
 python = "^3.11"
 pyyaml = "^6.0.1"
 tenacity = "^8.2.3"
