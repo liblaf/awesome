@@ -1,5 +1,5 @@
 <!-- markdownlint-disable MD041 -->
 
 <!-- prettier-ignore-start -->
-*[ACG]: Animation, Comics, and Games
+*[ACG]: **A**nimation, **C**omics, and **G**ames
 <!-- prettier-ignore-end -->

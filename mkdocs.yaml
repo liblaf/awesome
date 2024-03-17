@@ -6,34 +6,24 @@ repo_url: https://github.com/liblaf/awesome
 
 edit_uri: edit/main/docs/
 
+extra_css:
+  - styles/index.css
+
 theme:
   name: material
-  palette:
-    - media: "(prefers-color-scheme)"
-      toggle:
-        icon: material/brightness-auto
-        name: system preference
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      toggle:
-        icon: material/brightness-7
-        name: light mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      toggle:
-        icon: material/brightness-4
-        name: dark mode
   features:
     - content.action.edit
     - content.action.view
+    - content.code.copy
+    - content.code.select
+    - content.footnote.tooltips # sponsors only
+    - content.tabs.link
     - content.tooltips
     - navigation.indexes
     - navigation.instant
-    - navigation.instant.prefetch # sponsors only
     - navigation.instant.progress
     - navigation.path # sponsors only
     - navigation.prune
-    - navigation.sections
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.top
@@ -42,35 +32,60 @@ theme:
     - search.share
     - search.suggest
     - toc.follow
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: system preference
+    - scheme: default
+      media: "(prefers-color-scheme: light)"
+      toggle:
+        icon: material/brightness-7
+        name: light mode
+    - scheme: slate
+      media: "(prefers-color-scheme: dark)"
+      toggle:
+        icon: material/brightness-4
+        name: dark mode
 
-extra_css:
-  - styles/index.css
-
-watch:
-  - includes
+plugins:
+  # built-in
+  - meta # sponsors only
+  - optimize # sponsors only
+  - privacy
+  - search:
+      lang:
+        - en
+        - zh
+  - social
+  - tags
+  - typeset # sponsors only
+  # external
+  - gen-files:
+      scripts: []
+  - git-authors
+  - git-committers:
+      repository: liblaf/awesome
+      branch: main
+  # external-community
+  - git-revision-date-localized:
+      fallback_to_build_date: true
+      enable_creation_date: true
 
 markdown_extensions:
+  # external > markdown
   - abbr
   - admonition
   - attr_list
+  - footnotes
   - md_in_html
-  - pymdownx.details
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - tables
+  - toc:
+      anchorlink: true
+  # external > pymdownx
   - pymdownx.snippets:
       auto_append:
         - includes/abbreviations.md
-  - pymdownx.superfences
-  - tables
 
-plugins:
-  - git-authors
-  - git-committers:
-      branch: main
-      repository: liblaf/awesome
-  - git-revision-date-localized:
-      enable_creation_date: true
-      fallback_to_build_date: true
-  # - optimize # sponsors only
-  - search
+watch:
+  - includes
