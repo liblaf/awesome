@@ -1,0 +1,32 @@
+name: Data
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  data:
+    name: Data
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+      cancel-in-progress: true
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Rye
+        uses: eifinger/setup-rye@v2
+      - name: Install Dependencies
+        run: rye sync --no-lock
+      - name: Fetch Data
+        run: make --jobs
+      - name: Upload Data
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: docs/data
+          branch: data
+          single-commit: true

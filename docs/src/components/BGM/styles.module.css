@@ -1,0 +1,63 @@
+.badage {
+  border-radius: 0.5em;
+  font-weight: bolder;
+  margin: 0 0.2em;
+  padding: 0.2em 0.5em;
+}
+
+.cards {
+  display: grid;
+  gap: 0.5em;
+  grid-template-columns: repeat(auto-fill, minmax(10em, 1fr));
+}
+
+.card {
+  border: 0.1em solid transparent;
+  padding: 0.5em;
+  text-align: center;
+}
+
+.card:hover {
+  border: 0.1em solid #fff;
+  color: inherit;
+  filter: brightness(80%);
+  text-decoration: none;
+}
+
+.figure {
+  margin: 0;
+  line-height: 1.2;
+}
+
+.name {
+  font-weight: bolder;
+}
+
+.info {
+  font-size: smaller;
+}
+
+.想看 {
+  color: #faf5ff;
+  background-color: #9333ea;
+}
+
+.看过 {
+  color: #ecfeff;
+  background-color: #0891b2;
+}
+
+.在看 {
+  color: #f0fdf4;
+  background-color: #16a34a;
+}
+
+.搁置 {
+  color: #fefce8;
+  background-color: #ca8a04;
+}
+
+.抛弃 {
+  color: #fef2f2;
+  background-color: #dc2626;
+}

@@ -1,3 +1,4 @@
-# Awesome
+# awesome
 
-My Awesome Lists
+Describe your project here.
+* License: MIT
