@@ -28,7 +28,7 @@ type Collection = {
 export default function BGM({ rate }: { rate: number }): JSX.Element {
   const data = DATA.data as Collection[];
   const collections: Collection[] = data.filter(
-    (collection: Collection): boolean => collection.rate === rate
+    (collection: Collection): boolean => collection.rate === rate,
   );
   return (
     <div className={styles.cards}>

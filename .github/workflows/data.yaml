@@ -2,8 +2,9 @@ name: Data
 
 on:
   push:
-    branches:
-      - main
+  schedule:
+    - cron: 0 0 * * *
+  workflow_call:
   workflow_dispatch:
 
 jobs:
@@ -24,7 +25,8 @@ jobs:
         run: rye sync --no-lock
       - name: Fetch Data
         run: make --jobs
-      - name: Upload Data
+      - if: github.ref == 'refs/heads/main'
+        name: Upload Data
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: docs/data
