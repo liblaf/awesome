@@ -28,7 +28,7 @@ type Collection = {
 export default function BGM({ rate }: { rate: number }): JSX.Element {
   const data = DATA.data as Collection[];
   const collections: Collection[] = data.filter(
-    (collection: Collection): boolean => collection.rate === rate,
+    (collection: Collection): boolean => collection.rate === rate
   );
   return (
     <div className={styles.cards}>
@@ -37,7 +37,6 @@ export default function BGM({ rate }: { rate: number }): JSX.Element {
           collection.subject.name_cn || collection.subject.name;
         const type_name: string = TYPES[collection.type];
         const type_style: string = styles[type_name];
-        console.log(ICONS[type_name]);
         return (
           <Link
             className={clsx(styles.card, type_style)}
