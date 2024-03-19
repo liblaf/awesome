@@ -18,7 +18,9 @@ class Data(pydantic.BaseModel):
 
 
 async def get_collection(collection: list[str]) -> Collection:
-    repos_input: list[str] = [s for s in collection if re.fullmatch(r"(\w+)/(\w+)", s)]
+    repos_input: list[str] = [
+        s for s in collection if re.fullmatch(r"([^/]+)/([^/]+)", s)
+    ]
     repos: list[_github.Repository] = await _github.get_repos(repos_input)
     websites_input: list[str] = [s for s in collection if s.startswith("https://")]
     websites: list[_website.Website] = await _website.get_websites(websites_input)

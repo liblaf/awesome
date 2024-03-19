@@ -84,7 +84,9 @@ async def get_website(url: str) -> Website:
         ) as client:
             response: httpx.Response = await client.get(url)
             response = response.raise_for_status()
-            soup: bs4.BeautifulSoup = bs4.BeautifulSoup(response.text)
+            soup: bs4.BeautifulSoup = bs4.BeautifulSoup(
+                response.text, features="html.parser"
+            )
             image: str | None = _get_image(soup)
             if image and not image.startswith("http"):
                 image = parse.urljoin(url, image)

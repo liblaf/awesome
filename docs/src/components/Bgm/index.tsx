@@ -1,9 +1,7 @@
 import Link from "@docusaurus/Link";
-import { Icon } from "@iconify/react";
 import DATA from "@site/data/bgm.json";
-import clsx from "clsx";
-import { ICONS, TYPES } from "./constants";
 import Badge from "./Badge";
+import { TYPES } from "./constants";
 import styles from "./styles.module.css";
 
 type Collection = {
@@ -26,7 +24,7 @@ type Collection = {
   };
 };
 
-export default function BGM({ rate }: { rate: number }): JSX.Element {
+export default function Bgm({ rate }: { rate: number }): JSX.Element {
   const data = DATA.data as Collection[];
   const collections_unordered: Collection[] = data.filter(
     (collection: Collection): boolean => collection.rate === rate
@@ -48,9 +46,9 @@ export default function BGM({ rate }: { rate: number }): JSX.Element {
         return (
           <Link
             className={styles.card}
-            href={`https://bgm.tv/subject/${collection.subject.id}`}
             key={collection.subject_id}
             title={name}
+            to={`https://bgm.tv/subject/${collection.subject.id}`}
           >
             <figure>
               <div className={styles.cover}>
