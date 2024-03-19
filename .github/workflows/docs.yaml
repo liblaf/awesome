@@ -7,20 +7,10 @@ on:
   workflow_dispatch:
 
 jobs:
-  data:
-    name: Data
-    permissions:
-      contents: write
-    if: github.ref == 'refs/heads/main'
-    uses: ./.github/workflows/data.yaml
-
   build:
     name: Build
     permissions:
       contents: write
-    needs:
-      - data
-    if: always()
     runs-on: ubuntu-latest
     steps:
       - name: Checkout

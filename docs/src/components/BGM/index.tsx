@@ -3,6 +3,7 @@ import { Icon } from "@iconify/react";
 import DATA from "@site/data/bgm.json";
 import clsx from "clsx";
 import { ICONS, TYPES } from "./constants";
+import Badge from "./Badge";
 import styles from "./styles.module.css";
 
 type Collection = {
@@ -27,8 +28,15 @@ type Collection = {
 
 export default function BGM({ rate }: { rate: number }): JSX.Element {
   const data = DATA.data as Collection[];
-  const collections: Collection[] = data.filter(
+  const collections_unordered: Collection[] = data.filter(
     (collection: Collection): boolean => collection.rate === rate
+  );
+  const collections: Collection[] = collections_unordered.sort(
+    (a: Collection, b: Collection): number => {
+      const a_date = new Date(a.subject.date);
+      const b_date = new Date(b.subject.date);
+      return b_date.getTime() - a_date.getTime();
+    }
   );
   return (
     <div className={styles.cards}>
@@ -39,20 +47,23 @@ export default function BGM({ rate }: { rate: number }): JSX.Element {
         const type_style: string = styles[type_name];
         return (
           <Link
-            className={clsx(styles.card, type_style)}
-            key={collection.subject_id}
+            className={styles.card}
             href={`https://bgm.tv/subject/${collection.subject.id}`}
+            key={collection.subject_id}
+            title={name}
           >
-            <figure className={styles.figure}>
-              <img alt={name} src={collection.subject.images.large} />
+            <figure>
+              <div className={styles.cover}>
+                <Badge name={type_name} />
+                <img alt={name} src={collection.subject.images.large} />
+              </div>
               <figcaption className={styles.name}>
-                <Icon icon={ICONS[type_name]} />
-                <span> {name} </span>
+                <div> {name} </div>
               </figcaption>
               <div className={styles.info}>
                 {collection.subject.date}
                 {" / "}
-                {collection.subject.score}
+                {collection.subject.score.toFixed(1)}
               </div>
             </figure>
           </Link>
