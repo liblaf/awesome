@@ -20,7 +20,8 @@ export default function Repo({ repo }: { repo: Repo }): JSX.Element {
       </Link>
       {" ( "}
       <Stars stars={repo.stargazers_count} />
-      {" )"} &mdash; {repo.description}
+      {" )"}
+      {repo.description ? <> &mdash; {repo.description} </> : null}
     </>
   );
 }
