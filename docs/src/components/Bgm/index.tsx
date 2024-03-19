@@ -27,14 +27,14 @@ type Collection = {
 export default function Bgm({ rate }: { rate: number }): JSX.Element {
   const data = DATA.data as Collection[];
   const collections_unordered: Collection[] = data.filter(
-    (collection: Collection): boolean => collection.rate === rate
+    (collection: Collection): boolean => collection.rate === rate,
   );
   const collections: Collection[] = collections_unordered.sort(
     (a: Collection, b: Collection): number => {
       const a_date = new Date(a.subject.date);
       const b_date = new Date(b.subject.date);
       return b_date.getTime() - a_date.getTime();
-    }
+    },
   );
   return (
     <div className={styles.cards}>
