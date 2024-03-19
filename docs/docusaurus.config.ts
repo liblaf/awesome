@@ -6,6 +6,8 @@ const config: Config = {
   title: "Awesome",
   url: "https://awesome.liblaf.me",
   baseUrl: "/",
+  favicon:
+    "https://api.iconify.design/simple-icons/awesomelists.svg?color=%2306b6d4",
 
   themeConfig: {
     colorMode: {
@@ -13,6 +15,9 @@ const config: Config = {
     },
     navbar: {
       title: "Awesome",
+      logo: {
+        src: "https://api.iconify.design/simple-icons/awesomelists.svg?color=%2306b6d4",
+      },
       items: [
         {
           label: "GitHub",
@@ -32,8 +37,11 @@ const config: Config = {
     [
       "@easyops-cn/docusaurus-search-local",
       {
+        indexDocs: true,
         indexBlog: false,
+        indexPages: false,
         docsRouteBasePath: "/",
+        language: ["en", "zh"],
         hashed: true,
         highlightSearchTermsOnTargetPage: true,
         explicitSearchResultPath: true,
