@@ -35,7 +35,7 @@ export default function WebsiteCard({
       className={clsx(
         "card",
         styles.card,
-        website.image ? styles.image : undefined
+        website.image ? styles.image : undefined,
       )}
       style={background}
       title={title}

@@ -12,7 +12,7 @@ docs/data: docs/data/demo.json
 docs/data: docs/data/awesome.json
 
 ifeq ($(DEMO),)
-docs/data/awesome.json: $(wildcard config/*.yaml)
+docs/data/awesome.json: $(wildcard config/*.yaml) $(wildcard config/alternatives/*.yaml)
 	@ mkdir --parents --verbose "$(@D)"
 	cat $^ | rye run awesome mixed > "$@"
 else

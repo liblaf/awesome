@@ -22,7 +22,8 @@ jobs:
         with:
           version: latest
           package_json_file: docs/package.json
-      - uses: actions/setup-node@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
           node-version: latest
           cache: pnpm

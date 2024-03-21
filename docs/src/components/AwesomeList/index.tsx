@@ -43,19 +43,19 @@ export default function AwesomeList({ name }: { name?: string }): JSX.Element {
       {data.websites
         .sort(
           (a: Website, b: Website): number =>
-            (a.description?.length ?? 0) - (b.description?.length ?? 0)
+            (a.description?.length ?? 0) - (b.description?.length ?? 0),
         )
         .map(
           (website: Website): JSX.Element => (
             <WebsiteCard website={website} />
-          )
+          ),
         )}
       {data.repos
         .sort((a: Repo, b: Repo): number => b.stars - a.stars)
         .map(
           (repo: Repo): JSX.Element => (
             <RepoCard repo={repo} />
-          )
+          ),
         )}
     </div>
   );
