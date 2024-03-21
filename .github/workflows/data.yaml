@@ -25,6 +25,8 @@ jobs:
         run: rye sync --no-lock
       - name: Fetch Data
         run: make --jobs
+        env:
+          GH_TOKEN: ${{ github.token }}
       - if: github.ref == 'refs/heads/main'
         name: Upload Data
         uses: JamesIves/github-pages-deploy-action@v4
