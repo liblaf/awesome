@@ -18,9 +18,9 @@ export type Repo = {
   stars: number;
 };
 
-function prettyNumber(num: number): string {
+function prettyNumber(num?: number): string | undefined {
   return num
-    .toLocaleString(undefined, {
+    ?.toLocaleString(undefined, {
       maximumSignificantDigits: 3,
       notation: "compact",
     })

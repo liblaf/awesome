@@ -1,20 +1,19 @@
 import asyncio
 import datetime
-import functools
 import math
 import os
 from collections.abc import Iterable
 from typing import Any
 
+import aiocache
 import githubkit
 import pydantic
-import tenacity
 from githubkit import retry
 from githubkit.versions.latest import models
 from loguru import logger
 
 
-@functools.cache
+@aiocache.cached()
 async def get_repo_raw(full_name: str) -> models.FullRepository:
     _: Any
     token: str | None = os.getenv("GH_TOKEN")
@@ -31,7 +30,7 @@ async def get_repo_raw(full_name: str) -> models.FullRepository:
     return repository
 
 
-@functools.cache
+@aiocache.cached()
 async def get_participation(full_name: str) -> models.ParticipationStats:
     _: Any
     token: str | None = os.getenv("GH_TOKEN")
@@ -49,12 +48,12 @@ async def get_participation(full_name: str) -> models.ParticipationStats:
 
 
 class Repository(pydantic.BaseModel):
-    activity_score: int
-    description: str | None
+    activity_score: int | None = None
+    description: str | None = None
     forks: pydantic.NonNegativeInt
     full_name: str
     html_url: pydantic.HttpUrl
-    language: str | None
+    language: str | None = None
     name: str
     owner: str
     stars: pydantic.NonNegativeInt
@@ -72,7 +71,9 @@ async def calc_score(repo: models.FullRepository) -> int:
     score += repo.open_issues_count / 5
 
     # updated in last 3 months: adds a bonus multiplier between 0..1 to overall score (1 = updated today, 0 = updated more than 100 days ago)
-    days_since_last_update: float = (datetime.datetime.now() - repo.updated_at).days
+    days_since_last_update: float = (
+        datetime.datetime.now(datetime.UTC) - repo.updated_at
+    ).days
     score *= 1 + (100 - min(days_since_last_update, 100)) / 100
 
     # evaluate participation stats for the previous  3 months
@@ -84,7 +85,9 @@ async def calc_score(repo: models.FullRepository) -> int:
     # all repositories updated in the previous year will receive a boost of maximum 1000 declining by days since last update
     boost: float = 1000 - min(days_since_last_update, 365) * 2.74
     # gradually scale down boost according to repository creation date to mix with "real" engagement stats
-    days_since_creation: float = (datetime.datetime.now() - repo.created_at).days
+    days_since_creation: float = (
+        datetime.datetime.now(datetime.UTC) - repo.created_at
+    ).days
     boost *= (365 - min(days_since_creation, 365)) / 365
     # add boost to score
     score += boost
@@ -101,9 +104,6 @@ async def calc_score(repo: models.FullRepository) -> int:
     return score
 
 
-@tenacity.retry(
-    stop=tenacity.stop_after_attempt(4), wait=tenacity.wait_random_exponential(min=1)
-)
 async def get_repo(full_name: str) -> Repository:
     repository: models.FullRepository = await get_repo_raw(full_name)
     activity_score: int = await calc_score(repository)

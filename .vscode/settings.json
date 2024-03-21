@@ -8,7 +8,8 @@
   "python.analysis.diagnosticSeverityOverrides": {
     "reportMissingTypeStubs": "none",
     "reportUnknownArgumentType": "none",
-    "reportUnknownMemberType": "none"
+    "reportUnknownMemberType": "none",
+    "reportUnknownVariableType": "none"
   },
   "python.analysis.typeCheckingMode": "strict"
 }

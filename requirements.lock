@@ -8,6 +8,8 @@
 #   with-sources: false
 
 -e file:.
+aiocache==0.12.2
+    # via awesome
 annotated-types==0.6.0
     # via pydantic
 anyio==4.3.0
