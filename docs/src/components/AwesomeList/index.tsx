@@ -29,7 +29,7 @@ export default function AwesomeList({ name }: { name?: string }): JSX.Element {
       {data.repos.map(
         (repo: Repo): JSX.Element => (
           <RepoCard repo={repo} />
-        )
+        ),
       )}
     </div>
   );
