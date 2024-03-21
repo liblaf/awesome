@@ -40,11 +40,16 @@ export default function AwesomeList({ name }: { name?: string }): JSX.Element {
   const data: Data = DATA.data[name] ?? DEMO;
   return (
     <div className={styles.cards}>
-      {data.websites.map(
-        (website: Website): JSX.Element => (
-          <WebsiteCard website={website} />
+      {data.websites
+        .sort(
+          (a: Website, b: Website): number =>
+            (a.description?.length ?? 0) - (b.description?.length ?? 0)
         )
-      )}
+        .map(
+          (website: Website): JSX.Element => (
+            <WebsiteCard website={website} />
+          )
+        )}
       {data.repos
         .sort((a: Repo, b: Repo): number => b.stars - a.stars)
         .map(

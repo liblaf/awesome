@@ -29,18 +29,25 @@ docs/data/demo.json: config/demo.yaml
 	@ mkdir --parents --verbose "$(@D)"
 	rye run awesome mixed < "$<" > "$@"
 
+AWESOME_LIST := docs/docs/alternatives/cli.mdx
+AWESOME_LIST += docs/docs/alternatives/desktop.mdx
+AWESOME_LIST += docs/docs/awesome/github.mdx
+AWESOME_LIST += docs/docs/awesome/languages.mdx
+AWESOME_LIST += docs/docs/awesome/websites.mdx
 .PHONY: docs/docs
-docs/docs: docs/docs/alternatives/cli.mdx docs/docs/awesome/github.mdx docs/docs/awesome/languages.mdx docs/docs/awesome/websites.mdx
+docs/docs: $(AWESOME_LIST)
 
-docs/docs/alternatives/cli.mdx: config/alternatives.yaml
+docs/docs/alternatives/cli.mdx: config/alternatives/cli.yaml
 docs/docs/alternatives/cli.mdx: TITLE := CLI
+docs/docs/alternatives/desktop.mdx: config/alternatives/desktop.yaml
+docs/docs/alternatives/desktop.mdx: TITLE := Desktop
 docs/docs/awesome/github.mdx: config/github.yaml
 docs/docs/awesome/github.mdx: TITLE := GitHub
 docs/docs/awesome/languages.mdx: config/languages.yaml
 docs/docs/awesome/languages.mdx: TITLE := Languages
 docs/docs/awesome/websites.mdx: config/websites.yaml
 docs/docs/awesome/websites.mdx: TITLE = Websites
-docs/docs/alternatives/cli.mdx docs/docs/awesome/github.mdx docs/docs/awesome/languages.mdx docs/docs/awesome/websites.mdx:
+$(AWESOME_LIST):
 	@ mkdir --parents --verbose "$(@D)"
 	rye run awesome mdx "$(TITLE)" < "$<" > "$@"
 	prettier --write "$@"

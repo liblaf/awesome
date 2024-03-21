@@ -43,7 +43,6 @@ export default function Bgm({ rate }: { rate: number }): JSX.Element {
         const name: string =
           collection.subject.name_cn || collection.subject.name;
         const type_name: string = TYPES[collection.type];
-        const type_style: string = styles[type_name];
         return (
           <Link
             className={styles.card}

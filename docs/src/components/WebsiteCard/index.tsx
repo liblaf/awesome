@@ -29,20 +29,22 @@ export default function WebsiteCard({
       background: `url(${website.image}) center center / cover no-repeat`,
     };
   }
+  const title: string = website.title ?? website.url;
   return (
     <Link
       className={clsx(
         "card",
         styles.card,
-        website.image ? styles.image : undefined,
+        website.image ? styles.image : undefined
       )}
       style={background}
+      title={title}
       to={website.url}
     >
       <div className={styles.detail}>
         <div className={styles.title}>
           <Favicon src={website.favicon} />
-          <span>{website.title ?? website.url}</span>
+          <span>{title}</span>
         </div>
         <Description>{website.description}</Description>
       </div>

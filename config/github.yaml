@@ -19,64 +19,43 @@ Browser:
 
 CLI:
   - ajeetdsouza/zoxide
-  - aristocratos/btop
   - bitwarden/clients
-  - BurntSushi/ripgrep
   - charmbracelet/gum
   - charmbracelet/vhs
   - cli/cli
   - commitizen/cz-cli
-  - dandavison/delta
   - direnv/direnv
-  - ducaale/xh
-  - dundee/gdu
   - dylanaraps/neofetch
-  - helix-editor/helix
   - ImageMagick/ImageMagick
   - jgm/pandoc
   - Jguer/yay
   - jlfwong/speedscope
   - junegunn/fzf
-  - lsd-rs/lsd
-  - mr-karan/doggo
-  - muesli/duf
   - Nukesor/pueue
   - PaddiM8/kalker
   - pre-commit/pre-commit
   - prettier/prettier
   - rclone/rclone
-  - sharkdp/bat
-  - sharkdp/fd
-  - sharkdp/hyperfine
   - starship/starship
   - svenstaro/miniserve
-  - sxyazi/yazi
   - tamasfe/taplo
   - tj/git-extras
   - tldr-pages/tldr
   - tmux/tmux
-  - TomWright/dasel
   - twpayne/chezmoi
   - WayneD/rsync
   - XAMPPRocky/tokei
-  - XuehaiPan/nvitop
 
 Computer Graphics:
   - cnr-isti-vclab/meshlab
   - Slicer/Slicer
 
 Desktop:
-  - githubnext/monaspace
-  - kovidgoyal/kitty
   - libpinyin/ibus-libpinyin
   - microsoft/vscode
-  - notofonts/noto-cjk
   - obsproject/obs-studio
-  - ryanoasis/nerd-fonts
-  - tonsky/FiraCode
   - ventoy/Ventoy
   - videolan/vlc
-  - Zettlr/Zettlr
 
 Gaming:
   - babalae/better-genshin-impact
@@ -90,7 +69,6 @@ GitHub Actions:
   - actions/setup-node
   - actions/setup-python
   - actions/upload-artifact
-  - arduino/setup-task
   - google-github-actions/release-please-action
   - JamesIves/github-pages-deploy-action
   - pnpm/action-setup
@@ -104,6 +82,7 @@ GNOME:
 
 Learn:
   - 996icu/996.ICU
+  - abbrcode/abbreviations-in-code
   - banach-space/llvm-tutor
   - EbookFoundation/free-programming-books
   - Hansimov/csapp
@@ -114,9 +93,13 @@ Learn:
   - The-Run-Philosophy-Organization/run
   - xinychen/latex-cookbook
 
+Resume:
+  - AmruthPillai/Reactive-Resume
+  - BartoszJarocki/cv
+  - said7388/developer-portfolio
+
 Self-Hosted:
   - alist-org/alist
-  - BartoszJarocki/cv
   - binary-husky/gpt_academic
   - ChatGPTNextWeb/ChatGPT-Next-Web
   - dani-garcia/vaultwarden
@@ -136,12 +119,11 @@ THU:
   - stellarkey/912_project
   - thu-cs-lab/HPC-Lab-Docs
   - THU-feiyue/docs
+  - thuservices/thuservices
   - Trinkle23897/learn2018-autodown
   - z4yx/GoAuthing
-  - ZenithalHourlyRate/thuservices
 
 Tools:
-  - AmruthPillai/Reactive-Resume
   - anuraghazra/github-readme-stats
   - lmc999/RegionRestrictionCheck
   - lowlighter/metrics
