@@ -7,6 +7,7 @@ import Meta from "./Meta";
 import styles from "./styles.module.css";
 
 export type Repo = {
+  activity_score: number;
   description?: string;
   forks: number;
   full_name: string;
@@ -47,6 +48,7 @@ export default function RepoCard({ repo }: { repo: Repo }): JSX.Element {
         <Language language={repo.language} />
         <Meta icon="octicon:star-16">{prettyNumber(repo.stars)}</Meta>
         <Meta icon="octicon:repo-forked-16">{prettyNumber(repo.forks)}</Meta>
+        <Meta icon="octicon:flame-16">{prettyNumber(repo.activity_score)}</Meta>
       </p>
     </Link>
   );
