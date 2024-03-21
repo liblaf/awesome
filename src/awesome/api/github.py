@@ -27,7 +27,7 @@ class Repository(pydantic.BaseModel):
 )
 async def get_repo(full_name: str) -> Repository:
     _: Any
-    token: str | None = os.getenv("GITHUB_TOKEN")
+    token: str | None = os.getenv("GH_TOKEN")
     owner: str
     repo: str
     owner, _, repo = full_name.partition("/")
