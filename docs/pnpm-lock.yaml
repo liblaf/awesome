@@ -32,6 +32,15 @@ dependencies:
   react-dom:
     specifier: ^18.0.0
     version: 18.2.0(react@18.2.0)
+  react-markdown:
+    specifier: ^9.0.1
+    version: 9.0.1(@types/react@18.2.67)(react@18.2.0)
+  remark-gemoji:
+    specifier: ^8.0.0
+    version: 8.0.0
+  remark-gfm:
+    specifier: ^4.0.0
+    version: 4.0.0
 
 devDependencies:
   '@docusaurus/module-type-aliases':
@@ -5061,6 +5070,10 @@ packages:
     resolution: {integrity: sha512-7XHNxH7qX9xG5mIwxkhumTox/MIRNcOgDrxWsMt2pAr23WHp6MrRlN7FBSFpCpr+oVO0F744iUgR82nJMfG2SA==}
     dev: false
 
+  /gemoji@8.1.0:
+    resolution: {integrity: sha512-HA4Gx59dw2+tn+UAa7XEV4ufUKI4fH1KgcbenVA9YKSj1QJTT0xh5Mwv5HMFNN3l2OtUe3ZIfuRwSyZS5pLIWw==}
+    dev: false
+
   /gensync@1.0.0-beta.2:
     resolution: {integrity: sha512-3hN7NaskYvMDLQY55gnW3NQ+mesEAepTqlg+VEbj7zzqEMBVNhzcGYYeqFo/TlYz6eQiFcp1HcsCZO+nGgS8zg==}
     engines: {node: '>=6.9.0'}
@@ -5434,6 +5447,10 @@ packages:
   /html-tags@3.3.1:
     resolution: {integrity: sha512-ztqyC3kLto0e9WbNp0aeP+M3kTt+nbaIveGmUxAtZa+8iFgKLUOD4YKM5j+f3QD89bra7UeumolZHKuOXnTmeQ==}
     engines: {node: '>=8'}
+    dev: false
+
+  /html-url-attributes@3.0.0:
+    resolution: {integrity: sha512-/sXbVCWayk6GDVg3ctOX6nxaVj7So40FcFAnWlWGNAB1LpYKcV5Cd10APjPjW80O7zYW2MsjBV4zZ7IZO5fVow==}
     dev: false
 
   /html-void-elements@3.0.0:
@@ -7817,6 +7834,28 @@ packages:
       webpack: 5.90.3
     dev: false
 
+  /react-markdown@9.0.1(@types/react@18.2.67)(react@18.2.0):
+    resolution: {integrity: sha512-186Gw/vF1uRkydbsOIkcGXw7aHq0sZOCRFFjGrr7b9+nVZg4UfA4enXCaxm4fUzecU38sWfrNDitGhshuU7rdg==}
+    peerDependencies:
+      '@types/react': '>=18'
+      react: '>=18'
+    dependencies:
+      '@types/hast': 3.0.4
+      '@types/react': 18.2.67
+      devlop: 1.1.0
+      hast-util-to-jsx-runtime: 2.3.0
+      html-url-attributes: 3.0.0
+      mdast-util-to-hast: 13.1.0
+      react: 18.2.0
+      remark-parse: 11.0.0
+      remark-rehype: 11.1.0
+      unified: 11.0.4
+      unist-util-visit: 5.0.0
+      vfile: 6.0.1
+    transitivePeerDependencies:
+      - supports-color
+    dev: false
+
   /react-router-config@5.1.1(react-router@5.3.4)(react@18.2.0):
     resolution: {integrity: sha512-DuanZjaD8mQp1ppHjgnnUnyOlqYXZVjnov/JzFhjLEwd3Z4dYjMSnqrEzzGThH47vpCOqPPwJM2FtthLeJ8Pbg==}
     peerDependencies:
@@ -8009,6 +8048,14 @@ packages:
       unified: 11.0.4
     transitivePeerDependencies:
       - supports-color
+    dev: false
+
+  /remark-gemoji@8.0.0:
+    resolution: {integrity: sha512-/fL9rc72FYwFGtOKcT+QeQdx9Q9t5v4N6KLXSDOTEgaedzK85I9judBqB2eqz+g4b0ERMejlwSOuPK+wket6aA==}
+    dependencies:
+      '@types/mdast': 4.0.3
+      gemoji: 8.1.0
+      mdast-util-find-and-replace: 3.0.1
     dev: false
 
   /remark-gfm@4.0.0:
