@@ -52,7 +52,7 @@ Services:
   - https://www.paypal.com
   - https://www.zotero.org
 
-Tools:
+Tools/website:
   - https://chatkit.app
   - https://devhints.io
   - https://draw.io
@@ -65,5 +65,5 @@ Tools:
   - https://uicolors.app
   - https://www.allacronyms.com
 
-Windows:
+Windows/website:
   - https://winstall.app

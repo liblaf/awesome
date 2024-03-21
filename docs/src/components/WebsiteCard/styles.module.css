@@ -47,9 +47,9 @@
 .favicon {
   height: 1.5em;
   margin-right: 6px;
-  vertical-align: middle;
-  top: -3px;
   position: relative;
+  vertical-align: middle;
+  width: 1.5em;
 }
 
 .title {

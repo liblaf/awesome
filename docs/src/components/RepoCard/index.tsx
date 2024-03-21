@@ -27,12 +27,19 @@ function prettyNumber(num: number): string {
 }
 
 export default function RepoCard({ repo }: { repo: Repo }): JSX.Element {
-  console.log(repo);
   return (
-    <Link className={clsx("card", styles.card)} to={repo.html_url}>
-      <div>
+    <Link
+      className={clsx("card", styles.card)}
+      title={repo.full_name}
+      to={repo.html_url}
+    >
+      <div className={styles.title}>
         <Icon className={styles.icon} icon="octicon:repo-16" />
-        <span className={styles.owner}>{repo.owner}/</span>
+        {repo.full_name.length < 31 ? (
+          <span className={styles.owner}>{repo.owner}/</span>
+        ) : (
+          <></>
+        )}
         <span className={styles.name}>{repo.name}</span>
       </div>
       <Description>{repo.description}</Description>

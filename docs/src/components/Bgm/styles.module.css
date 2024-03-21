@@ -20,7 +20,16 @@
 }
 
 .card:hover {
-  filter: brightness(80%);
+  text-decoration: none;
+}
+
+.card img {
+  transition: all 0.5s;
+}
+
+.card:hover img {
+  filter: brightness(75%);
+  transform: scale(1.1);
 }
 
 .card figure {

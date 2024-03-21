@@ -1,7 +1,6 @@
 .description {
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-  margin-bottom: 100px;
+  -webkit-line-clamp: 3;
   display: -webkit-box;
   flex-grow: 1;
   font-size: smaller;
@@ -9,5 +8,4 @@
   margin: 4px 0 0 0;
   overflow: hidden;
   text-overflow: ellipsis;
-  text-shadow: 1px 1px 2px var(--ifm-card-background-color);
 }
