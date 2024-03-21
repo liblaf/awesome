@@ -1,0 +1,74 @@
+.cards {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.card {
+  /* https://github.com/facebook/docusaurus/blob/main/packages/docusaurus-theme-classic/src/theme/DocCard/styles.module.css */
+  --ifm-link-color: var(--ifm-color-emphasis-800);
+  --ifm-link-hover-color: var(--ifm-color-emphasis-700);
+  --ifm-link-hover-decoration: none;
+
+  box-shadow: 0 1.5px 3px 0 rgb(0 0 0 / 15%);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  transition: all var(--ifm-transition-fast) ease;
+  transition-property: border, box-shadow;
+
+  padding: 12px;
+}
+
+.card:hover {
+  /* https://github.com/facebook/docusaurus/blob/main/packages/docusaurus-theme-classic/src/theme/DocCard/styles.module.css */
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 3px 6px 0 rgb(0 0 0 / 20%);
+}
+
+.repo-icon {
+  margin-right: 4px;
+}
+
+.icon {
+  display: inline-block;
+  position: relative;
+  top: -1px;
+  vertical-align: middle;
+}
+
+.owner {
+  color: var(--ifm-color-primary);
+}
+
+.repo {
+  color: var(--ifm-color-primary);
+  font-weight: bolder;
+}
+
+.description {
+  font-size: smaller;
+  margin: 4px 0 0 0;
+  flex-grow: 1;
+}
+
+.info {
+  font-size: smaller;
+  margin: 4px 0 0 0;
+}
+
+.info .language {
+  margin-right: 16px;
+}
+
+.info .language .language-color {
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 50%;
+  display: inline-block;
+  height: 12px;
+  position: relative;
+  top: 1px;
+  width: 12px;
+}
+
+.meta + .meta {
+  margin-left: 16px;
+}

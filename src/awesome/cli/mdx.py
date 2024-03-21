@@ -14,7 +14,7 @@ async def _main(title: str) -> None:
 title: {title}
 ---
 
-import Repos from "@site/src/components/Repos";
+import AwesomeList from "@site/src/components/AwesomeList";
 """
     )
     for collection in collections.keys():
@@ -22,7 +22,7 @@ import Repos from "@site/src/components/Repos";
             f"""
 ## {collection}
 
-<Repos name="{collection}" />
+<AwesomeList name="{collection}" />
 """
         )
 

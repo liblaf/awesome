@@ -7,15 +7,16 @@ authors = [
   { email = "30631553+liblaf@users.noreply.github.com", name = "liblaf" },
 ]
 dependencies = [
-  "beautifulsoup4>=4.12.3",
-  "fake-useragent>=1.5.1",
-  "httpx[socks]>=0.27.0",
-  "loguru>=0.7.2",
-  "pydantic>=2.6.4",
-  "pyyaml>=6.0.1",
-  "tenacity>=8.2.3",
-  "typeguard>=4.1.5",
-  "typer[all]>=0.9.0",
+    "beautifulsoup4>=4.12.3",
+    "fake-useragent>=1.5.1",
+    "httpx[socks]>=0.27.0",
+    "loguru>=0.7.2",
+    "pydantic>=2.6.4",
+    "pyyaml>=6.0.1",
+    "tenacity>=8.2.3",
+    "typeguard>=4.1.5",
+    "typer[all]>=0.9.0",
+    "githubkit>=0.11.2",
 ]
 description = "Add your description here"
 license = { text = "MIT" }

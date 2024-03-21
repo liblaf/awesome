@@ -23,12 +23,18 @@ colorama==0.4.6
     # via typer
 fake-useragent==1.5.1
     # via awesome
+githubkit==0.11.2
+    # via awesome
 h11==0.14.0
     # via httpcore
+hishel==0.0.24
+    # via githubkit
 httpcore==1.0.4
     # via httpx
 httpx==0.27.0
     # via awesome
+    # via githubkit
+    # via hishel
     # via httpx
 idna==3.6
     # via anyio
@@ -41,6 +47,7 @@ mdurl==0.1.2
     # via markdown-it-py
 pydantic==2.6.4
     # via awesome
+    # via githubkit
 pydantic-core==2.16.3
     # via pydantic
 pygments==2.17.2
@@ -66,6 +73,8 @@ typer==0.9.0
     # via awesome
     # via typer
 typing-extensions==4.10.0
+    # via githubkit
+    # via hishel
     # via pydantic
     # via pydantic-core
     # via typer

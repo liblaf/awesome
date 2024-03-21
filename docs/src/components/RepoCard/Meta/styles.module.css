@@ -1,0 +1,11 @@
+.meta + .meta {
+  margin-left: 16px;
+}
+
+.icon {
+  display: inline-block;
+  margin-right: 4px;
+  position: relative;
+  top: -1px;
+  vertical-align: middle;
+}
