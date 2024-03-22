@@ -31,6 +31,23 @@ async def get_repo_raw(full_name: str) -> models.FullRepository:
 
 
 @aiocache.cached()
+async def get_commits(full_name: str) -> list[models.Commit]:
+    _: Any
+    token: str | None = os.getenv("GH_TOKEN")
+    owner: str
+    repo: str
+    owner, _, repo = full_name.partition("/")
+    async with githubkit.GitHub(
+        token, auto_retry=retry.RetryRateLimit(max_retry=4)
+    ) as gh:
+        response: githubkit.Response[
+            list[models.Commit]
+        ] = await gh.rest.repos.async_list_commits(owner, repo)
+    commits: list[models.Commit] = response.parsed_data
+    return commits
+
+
+@aiocache.cached()
 async def get_participation(full_name: str) -> models.ParticipationStats:
     _: Any
     token: str | None = os.getenv("GH_TOKEN")
@@ -59,6 +76,17 @@ class Repository(pydantic.BaseModel):
     stars: pydantic.NonNegativeInt
 
 
+async def get_updated_at(repo: models.FullRepository) -> datetime.datetime:
+    commits: list[models.Commit] = await get_commits(repo.full_name)
+    updated_at: datetime.datetime = repo.updated_at
+    try:
+        updated_at = datetime.datetime.fromisoformat(commits[0].commit.author.date)  # pyright: ignore
+    except Exception as e:
+        logger.error(e)
+    finally:
+        return updated_at
+
+
 @logger.catch(default=None)
 async def calc_score(repo: models.FullRepository) -> int:
     # initial score is 50 to give active repos with low GitHub KPIs (forks, watchers, stars) a better starting point
@@ -71,8 +99,9 @@ async def calc_score(repo: models.FullRepository) -> int:
     score += repo.open_issues_count / 5
 
     # updated in last 3 months: adds a bonus multiplier between 0..1 to overall score (1 = updated today, 0 = updated more than 100 days ago)
+    updated_at: datetime.datetime = await get_updated_at(repo)
     days_since_last_update: float = (
-        datetime.datetime.now(datetime.UTC) - repo.updated_at
+        datetime.datetime.now(datetime.UTC) - updated_at
     ).days
     score *= 1 + (100 - min(days_since_last_update, 100)) / 100
 

@@ -51,7 +51,14 @@ export default function AwesomeList({ name }: { name?: string }): JSX.Element {
           ),
         )}
       {data.repos
-        .sort((a: Repo, b: Repo): number => b.stars - a.stars)
+        .sort((a: Repo, b: Repo): number => {
+          const a_score: number = a.activity_score ?? 0;
+          const b_score: number = b.activity_score ?? 0;
+          if (a_score !== b_score) {
+            return b_score - a_score;
+          }
+          return b.stars - a.stars;
+        })
         .map(
           (repo: Repo): JSX.Element => (
             <RepoCard repo={repo} />

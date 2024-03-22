@@ -7,7 +7,7 @@ import Meta from "./Meta";
 import styles from "./styles.module.css";
 
 export type Repo = {
-  activity_score: number;
+  activity_score?: number;
   description?: string;
   forks: number;
   full_name: string;
