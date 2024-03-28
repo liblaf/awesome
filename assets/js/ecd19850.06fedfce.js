@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocs=self.webpackChunkdocs||[]).push([[202],{6782:e=>{e.exports=JSON.parse('{"title":"Alternatives","slug":"/category/alternatives","permalink":"/category/alternatives","navigation":{"previous":{"title":"ACG","permalink":"/acg"},"next":{"title":"CLI","permalink":"/alternatives/cli"}}}')}}]);
