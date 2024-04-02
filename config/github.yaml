@@ -47,8 +47,22 @@ CLI:
   - XAMPPRocky/tokei
 
 Computer Graphics:
+  - CGAL/cgal
   - cnr-isti-vclab/meshlab
+  - inducer/meshpy
+  - InteractiveComputerGraphics/PositionBasedDynamics
+  - ipc-sim/ipc-toolkit
+  - Kitware/ParaView
+  - kornia/kornia
+  - libigl/libigl
+  - mikedh/trimesh
+  - nschloe/meshio
+  - opencv/opencv
+  - polyfem/polyfem
+  - pyvista/pyvista
+  - scipy/scipy
   - Slicer/Slicer
+  - taichi-dev/taichi
 
 Desktop:
   - libpinyin/ibus-libpinyin
@@ -110,7 +124,6 @@ Self-Hosted:
   - shuding/nextra
   - squidfunk/mkdocs-material
   - Stirling-Tools/Stirling-PDF
-  - vuepress-theme-hope/vuepress-theme-hope
 
 THU:
   - Harry-Chen/Learn-Helper
@@ -124,7 +137,9 @@ THU:
   - z4yx/GoAuthing
 
 Tools:
+  - AirportR/fulltclash
   - anuraghazra/github-readme-stats
+  - jason5ng32/MyIP
   - lmc999/RegionRestrictionCheck
   - lowlighter/metrics
   - nkeonkeo/MediaUnlockTest
@@ -135,8 +150,13 @@ Windows:
   - YerongAI/Office-Tool
 
 Zotero:
+  - ChenglongMa/zoplicate
+  - Dominic-DallOsto/zotero-reading-list
+  - l0o0/tara
   - MuiseDestiny/zotero-reference
-  - retorquere/zotero-open-pdf
-  - tefkah/zotero-night
+  - MuiseDestiny/zotero-style
+  - northword/zotero-format-metadata
+  - retorquere/zotero-better-bibtex
+  - syt2/zotero-addons
   - windingwind/zotero-pdf-translate
   - zotero/zotero
