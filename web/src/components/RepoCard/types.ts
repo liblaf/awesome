@@ -23,7 +23,7 @@ export const DEMO_REPO: Repo = {
     color: "#000000",
     name: "LANGUAGE",
   },
-  shortDescriptionHTML: "DESCRIPTION",
+  shortDescriptionHTML: "🔴 DESCRIPTION",
   stargazerCount: 0,
   url: "https://github.com/OWNER/NAME",
 };

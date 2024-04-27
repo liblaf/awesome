@@ -7,7 +7,7 @@ export type Website = {
 };
 
 export const DEMO_WEBSITE: Website = {
-  description: "DESCRIPTION",
+  description: "🔴 DESCRIPTION",
   favicon: "https://icons.bitwarden.net/example.com/icon.png",
   title: "TITLE",
   url: "https://example.com",
