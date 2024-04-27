@@ -1,23 +1,24 @@
 {
   "words": [
-    "agarrharr",
-    "astro",
-    "bestofjs",
-    "fffaraz",
-    "ibraheemdev",
+    "bidi",
+    "commitizen",
+    "eifinger",
     "iconify",
-    "kazhnuz",
     "levelno",
     "liblaf",
     "pycache",
     "pydantic",
     "pyproject",
     "pyright",
-    "sindresorhus",
     "taplo",
-    "venv",
-    "vinta"
+    "venv"
   ],
-  "ignorePaths": ["**/*-lock.*", "**/*.lock*", "**/*.mdx", "**/.cspell.json"],
+  "ignorePaths": [
+    "**/*-lock.*",
+    "**/*.lock*",
+    "**/*.mdx",
+    "**/.cspell.json",
+    "**/config/**/**.yaml"
+  ],
   "allowCompoundWords": true
 }
