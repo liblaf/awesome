@@ -1,1 +1,1596 @@
-{}
+{
+  "github": {
+    "microsoft/ML-For-Beginners": {
+      "forkCount": 13586,
+      "name": "ML-For-Beginners",
+      "nameWithOwner": "microsoft/ML-For-Beginners",
+      "owner": "microsoft",
+      "primaryLanguage": { "color": "#e34c26", "name": "HTML" },
+      "shortDescriptionHTML": "12 weeks, 26 lessons, 52 quizzes, classic Machine Learning for all",
+      "stargazerCount": 66937,
+      "url": "https://github.com/microsoft/ML-For-Beginners"
+    },
+    "Nuitka/Nuitka": {
+      "forkCount": 582,
+      "name": "Nuitka",
+      "nameWithOwner": "Nuitka/Nuitka",
+      "owner": "Nuitka",
+      "primaryLanguage": { "color": "#3572A5", "name": "Python" },
+      "shortDescriptionHTML": "Nuitka is a Python compiler written in Python. It's fully compatible with Python 2.6, 2.7, 3.4, 3.5, 3.6, 3.7, 3.8, 3.9, 3.10, and 3.11. You feed it your Python app, it does a lot of clever things,…",
+      "stargazerCount": 10850,
+      "url": "https://github.com/Nuitka/Nuitka"
+    },
+    "sirupsen/logrus": {
+      "forkCount": 2252,
+      "name": "logrus",
+      "nameWithOwner": "sirupsen/logrus",
+      "owner": "sirupsen",
+      "primaryLanguage": { "color": "#00ADD8", "name": "Go" },
+      "shortDescriptionHTML": "Structured, pluggable logging for Go.",
+      "stargazerCount": 24061,
+      "url": "https://github.com/sirupsen/logrus"
+    },
+    "ardaku/whoami": {
+      "forkCount": 23,
+      "name": "whoami",
+      "nameWithOwner": "ardaku/whoami",
+      "owner": "ardaku",
+      "primaryLanguage": { "color": "#dea584", "name": "Rust" },
+      "shortDescriptionHTML": "Rust crate to get the current user and environment.",
+      "stargazerCount": 153,
+      "url": "https://github.com/ardaku/whoami"
+    },
+    "paperwm/PaperWM": {
+      "forkCount": 122,
+      "name": "PaperWM",
+      "nameWithOwner": "paperwm/PaperWM",
+      "owner": "paperwm",
+      "primaryLanguage": { "color": "#f1e05a", "name": "JavaScript" },
+      "shortDescriptionHTML": "Tiled scrollable window management for Gnome Shell",
+      "stargazerCount": 2645,
+      "url": "https://github.com/paperwm/PaperWM"
+    },
+    "vuejs/vue": {
+      "forkCount": 33626,
+      "name": "vue",
+      "nameWithOwner": "vuejs/vue",
+      "owner": "vuejs",
+      "primaryLanguage": { "color": "#3178c6", "name": "TypeScript" },
+      "shortDescriptionHTML": "This is the repo for Vue 2. For Vue 3, go to https://github.com/vuejs/core",
+      "stargazerCount": 206966,
+      "url": "https://github.com/vuejs/vue"
+    },
+    "TheLartians/ModernCppStarter": {
+      "forkCount": 355,
+      "name": "ModernCppStarter",
+      "nameWithOwner": "TheLartians/ModernCppStarter",
+      "owner": "TheLartians",
+      "primaryLanguage": { "color": "#DA3434", "name": "CMake" },
+      "shortDescriptionHTML": "🚀 Kick-start your C++! A template for modern C++ projects using CMake, CI, code coverage, clang-format, reproducible dependency management and much more.",
+      "stargazerCount": 4049,
+      "url": "https://github.com/TheLartians/ModernCppStarter"
+    },
+    "pyinstaller/pyinstaller": {
+      "forkCount": 1914,
+      "name": "pyinstaller",
+      "nameWithOwner": "pyinstaller/pyinstaller",
+      "owner": "pyinstaller",
+      "primaryLanguage": { "color": "#3572A5", "name": "Python" },
+      "shortDescriptionHTML": "Freeze (package) Python programs into stand-alone executables",
+      "stargazerCount": 11292,
+      "url": "https://github.com/pyinstaller/pyinstaller"
+    },
+    "awesome-selfhosted/awesome-selfhosted": {
+      "forkCount": 8989,
+      "name": "awesome-selfhosted",
+      "nameWithOwner": "awesome-selfhosted/awesome-selfhosted",
+      "owner": "awesome-selfhosted",
+      "primaryLanguage": null,
+      "shortDescriptionHTML": "A list of Free Software network services and web applications which can be hosted on your own servers",
+      "stargazerCount": 178134,
+      "url": "https://github.com/awesome-selfhosted/awesome-selfhosted"
+    },
+    "sindresorhus/awesome-nodejs": {
+      "forkCount": 5765,
+      "name": "awesome-nodejs",
+      "nameWithOwner": "sindresorhus/awesome-nodejs",
+      "owner": "sindresorhus",
+      "primaryLanguage": null,
+      "shortDescriptionHTML": "⚡ Delightful Node.js packages and resources",
+      "stargazerCount": 55906,
+      "url": "https://github.com/sindresorhus/awesome-nodejs"
+    },
+    "sindresorhus/awesome": {
+      "forkCount": 26798,
+      "name": "awesome",
+      "nameWithOwner": "sindresorhus/awesome",
+      "owner": "sindresorhus",
+      "primaryLanguage": null,
+      "shortDescriptionHTML": "😎 Awesome lists about all kinds of interesting topics",
+      "stargazerCount": 300593,
+      "url": "https://github.com/sindresorhus/awesome"
+    },
+    "openai/tiktoken": {
+      "forkCount": 672,
+      "name": "tiktoken",
+      "nameWithOwner": "openai/tiktoken",
+      "owner": "openai",
+      "primaryLanguage": { "color": "#3572A5", "name": "Python" },
+      "shortDescriptionHTML": "tiktoken is a fast BPE tokeniser for use with OpenAI's models.",
+      "stargazerCount": 9804,
+      "url": "https://github.com/openai/tiktoken"
+    },
+    "dylanaraps/neofetch": {
+      "forkCount": 1457,
+      "name": "neofetch",
+      "nameWithOwner": "dylanaraps/neofetch",
+      "owner": "dylanaraps",
+      "primaryLanguage": { "color": "#89e051", "name": "Shell" },
+      "shortDescriptionHTML": "🖼️ A command-line system information tool written in bash 3.2+",
+      "stargazerCount": 20416,
+      "url": "https://github.com/dylanaraps/neofetch"
+    },
+    "actions/setup-node": {
+      "forkCount": 1177,
+      "name": "setup-node",
+      "nameWithOwner": "actions/setup-node",
+      "owner": "actions",
+      "primaryLanguage": { "color": "#3178c6", "name": "TypeScript" },
+      "shortDescriptionHTML": "Set up your GitHub Actions workflow with a specific version of node.js",
+      "stargazerCount": 3608,
+      "url": "https://github.com/actions/setup-node"
+    },
+    "tldr-pages/tldr": {
+      "forkCount": 3974,
+      "name": "tldr",
+      "nameWithOwner": "tldr-pages/tldr",
+      "owner": "tldr-pages",
+      "primaryLanguage": { "color": "#083fa1", "name": "Markdown" },
+      "shortDescriptionHTML": "📚 Collaborative cheatsheets for console commands",
+      "stargazerCount": 48428,
+      "url": "https://github.com/tldr-pages/tldr"
+    },
+    "avelino/awesome-go": {
+      "forkCount": 11592,
+      "name": "awesome-go",
+      "nameWithOwner": "avelino/awesome-go",
+      "owner": "avelino",
+      "primaryLanguage": { "color": "#00ADD8", "name": "Go" },
+      "shortDescriptionHTML": "A curated list of awesome Go frameworks, libraries and software",
+      "stargazerCount": 120883,
+      "url": "https://github.com/avelino/awesome-go"
+    },
+    "prettier/prettier": {
+      "forkCount": 4120,
+      "name": "prettier",
+      "nameWithOwner": "prettier/prettier",
+      "owner": "prettier",
+      "primaryLanguage": { "color": "#f1e05a", "name": "JavaScript" },
+      "shortDescriptionHTML": "Prettier is an opinionated code formatter.",
+      "stargazerCount": 48281,
+      "url": "https://github.com/prettier/prettier"
+    },
+    "plk/biber": {
+      "forkCount": 36,
+      "name": "biber",
+      "nameWithOwner": "plk/biber",
+      "owner": "plk",
+      "primaryLanguage": { "color": "#3D6117", "name": "TeX" },
+      "shortDescriptionHTML": "Backend processor for BibLaTeX",
+      "stargazerCount": 328,
+      "url": "https://github.com/plk/biber"
+    },
+    "tectonic-typesetting/tectonic": {
+      "forkCount": 151,
+      "name": "tectonic",
+      "nameWithOwner": "tectonic-typesetting/tectonic",
+      "owner": "tectonic-typesetting",
+      "primaryLanguage": { "color": "#555555", "name": "C" },
+      "shortDescriptionHTML": "A modernized, complete, self-contained TeX/LaTeX engine, powered by XeTeX and TeXLive.",
+      "stargazerCount": 3758,
+      "url": "https://github.com/tectonic-typesetting/tectonic"
+    },
+    "baoyachi/shadow-rs": {
+      "forkCount": 35,
+      "name": "shadow-rs",
+      "nameWithOwner": "baoyachi/shadow-rs",
+      "owner": "baoyachi",
+      "primaryLanguage": { "color": "#dea584", "name": "Rust" },
+      "shortDescriptionHTML": "A build-time information stored in your rust project.(binary,lib,cdylib,dylib)",
+      "stargazerCount": 394,
+      "url": "https://github.com/baoyachi/shadow-rs"
+    },
+    "JamesIves/github-pages-deploy-action": {
+      "forkCount": 346,
+      "name": "github-pages-deploy-action",
+      "nameWithOwner": "JamesIves/github-pages-deploy-action",
+      "owner": "JamesIves",
+      "primaryLanguage": { "color": "#3178c6", "name": "TypeScript" },
+      "shortDescriptionHTML": "🚀 Automatically deploy your project to GitHub Pages using GitHub Actions. This action can be configured to push your production-ready code into any branch you'd like.",
+      "stargazerCount": 4076,
+      "url": "https://github.com/JamesIves/github-pages-deploy-action"
+    },
+    "direnv/direnv": {
+      "forkCount": 612,
+      "name": "direnv",
+      "nameWithOwner": "direnv/direnv",
+      "owner": "direnv",
+      "primaryLanguage": { "color": "#00ADD8", "name": "Go" },
+      "shortDescriptionHTML": "unclutter your .profile",
+      "stargazerCount": 11702,
+      "url": "https://github.com/direnv/direnv"
+    },
+    "fffaraz/awesome-cpp": {
+      "forkCount": 7629,
+      "name": "awesome-cpp",
+      "nameWithOwner": "fffaraz/awesome-cpp",
+      "owner": "fffaraz",
+      "primaryLanguage": null,
+      "shortDescriptionHTML": "A curated list of awesome C++ (or C) frameworks, libraries, resources, and shiny things. Inspired by awesome-... stuff.",
+      "stargazerCount": 55588,
+      "url": "https://github.com/fffaraz/awesome-cpp"
+    },
+    "rust-unofficial/awesome-rust": {
+      "forkCount": 2557,
+      "name": "awesome-rust",
+      "nameWithOwner": "rust-unofficial/awesome-rust",
+      "owner": "rust-unofficial",
+      "primaryLanguage": { "color": "#dea584", "name": "Rust" },
+      "shortDescriptionHTML": "A curated list of Rust code and resources.",
+      "stargazerCount": 42923,
+      "url": "https://github.com/rust-unofficial/awesome-rust"
+    },
+    "babalae/better-genshin-impact": {
+      "forkCount": 205,
+      "name": "better-genshin-impact",
+      "nameWithOwner": "babalae/better-genshin-impact",
+      "owner": "babalae",
+      "primaryLanguage": { "color": "#178600", "name": "C#" },
+      "shortDescriptionHTML": "📦BetterGI · 更好的原神 - 自动拾取 | 自动剧情 | 全自动钓鱼(AI) | 全自动七圣召唤 | 自动伐木 | 自动刷本 - UI Automation Testing Tools For Genshin Impact",
+      "stargazerCount": 2928,
+      "url": "https://github.com/babalae/better-genshin-impact"
+    },
+    "Patarimi/typer-cli": {
+      "forkCount": 0,
+      "name": "typer-cli",
+      "nameWithOwner": "Patarimi/typer-cli",
+      "owner": "Patarimi",
+      "primaryLanguage": { "color": "#3572A5", "name": "Python" },
+      "shortDescriptionHTML": "Run Typer scripts with completion, without having to create a package, using Typer CLI.",
+      "stargazerCount": 0,
+      "url": "https://github.com/Patarimi/typer-cli"
+    },
+    "pydantic/pydantic": {
+      "forkCount": 1643,
+      "name": "pydantic",
+      "nameWithOwner": "pydantic/pydantic",
+      "owner": "pydantic",
+      "primaryLanguage": { "color": "#3572A5", "name": "Python" },
+      "shortDescriptionHTML": "Data validation using Python type hints",
+      "stargazerCount": 18648,
+      "url": "https://github.com/pydantic/pydantic"
+    },
+    "sysprog21/lkmpg": {
+      "forkCount": 471,
+      "name": "lkmpg",
+      "nameWithOwner": "sysprog21/lkmpg",
+      "owner": "sysprog21",
+      "primaryLanguage": { "color": "#3D6117", "name": "TeX" },
+      "shortDescriptionHTML": "The Linux Kernel Module Programming Guide (updated for 5.0+ kernels)",
+      "stargazerCount": 6981,
+      "url": "https://github.com/sysprog21/lkmpg"
+    },
+    "psf/requests": {
+      "forkCount": 9196,
+      "name": "requests",
+      "nameWithOwner": "psf/requests",
+      "owner": "psf",
+      "primaryLanguage": { "color": "#3572A5", "name": "Python" },
+      "shortDescriptionHTML": "A simple, yet elegant, HTTP library.",
+      "stargazerCount": 51364,
+      "url": "https://github.com/psf/requests"
+    },
+    "jd/tenacity": {
+      "forkCount": 260,
+      "name": "tenacity",
+      "nameWithOwner": "jd/tenacity",
+      "owner": "jd",
+      "primaryLanguage": { "color": "#3572A5", "name": "Python" },
+      "shortDescriptionHTML": "Retrying library for Python",
+      "stargazerCount": 5981,
+      "url": "https://github.com/jd/tenacity"
+    },
+    "otiai10/copy": {
+      "forkCount": 111,
+      "name": "copy",
+      "nameWithOwner": "otiai10/copy",
+      "owner": "otiai10",
+      "primaryLanguage": { "color": "#00ADD8", "name": "Go" },
+      "shortDescriptionHTML": "Go copy directory recursively",
+      "stargazerCount": 674,
+      "url": "https://github.com/otiai10/copy"
+    },
+    "XAMPPRocky/tokei": {
+      "forkCount": 483,
+      "name": "tokei",
+      "nameWithOwner": "XAMPPRocky/tokei",
+      "owner": "XAMPPRocky",
+      "primaryLanguage": { "color": "#dea584", "name": "Rust" },
+      "shortDescriptionHTML": "Count your code, quickly.",
+      "stargazerCount": 9996,
+      "url": "https://github.com/XAMPPRocky/tokei"
+    },
+    "vercel/vercel": {
+      "forkCount": 2068,
+      "name": "vercel",
+      "nameWithOwner": "vercel/vercel",
+      "owner": "vercel",
+      "primaryLanguage": { "color": "#3178c6", "name": "TypeScript" },
+      "shortDescriptionHTML": "Develop. Preview. Ship.",
+      "stargazerCount": 12167,
+      "url": "https://github.com/vercel/vercel"
+    },
+    "google/sanitizers": {
+      "forkCount": 983,
+      "name": "sanitizers",
+      "nameWithOwner": "google/sanitizers",
+      "owner": "google",
+      "primaryLanguage": { "color": "#555555", "name": "C" },
+      "shortDescriptionHTML": "AddressSanitizer, ThreadSanitizer, MemorySanitizer",
+      "stargazerCount": 10809,
+      "url": "https://github.com/google/sanitizers"
+    },
+    "Peternator7/strum": {
+      "forkCount": 136,
+      "name": "strum",
+      "nameWithOwner": "Peternator7/strum",
+      "owner": "Peternator7",
+      "primaryLanguage": { "color": "#dea584", "name": "Rust" },
+      "shortDescriptionHTML": "A small rust library for adding custom derives to enums",
+      "stargazerCount": 1574,
+      "url": "https://github.com/Peternator7/strum"
+    },
+    "tj/git-extras": {
+      "forkCount": 1189,
+      "name": "git-extras",
+      "nameWithOwner": "tj/git-extras",
+      "owner": "tj",
+      "primaryLanguage": { "color": "#89e051", "name": "Shell" },
+      "shortDescriptionHTML": "GIT utilities -- repo summary, repl, changelog population, author commit percentages and more",
+      "stargazerCount": 16720,
+      "url": "https://github.com/tj/git-extras"
+    },
+    "agronholm/typeguard": {
+      "forkCount": 105,
+      "name": "typeguard",
+      "nameWithOwner": "agronholm/typeguard",
+      "owner": "agronholm",
+      "primaryLanguage": { "color": "#3572A5", "name": "Python" },
+      "shortDescriptionHTML": "Run-time type checker for Python",
+      "stargazerCount": 1440,
+      "url": "https://github.com/agronholm/typeguard"
+    },
+    "obsproject/obs-studio": {
+      "forkCount": 7544,
+      "name": "obs-studio",
+      "nameWithOwner": "obsproject/obs-studio",
+      "owner": "obsproject",
+      "primaryLanguage": { "color": "#555555", "name": "C" },
+      "shortDescriptionHTML": "OBS Studio - Free and open source software for live streaming and screen recording",
+      "stargazerCount": 55597,
+      "url": "https://github.com/obsproject/obs-studio"
+    },
+    "encode/httpx": {
+      "forkCount": 796,
+      "name": "httpx",
+      "nameWithOwner": "encode/httpx",
+      "owner": "encode",
+      "primaryLanguage": { "color": "#3572A5", "name": "Python" },
+      "shortDescriptionHTML": "A next generation HTTP client for Python. 🦋",
+      "stargazerCount": 12270,
+      "url": "https://github.com/encode/httpx"
+    },
+    "lmintlcx/pvztoolkit": {
+      "forkCount": 30,
+      "name": "pvztoolkit",
+      "nameWithOwner": "lmintlcx/pvztoolkit",
+      "owner": "lmintlcx",
+      "primaryLanguage": { "color": "#f34b7d", "name": "C++" },
+      "shortDescriptionHTML": "植物大战僵尸 PC 版综合修改器",
+      "stargazerCount": 384,
+      "url": "https://github.com/lmintlcx/pvztoolkit"
+    },
+    "RsyncProject/rsync": {
+      "forkCount": 288,
+      "name": "rsync",
+      "nameWithOwner": "RsyncProject/rsync",
+      "owner": "RsyncProject",
+      "primaryLanguage": { "color": "#555555", "name": "C" },
+      "shortDescriptionHTML": "An open source utility that provides fast incremental file transfer. It also has useful features for backup and restore operations among many other use cases.",
+      "stargazerCount": 2320,
+      "url": "https://github.com/RsyncProject/rsync"
+    },
+    "PaddiM8/kalker": {
+      "forkCount": 70,
+      "name": "kalker",
+      "nameWithOwner": "PaddiM8/kalker",
+      "owner": "PaddiM8",
+      "primaryLanguage": { "color": "#dea584", "name": "Rust" },
+      "shortDescriptionHTML": "Scientific calculator with math syntax that supports user-defined variables and functions, complex numbers, and estimation of derivatives and integrals",
+      "stargazerCount": 1536,
+      "url": "https://github.com/PaddiM8/kalker"
+    },
+    "The-Run-Philosophy-Organization/run": {
+      "forkCount": 2567,
+      "name": "run",
+      "nameWithOwner": "The-Run-Philosophy-Organization/run",
+      "owner": "The-Run-Philosophy-Organization",
+      "primaryLanguage": null,
+      "shortDescriptionHTML": "润学全球官方指定GITHUB，整理润学宗旨、纲领、理论和各类润之实例；解决为什么润，润去哪里，怎么润三大问题； 并成为新中国人的核心宗教，核心信念。",
+      "stargazerCount": 30852,
+      "url": "https://github.com/The-Run-Philosophy-Organization/run"
+    },
+    "actions/setup-python": {
+      "forkCount": 492,
+      "name": "setup-python",
+      "nameWithOwner": "actions/setup-python",
+      "owner": "actions",
+      "primaryLanguage": { "color": "#3178c6", "name": "TypeScript" },
+      "shortDescriptionHTML": "Set up your GitHub Actions workflow with a specific version of Python",
+      "stargazerCount": 1537,
+      "url": "https://github.com/actions/setup-python"
+    },
+    "corecoding/Vitals": {
+      "forkCount": 85,
+      "name": "Vitals",
+      "nameWithOwner": "corecoding/Vitals",
+      "owner": "corecoding",
+      "primaryLanguage": { "color": "#f1e05a", "name": "JavaScript" },
+      "shortDescriptionHTML": "A glimpse into your computer's temperature, voltage, fan speed, memory usage and CPU load.",
+      "stargazerCount": 1259,
+      "url": "https://github.com/corecoding/Vitals"
+    },
+    "xu-cheng/latex-action": {
+      "forkCount": 134,
+      "name": "latex-action",
+      "nameWithOwner": "xu-cheng/latex-action",
+      "owner": "xu-cheng",
+      "primaryLanguage": { "color": "#89e051", "name": "Shell" },
+      "shortDescriptionHTML": "<img class=\"emoji\" title=\":octocat:\" alt=\":octocat:\" src=\"https://github.githubassets.com/images/icons/emoji/octocat.png\" height=\"20\" width=\"20\" align=\"absmiddle\"> GitHub Action to compile LaTeX documents",
+      "stargazerCount": 1047,
+      "url": "https://github.com/xu-cheng/latex-action"
+    },
+    "rust-lang/futures-rs": {
+      "forkCount": 599,
+      "name": "futures-rs",
+      "nameWithOwner": "rust-lang/futures-rs",
+      "owner": "rust-lang",
+      "primaryLanguage": { "color": "#dea584", "name": "Rust" },
+      "shortDescriptionHTML": "Zero-cost asynchronous programming in Rust",
+      "stargazerCount": 5238,
+      "url": "https://github.com/rust-lang/futures-rs"
+    },
+    "charmbracelet/vhs": {
+      "forkCount": 230,
+      "name": "vhs",
+      "nameWithOwner": "charmbracelet/vhs",
+      "owner": "charmbracelet",
+      "primaryLanguage": { "color": "#00ADD8", "name": "Go" },
+      "shortDescriptionHTML": "Your CLI home video recorder 📼",
+      "stargazerCount": 13842,
+      "url": "https://github.com/charmbracelet/vhs"
+    },
+    "cli/cli": {
+      "forkCount": 5196,
+      "name": "cli",
+      "nameWithOwner": "cli/cli",
+      "owner": "cli",
+      "primaryLanguage": { "color": "#00ADD8", "name": "Go" },
+      "shortDescriptionHTML": "GitHub’s official command line tool",
+      "stargazerCount": 35397,
+      "url": "https://github.com/cli/cli"
+    },
+    "shadcn-ui/ui": {
+      "forkCount": 3067,
+      "name": "ui",
+      "nameWithOwner": "shadcn-ui/ui",
+      "owner": "shadcn-ui",
+      "primaryLanguage": { "color": "#3178c6", "name": "TypeScript" },
+      "shortDescriptionHTML": "Beautifully designed components that you can copy and paste into your apps. Accessible. Customizable. Open Source.",
+      "stargazerCount": 57151,
+      "url": "https://github.com/shadcn-ui/ui"
+    },
+    "yaml/pyyaml": {
+      "forkCount": 492,
+      "name": "pyyaml",
+      "nameWithOwner": "yaml/pyyaml",
+      "owner": "yaml",
+      "primaryLanguage": { "color": "#3572A5", "name": "Python" },
+      "shortDescriptionHTML": "Canonical source repository for PyYAML",
+      "stargazerCount": 2427,
+      "url": "https://github.com/yaml/pyyaml"
+    },
+    "tamasfe/taplo": {
+      "forkCount": 104,
+      "name": "taplo",
+      "nameWithOwner": "tamasfe/taplo",
+      "owner": "tamasfe",
+      "primaryLanguage": { "color": "#dea584", "name": "Rust" },
+      "shortDescriptionHTML": "A TOML toolkit written in Rust",
+      "stargazerCount": 1157,
+      "url": "https://github.com/tamasfe/taplo"
+    },
+    "videolan/vlc": {
+      "forkCount": 4903,
+      "name": "vlc",
+      "nameWithOwner": "videolan/vlc",
+      "owner": "videolan",
+      "primaryLanguage": { "color": "#555555", "name": "C" },
+      "shortDescriptionHTML": "VLC media player - All pull requests are ignored, please follow https://wiki.videolan.org/Sending_Patches_VLC/",
+      "stargazerCount": 12998,
+      "url": "https://github.com/videolan/vlc"
+    },
+    "ventoy/Ventoy": {
+      "forkCount": 3838,
+      "name": "Ventoy",
+      "nameWithOwner": "ventoy/Ventoy",
+      "owner": "ventoy",
+      "primaryLanguage": { "color": "#555555", "name": "C" },
+      "shortDescriptionHTML": "A new bootable USB solution.",
+      "stargazerCount": 57780,
+      "url": "https://github.com/ventoy/Ventoy"
+    },
+    "actions/checkout": {
+      "forkCount": 1537,
+      "name": "checkout",
+      "nameWithOwner": "actions/checkout",
+      "owner": "actions",
+      "primaryLanguage": { "color": "#3178c6", "name": "TypeScript" },
+      "shortDescriptionHTML": "Action for checking out a repo",
+      "stargazerCount": 5245,
+      "url": "https://github.com/actions/checkout"
+    },
+    "Scighost/Starward": {
+      "forkCount": 132,
+      "name": "Starward",
+      "nameWithOwner": "Scighost/Starward",
+      "owner": "Scighost",
+      "primaryLanguage": { "color": "#178600", "name": "C#" },
+      "shortDescriptionHTML": "Game Launcher for miHoYo - 米家游戏启动器",
+      "stargazerCount": 2868,
+      "url": "https://github.com/Scighost/Starward"
+    },
+    "pytest-dev/pytest": {
+      "forkCount": 2507,
+      "name": "pytest",
+      "nameWithOwner": "pytest-dev/pytest",
+      "owner": "pytest-dev",
+      "primaryLanguage": { "color": "#3572A5", "name": "Python" },
+      "shortDescriptionHTML": "The pytest framework makes it easy to write small tests, yet scales to support complex functional testing",
+      "stargazerCount": 11371,
+      "url": "https://github.com/pytest-dev/pytest"
+    },
+    "svenstaro/miniserve": {
+      "forkCount": 280,
+      "name": "miniserve",
+      "nameWithOwner": "svenstaro/miniserve",
+      "owner": "svenstaro",
+      "primaryLanguage": { "color": "#dea584", "name": "Rust" },
+      "shortDescriptionHTML": "🌟 For when you really just want to serve some files over HTTP right now!",
+      "stargazerCount": 5584,
+      "url": "https://github.com/svenstaro/miniserve"
+    },
+    "pre-commit/pre-commit": {
+      "forkCount": 762,
+      "name": "pre-commit",
+      "nameWithOwner": "pre-commit/pre-commit",
+      "owner": "pre-commit",
+      "primaryLanguage": { "color": "#3572A5", "name": "Python" },
+      "shortDescriptionHTML": "A framework for managing and maintaining multi-language pre-commit hooks.",
+      "stargazerCount": 12061,
+      "url": "https://github.com/pre-commit/pre-commit"
+    },
+    "ImageMagick/ImageMagick": {
+      "forkCount": 1283,
+      "name": "ImageMagick",
+      "nameWithOwner": "ImageMagick/ImageMagick",
+      "owner": "ImageMagick",
+      "primaryLanguage": { "color": "#555555", "name": "C" },
+      "shortDescriptionHTML": "🧙‍♂️ ImageMagick 7",
+      "stargazerCount": 11119,
+      "url": "https://github.com/ImageMagick/ImageMagick"
+    },
+    "TeamFlos/phira": {
+      "forkCount": 86,
+      "name": "phira",
+      "nameWithOwner": "TeamFlos/phira",
+      "owner": "TeamFlos",
+      "primaryLanguage": { "color": "#dea584", "name": "Rust" },
+      "shortDescriptionHTML": "",
+      "stargazerCount": 794,
+      "url": "https://github.com/TeamFlos/phira"
+    },
+    "starship/starship": {
+      "forkCount": 1756,
+      "name": "starship",
+      "nameWithOwner": "starship/starship",
+      "owner": "starship",
+      "primaryLanguage": { "color": "#dea584", "name": "Rust" },
+      "shortDescriptionHTML": "☄🌌️ The minimal, blazing-fast, and infinitely customizable prompt for any shell!",
+      "stargazerCount": 40825,
+      "url": "https://github.com/starship/starship"
+    },
+    "facebook/react": {
+      "forkCount": 45257,
+      "name": "react",
+      "nameWithOwner": "facebook/react",
+      "owner": "facebook",
+      "primaryLanguage": { "color": "#f1e05a", "name": "JavaScript" },
+      "shortDescriptionHTML": "The library for web and native user interfaces.",
+      "stargazerCount": 221891,
+      "url": "https://github.com/facebook/react"
+    },
+    "trackawesomelist/trackawesomelist": {
+      "forkCount": 20,
+      "name": "trackawesomelist",
+      "nameWithOwner": "trackawesomelist/trackawesomelist",
+      "owner": "trackawesomelist",
+      "primaryLanguage": null,
+      "shortDescriptionHTML": "Track 500+ Awesome List Updates, Track it - not just star it!",
+      "stargazerCount": 290,
+      "url": "https://github.com/trackawesomelist/trackawesomelist"
+    },
+    "ibraheemdev/modern-unix": {
+      "forkCount": 756,
+      "name": "modern-unix",
+      "nameWithOwner": "ibraheemdev/modern-unix",
+      "owner": "ibraheemdev",
+      "primaryLanguage": null,
+      "shortDescriptionHTML": "A collection of modern/faster/saner alternatives to common unix commands.",
+      "stargazerCount": 29761,
+      "url": "https://github.com/ibraheemdev/modern-unix"
+    },
+    "google-github-actions/release-please-action": {
+      "forkCount": 182,
+      "name": "release-please-action",
+      "nameWithOwner": "google-github-actions/release-please-action",
+      "owner": "google-github-actions",
+      "primaryLanguage": { "color": "#3178c6", "name": "TypeScript" },
+      "shortDescriptionHTML": "automated releases based on conventional commits",
+      "stargazerCount": 1415,
+      "url": "https://github.com/google-github-actions/release-please-action"
+    },
+    "astral-sh/ruff": {
+      "forkCount": 850,
+      "name": "ruff",
+      "nameWithOwner": "astral-sh/ruff",
+      "owner": "astral-sh",
+      "primaryLanguage": { "color": "#dea584", "name": "Rust" },
+      "shortDescriptionHTML": "An extremely fast Python linter and code formatter, written in Rust.",
+      "stargazerCount": 26604,
+      "url": "https://github.com/astral-sh/ruff"
+    },
+    "banach-space/llvm-tutor": {
+      "forkCount": 353,
+      "name": "llvm-tutor",
+      "nameWithOwner": "banach-space/llvm-tutor",
+      "owner": "banach-space",
+      "primaryLanguage": { "color": "#f34b7d", "name": "C++" },
+      "shortDescriptionHTML": "A collection of out-of-tree LLVM passes for teaching and learning",
+      "stargazerCount": 2717,
+      "url": "https://github.com/banach-space/llvm-tutor"
+    },
+    "tiangolo/typer": {
+      "forkCount": 620,
+      "name": "typer",
+      "nameWithOwner": "tiangolo/typer",
+      "owner": "tiangolo",
+      "primaryLanguage": { "color": "#3572A5", "name": "Python" },
+      "shortDescriptionHTML": "Typer, build great CLIs. Easy to code. Based on Python type hints.",
+      "stargazerCount": 14362,
+      "url": "https://github.com/tiangolo/typer"
+    },
+    "emirpasic/gods": {
+      "forkCount": 1686,
+      "name": "gods",
+      "nameWithOwner": "emirpasic/gods",
+      "owner": "emirpasic",
+      "primaryLanguage": { "color": "#00ADD8", "name": "Go" },
+      "shortDescriptionHTML": "GoDS (Go Data Structures) - Sets, Lists, Stacks, Maps, Trees, Queues, and much more",
+      "stargazerCount": 15422,
+      "url": "https://github.com/emirpasic/gods"
+    },
+    "vercel/next.js": {
+      "forkCount": 25797,
+      "name": "next.js",
+      "nameWithOwner": "vercel/next.js",
+      "owner": "vercel",
+      "primaryLanguage": { "color": "#f1e05a", "name": "JavaScript" },
+      "shortDescriptionHTML": "The React Framework",
+      "stargazerCount": 120640,
+      "url": "https://github.com/vercel/next.js"
+    },
+    "charmbracelet/gum": {
+      "forkCount": 318,
+      "name": "gum",
+      "nameWithOwner": "charmbracelet/gum",
+      "owner": "charmbracelet",
+      "primaryLanguage": { "color": "#00ADD8", "name": "Go" },
+      "shortDescriptionHTML": "A tool for glamorous shell scripts 🎀",
+      "stargazerCount": 16753,
+      "url": "https://github.com/charmbracelet/gum"
+    },
+    "libpinyin/ibus-libpinyin": {
+      "forkCount": 89,
+      "name": "ibus-libpinyin",
+      "nameWithOwner": "libpinyin/ibus-libpinyin",
+      "owner": "libpinyin",
+      "primaryLanguage": { "color": "#f34b7d", "name": "C++" },
+      "shortDescriptionHTML": "",
+      "stargazerCount": 610,
+      "url": "https://github.com/libpinyin/ibus-libpinyin"
+    },
+    "ant-design/ant-design": {
+      "forkCount": 45947,
+      "name": "ant-design",
+      "nameWithOwner": "ant-design/ant-design",
+      "owner": "ant-design",
+      "primaryLanguage": { "color": "#3178c6", "name": "TypeScript" },
+      "shortDescriptionHTML": "An enterprise-class UI design language and React UI library",
+      "stargazerCount": 90225,
+      "url": "https://github.com/ant-design/ant-design"
+    },
+    "ubuntu/gnome-shell-extension-appindicator": {
+      "forkCount": 156,
+      "name": "gnome-shell-extension-appindicator",
+      "nameWithOwner": "ubuntu/gnome-shell-extension-appindicator",
+      "owner": "ubuntu",
+      "primaryLanguage": { "color": "#f1e05a", "name": "JavaScript" },
+      "shortDescriptionHTML": "Adds KStatusNotifierItem support to the Shell",
+      "stargazerCount": 1107,
+      "url": "https://github.com/ubuntu/gnome-shell-extension-appindicator"
+    },
+    "serde-rs/serde": {
+      "forkCount": 734,
+      "name": "serde",
+      "nameWithOwner": "serde-rs/serde",
+      "owner": "serde-rs",
+      "primaryLanguage": { "color": "#dea584", "name": "Rust" },
+      "shortDescriptionHTML": "Serialization framework for Rust",
+      "stargazerCount": 8574,
+      "url": "https://github.com/serde-rs/serde"
+    },
+    "zhiburt/tabled": {
+      "forkCount": 68,
+      "name": "tabled",
+      "nameWithOwner": "zhiburt/tabled",
+      "owner": "zhiburt",
+      "primaryLanguage": { "color": "#dea584", "name": "Rust" },
+      "shortDescriptionHTML": "An easy to use library for pretty print tables of Rust structs and enums.",
+      "stargazerCount": 1824,
+      "url": "https://github.com/zhiburt/tabled"
+    },
+    "koalaman/shellcheck": {
+      "forkCount": 1718,
+      "name": "shellcheck",
+      "nameWithOwner": "koalaman/shellcheck",
+      "owner": "koalaman",
+      "primaryLanguage": { "color": "#5e5086", "name": "Haskell" },
+      "shortDescriptionHTML": "ShellCheck, a static analysis tool for shell scripts",
+      "stargazerCount": 35000,
+      "url": "https://github.com/koalaman/shellcheck"
+    },
+    "tokio-rs/tracing": {
+      "forkCount": 648,
+      "name": "tracing",
+      "nameWithOwner": "tokio-rs/tracing",
+      "owner": "tokio-rs",
+      "primaryLanguage": { "color": "#dea584", "name": "Rust" },
+      "shortDescriptionHTML": "Application level tracing for Rust.",
+      "stargazerCount": 4947,
+      "url": "https://github.com/tokio-rs/tracing"
+    },
+    "jorgebucaran/fisher": {
+      "forkCount": 254,
+      "name": "fisher",
+      "nameWithOwner": "jorgebucaran/fisher",
+      "owner": "jorgebucaran",
+      "primaryLanguage": { "color": "#89e051", "name": "Shell" },
+      "shortDescriptionHTML": "A plugin manager for Fish",
+      "stargazerCount": 7393,
+      "url": "https://github.com/jorgebucaran/fisher"
+    },
+    "Get-Tech-Stack/TechStack": {
+      "forkCount": 12,
+      "name": "TechStack",
+      "nameWithOwner": "Get-Tech-Stack/TechStack",
+      "owner": "Get-Tech-Stack",
+      "primaryLanguage": { "color": "#3178c6", "name": "TypeScript" },
+      "shortDescriptionHTML": "The extension will display the tech stack of the Repo when the user visits a GitHub Public Repo. The user can easily get more info about the repo. 当用户访问 GitHub 公共存储库时，该扩展将显示存储库的技术栈。 用户可以更轻松地获取有关存储库…",
+      "stargazerCount": 455,
+      "url": "https://github.com/Get-Tech-Stack/TechStack"
+    },
+    "tmux/tmux": {
+      "forkCount": 2031,
+      "name": "tmux",
+      "nameWithOwner": "tmux/tmux",
+      "owner": "tmux",
+      "primaryLanguage": { "color": "#555555", "name": "C" },
+      "shortDescriptionHTML": "tmux source code",
+      "stargazerCount": 32971,
+      "url": "https://github.com/tmux/tmux"
+    },
+    "Kazhnuz/awesome-gnome": {
+      "forkCount": 40,
+      "name": "awesome-gnome",
+      "nameWithOwner": "Kazhnuz/awesome-gnome",
+      "owner": "Kazhnuz",
+      "primaryLanguage": null,
+      "shortDescriptionHTML": "A curated list of awesome apps, extensions, modules, themes and tools for the Gnome Desktop Environment.",
+      "stargazerCount": 1025,
+      "url": "https://github.com/Kazhnuz/awesome-gnome"
+    },
+    "xinychen/latex-cookbook": {
+      "forkCount": 140,
+      "name": "latex-cookbook",
+      "nameWithOwner": "xinychen/latex-cookbook",
+      "owner": "xinychen",
+      "primaryLanguage": { "color": "#DA5B0B", "name": "Jupyter Notebook" },
+      "shortDescriptionHTML": "LaTeX论文写作教程 (清华大学出版社)",
+      "stargazerCount": 1234,
+      "url": "https://github.com/xinychen/latex-cookbook"
+    },
+    "benfred/py-spy": {
+      "forkCount": 391,
+      "name": "py-spy",
+      "nameWithOwner": "benfred/py-spy",
+      "owner": "benfred",
+      "primaryLanguage": { "color": "#dea584", "name": "Rust" },
+      "shortDescriptionHTML": "Sampling profiler for Python programs",
+      "stargazerCount": 11857,
+      "url": "https://github.com/benfred/py-spy"
+    },
+    "pnpm/action-setup": {
+      "forkCount": 70,
+      "name": "action-setup",
+      "nameWithOwner": "pnpm/action-setup",
+      "owner": "pnpm",
+      "primaryLanguage": { "color": "#3178c6", "name": "TypeScript" },
+      "shortDescriptionHTML": "Install pnpm package manager",
+      "stargazerCount": 788,
+      "url": "https://github.com/pnpm/action-setup"
+    },
+    "python-poetry/poetry": {
+      "forkCount": 2203,
+      "name": "poetry",
+      "nameWithOwner": "python-poetry/poetry",
+      "owner": "python-poetry",
+      "primaryLanguage": { "color": "#3572A5", "name": "Python" },
+      "shortDescriptionHTML": "Python packaging and dependency management made easy",
+      "stargazerCount": 29506,
+      "url": "https://github.com/python-poetry/poetry"
+    },
+    "pypa/pipx": {
+      "forkCount": 372,
+      "name": "pipx",
+      "nameWithOwner": "pypa/pipx",
+      "owner": "pypa",
+      "primaryLanguage": { "color": "#3572A5", "name": "Python" },
+      "shortDescriptionHTML": "Install and Run Python Applications in Isolated Environments",
+      "stargazerCount": 8846,
+      "url": "https://github.com/pypa/pipx"
+    },
+    "dtolnay/anyhow": {
+      "forkCount": 135,
+      "name": "anyhow",
+      "nameWithOwner": "dtolnay/anyhow",
+      "owner": "dtolnay",
+      "primaryLanguage": { "color": "#dea584", "name": "Rust" },
+      "shortDescriptionHTML": "Flexible concrete Error type built on std::error::Error",
+      "stargazerCount": 5050,
+      "url": "https://github.com/dtolnay/anyhow"
+    },
+    "Jguer/yay": {
+      "forkCount": 345,
+      "name": "yay",
+      "nameWithOwner": "Jguer/yay",
+      "owner": "Jguer",
+      "primaryLanguage": { "color": "#00ADD8", "name": "Go" },
+      "shortDescriptionHTML": "Yet another Yogurt - An AUR Helper written in Go",
+      "stargazerCount": 10328,
+      "url": "https://github.com/Jguer/yay"
+    },
+    "jcaesar/structstruck": {
+      "forkCount": 3,
+      "name": "structstruck",
+      "nameWithOwner": "jcaesar/structstruck",
+      "owner": "jcaesar",
+      "primaryLanguage": { "color": "#dea584", "name": "Rust" },
+      "shortDescriptionHTML": "Rust nested structs",
+      "stargazerCount": 47,
+      "url": "https://github.com/jcaesar/structstruck"
+    },
+    "bitwarden/clients": {
+      "forkCount": 1088,
+      "name": "clients",
+      "nameWithOwner": "bitwarden/clients",
+      "owner": "bitwarden",
+      "primaryLanguage": { "color": "#3178c6", "name": "TypeScript" },
+      "shortDescriptionHTML": "Bitwarden client applications (web, browser extension, desktop, and cli)",
+      "stargazerCount": 8303,
+      "url": "https://github.com/bitwarden/clients"
+    },
+    "dirs-dev/directories-rs": {
+      "forkCount": 33,
+      "name": "directories-rs",
+      "nameWithOwner": "dirs-dev/directories-rs",
+      "owner": "dirs-dev",
+      "primaryLanguage": { "color": "#dea584", "name": "Rust" },
+      "shortDescriptionHTML": "a mid-level library that provides config/cache/data paths, following the respective conventions on Linux, macOS and Windows",
+      "stargazerCount": 694,
+      "url": "https://github.com/dirs-dev/directories-rs"
+    },
+    "agarrharr/awesome-cli-apps": {
+      "forkCount": 835,
+      "name": "awesome-cli-apps",
+      "nameWithOwner": "agarrharr/awesome-cli-apps",
+      "owner": "agarrharr",
+      "primaryLanguage": { "color": "#89e051", "name": "Shell" },
+      "shortDescriptionHTML": "🖥 📊 🕹 🛠 A curated list of command line apps",
+      "stargazerCount": 13761,
+      "url": "https://github.com/agarrharr/awesome-cli-apps"
+    },
+    "stretchr/testify": {
+      "forkCount": 1548,
+      "name": "testify",
+      "nameWithOwner": "stretchr/testify",
+      "owner": "stretchr",
+      "primaryLanguage": { "color": "#00ADD8", "name": "Go" },
+      "shortDescriptionHTML": "A toolkit with common assertions and mocks that plays nicely with the standard library",
+      "stargazerCount": 22032,
+      "url": "https://github.com/stretchr/testify"
+    },
+    "actions/download-artifact": {
+      "forkCount": 429,
+      "name": "download-artifact",
+      "nameWithOwner": "actions/download-artifact",
+      "owner": "actions",
+      "primaryLanguage": { "color": "#3178c6", "name": "TypeScript" },
+      "shortDescriptionHTML": "",
+      "stargazerCount": 1273,
+      "url": "https://github.com/actions/download-artifact"
+    },
+    "pterm/pterm": {
+      "forkCount": 182,
+      "name": "pterm",
+      "nameWithOwner": "pterm/pterm",
+      "owner": "pterm",
+      "primaryLanguage": { "color": "#00ADD8", "name": "Go" },
+      "shortDescriptionHTML": "✨ #PTerm is a modern Go module to easily beautify console output. Featuring charts, progressbars, tables, trees, text input, select menus and much more 🚀 It's completely configurable and 100% cross…",
+      "stargazerCount": 4549,
+      "url": "https://github.com/pterm/pterm"
+    },
+    "fish-shell/fish-shell": {
+      "forkCount": 1853,
+      "name": "fish-shell",
+      "nameWithOwner": "fish-shell/fish-shell",
+      "owner": "fish-shell",
+      "primaryLanguage": { "color": "#dea584", "name": "Rust" },
+      "shortDescriptionHTML": "The user-friendly command line shell.",
+      "stargazerCount": 24555,
+      "url": "https://github.com/fish-shell/fish-shell"
+    },
+    "Harry-Chen/thu-learn-lib": {
+      "forkCount": 10,
+      "name": "thu-learn-lib",
+      "nameWithOwner": "Harry-Chen/thu-learn-lib",
+      "owner": "Harry-Chen",
+      "primaryLanguage": { "color": "#3178c6", "name": "TypeScript" },
+      "shortDescriptionHTML": "A JavaScript library to provide a program-friendly interface to Web Learning of Tsinghua University",
+      "stargazerCount": 67,
+      "url": "https://github.com/Harry-Chen/thu-learn-lib"
+    },
+    "ajeetdsouza/zoxide": {
+      "forkCount": 498,
+      "name": "zoxide",
+      "nameWithOwner": "ajeetdsouza/zoxide",
+      "owner": "ajeetdsouza",
+      "primaryLanguage": { "color": "#dea584", "name": "Rust" },
+      "shortDescriptionHTML": "A smarter cd command. Supports all major shells.",
+      "stargazerCount": 18628,
+      "url": "https://github.com/ajeetdsouza/zoxide"
+    },
+    "numpy/numpy": {
+      "forkCount": 9304,
+      "name": "numpy",
+      "nameWithOwner": "numpy/numpy",
+      "owner": "numpy",
+      "primaryLanguage": { "color": "#3572A5", "name": "Python" },
+      "shortDescriptionHTML": "The fundamental package for scientific computing with Python.",
+      "stargazerCount": 26377,
+      "url": "https://github.com/numpy/numpy"
+    },
+    "jlfwong/speedscope": {
+      "forkCount": 229,
+      "name": "speedscope",
+      "nameWithOwner": "jlfwong/speedscope",
+      "owner": "jlfwong",
+      "primaryLanguage": { "color": "#3178c6", "name": "TypeScript" },
+      "shortDescriptionHTML": "🔬 A fast, interactive web-based viewer for performance profiles.",
+      "stargazerCount": 5206,
+      "url": "https://github.com/jlfwong/speedscope"
+    },
+    "gosimple/slug": {
+      "forkCount": 105,
+      "name": "slug",
+      "nameWithOwner": "gosimple/slug",
+      "owner": "gosimple",
+      "primaryLanguage": { "color": "#00ADD8", "name": "Go" },
+      "shortDescriptionHTML": "URL-friendly slugify with multiple languages support.",
+      "stargazerCount": 1089,
+      "url": "https://github.com/gosimple/slug"
+    },
+    "abbrcode/abbreviations-in-code": {
+      "forkCount": 49,
+      "name": "abbreviations-in-code",
+      "nameWithOwner": "abbrcode/abbreviations-in-code",
+      "owner": "abbrcode",
+      "primaryLanguage": { "color": "#f1e05a", "name": "JavaScript" },
+      "shortDescriptionHTML": "The list of common abbreviations in program codes.",
+      "stargazerCount": 355,
+      "url": "https://github.com/abbrcode/abbreviations-in-code"
+    },
+    "dsnet/try": {
+      "forkCount": 4,
+      "name": "try",
+      "nameWithOwner": "dsnet/try",
+      "owner": "dsnet",
+      "primaryLanguage": { "color": "#00ADD8", "name": "Go" },
+      "shortDescriptionHTML": "Simplified error handling in Go",
+      "stargazerCount": 164,
+      "url": "https://github.com/dsnet/try"
+    },
+    "shimohq/chinese-programmer-wrong-pronunciation": {
+      "forkCount": 1552,
+      "name": "chinese-programmer-wrong-pronunciation",
+      "nameWithOwner": "shimohq/chinese-programmer-wrong-pronunciation",
+      "owner": "shimohq",
+      "primaryLanguage": { "color": "#f1e05a", "name": "JavaScript" },
+      "shortDescriptionHTML": "中国程序员容易发音错误的单词",
+      "stargazerCount": 21509,
+      "url": "https://github.com/shimohq/chinese-programmer-wrong-pronunciation"
+    },
+    "micheleg/dash-to-dock": {
+      "forkCount": 465,
+      "name": "dash-to-dock",
+      "nameWithOwner": "micheleg/dash-to-dock",
+      "owner": "micheleg",
+      "primaryLanguage": { "color": "#f1e05a", "name": "JavaScript" },
+      "shortDescriptionHTML": "A dock for the Gnome Shell. This extension moves the dash out of the overview transforming it in a dock for an easier launching of applications and a faster switching between windows and desktops.",
+      "stargazerCount": 3773,
+      "url": "https://github.com/micheleg/dash-to-dock"
+    },
+    "pnpm/pnpm": {
+      "forkCount": 909,
+      "name": "pnpm",
+      "nameWithOwner": "pnpm/pnpm",
+      "owner": "pnpm",
+      "primaryLanguage": { "color": "#3178c6", "name": "TypeScript" },
+      "shortDescriptionHTML": "Fast, disk space efficient package manager",
+      "stargazerCount": 27773,
+      "url": "https://github.com/pnpm/pnpm"
+    },
+    "bestofjs/javascript-risingstars": {
+      "forkCount": 56,
+      "name": "javascript-risingstars",
+      "nameWithOwner": "bestofjs/javascript-risingstars",
+      "owner": "bestofjs",
+      "primaryLanguage": { "color": "#ff5a03", "name": "Astro" },
+      "shortDescriptionHTML": "🌠 An overview of the JavaScript landscape in 2023: trends about frontend, Node.js, fullstack frameworks, build tools, testing, Vue.js, React, state management...",
+      "stargazerCount": 984,
+      "url": "https://github.com/bestofjs/javascript-risingstars"
+    },
+    "junegunn/fzf": {
+      "forkCount": 2296,
+      "name": "fzf",
+      "nameWithOwner": "junegunn/fzf",
+      "owner": "junegunn",
+      "primaryLanguage": { "color": "#00ADD8", "name": "Go" },
+      "shortDescriptionHTML": "🌸 A command-line fuzzy finder",
+      "stargazerCount": 59788,
+      "url": "https://github.com/junegunn/fzf"
+    },
+    "Hansimov/csapp": {
+      "forkCount": 196,
+      "name": "csapp",
+      "nameWithOwner": "Hansimov/csapp",
+      "owner": "Hansimov",
+      "primaryLanguage": { "color": "#555555", "name": "C" },
+      "shortDescriptionHTML": "个人整理的《深入理解计算机系统》中文电子版（原书第 3 版）与实验材料：https://hansimov.gitbook.io/csapp/",
+      "stargazerCount": 1320,
+      "url": "https://github.com/Hansimov/csapp"
+    },
+    "microsoft/vcpkg": {
+      "forkCount": 5993,
+      "name": "vcpkg",
+      "nameWithOwner": "microsoft/vcpkg",
+      "owner": "microsoft",
+      "primaryLanguage": { "color": "#DA3434", "name": "CMake" },
+      "shortDescriptionHTML": "C++ Library Manager for Windows, Linux, and MacOS",
+      "stargazerCount": 21509,
+      "url": "https://github.com/microsoft/vcpkg"
+    },
+    "conda/conda-lock": {
+      "forkCount": 99,
+      "name": "conda-lock",
+      "nameWithOwner": "conda/conda-lock",
+      "owner": "conda",
+      "primaryLanguage": { "color": "#3572A5", "name": "Python" },
+      "shortDescriptionHTML": "Lightweight lockfile for conda environments",
+      "stargazerCount": 436,
+      "url": "https://github.com/conda/conda-lock"
+    },
+    "doxygen/doxygen": {
+      "forkCount": 1240,
+      "name": "doxygen",
+      "nameWithOwner": "doxygen/doxygen",
+      "owner": "doxygen",
+      "primaryLanguage": { "color": "#f34b7d", "name": "C++" },
+      "shortDescriptionHTML": "Official doxygen git repository",
+      "stargazerCount": 5369,
+      "url": "https://github.com/doxygen/doxygen"
+    },
+    "spf13/cobra": {
+      "forkCount": 2784,
+      "name": "cobra",
+      "nameWithOwner": "spf13/cobra",
+      "owner": "spf13",
+      "primaryLanguage": { "color": "#00ADD8", "name": "Go" },
+      "shortDescriptionHTML": "A Commander for modern Go CLI interactions",
+      "stargazerCount": 35998,
+      "url": "https://github.com/spf13/cobra"
+    },
+    "EbookFoundation/free-programming-books": {
+      "forkCount": 59949,
+      "name": "free-programming-books",
+      "nameWithOwner": "EbookFoundation/free-programming-books",
+      "owner": "EbookFoundation",
+      "primaryLanguage": null,
+      "shortDescriptionHTML": "📚 Freely available programming books",
+      "stargazerCount": 320426,
+      "url": "https://github.com/EbookFoundation/free-programming-books"
+    },
+    "twpayne/chezmoi": {
+      "forkCount": 460,
+      "name": "chezmoi",
+      "nameWithOwner": "twpayne/chezmoi",
+      "owner": "twpayne",
+      "primaryLanguage": { "color": "#00ADD8", "name": "Go" },
+      "shortDescriptionHTML": "Manage your dotfiles across multiple diverse machines, securely.",
+      "stargazerCount": 11699,
+      "url": "https://github.com/twpayne/chezmoi"
+    },
+    "ConnorGray/clap-markdown": {
+      "forkCount": 10,
+      "name": "clap-markdown",
+      "nameWithOwner": "ConnorGray/clap-markdown",
+      "owner": "ConnorGray",
+      "primaryLanguage": { "color": "#dea584", "name": "Rust" },
+      "shortDescriptionHTML": "Autogenerate Markdown documentation for clap command-line tools",
+      "stargazerCount": 38,
+      "url": "https://github.com/ConnorGray/clap-markdown"
+    },
+    "Nukesor/pueue": {
+      "forkCount": 125,
+      "name": "pueue",
+      "nameWithOwner": "Nukesor/pueue",
+      "owner": "Nukesor",
+      "primaryLanguage": { "color": "#dea584", "name": "Rust" },
+      "shortDescriptionHTML": "🌠 Manage your shell commands.",
+      "stargazerCount": 4568,
+      "url": "https://github.com/Nukesor/pueue"
+    },
+    "rclone/rclone": {
+      "forkCount": 3942,
+      "name": "rclone",
+      "nameWithOwner": "rclone/rclone",
+      "owner": "rclone",
+      "primaryLanguage": { "color": "#00ADD8", "name": "Go" },
+      "shortDescriptionHTML": "\"rsync for cloud storage\" - Google Drive, S3, Dropbox, Backblaze B2, One Drive, Swift, Hubic, Wasabi, Google Cloud Storage, Azure Blob, Azure Files, Yandex Files",
+      "stargazerCount": 43834,
+      "url": "https://github.com/rclone/rclone"
+    },
+    "tmbo/questionary": {
+      "forkCount": 83,
+      "name": "questionary",
+      "nameWithOwner": "tmbo/questionary",
+      "owner": "tmbo",
+      "primaryLanguage": { "color": "#3572A5", "name": "Python" },
+      "shortDescriptionHTML": "Python library to build pretty command line user prompts ✨Easy to use multi-select lists, confirmations, free text prompts ...",
+      "stargazerCount": 1418,
+      "url": "https://github.com/tmbo/questionary"
+    },
+    "seanmonstar/reqwest": {
+      "forkCount": 1016,
+      "name": "reqwest",
+      "nameWithOwner": "seanmonstar/reqwest",
+      "owner": "seanmonstar",
+      "primaryLanguage": { "color": "#dea584", "name": "Rust" },
+      "shortDescriptionHTML": "An easy and powerful Rust HTTP Client",
+      "stargazerCount": 9136,
+      "url": "https://github.com/seanmonstar/reqwest"
+    },
+    "console-rs/indicatif": {
+      "forkCount": 234,
+      "name": "indicatif",
+      "nameWithOwner": "console-rs/indicatif",
+      "owner": "console-rs",
+      "primaryLanguage": { "color": "#dea584", "name": "Rust" },
+      "shortDescriptionHTML": "A command line progress reporting library for Rust",
+      "stargazerCount": 4115,
+      "url": "https://github.com/console-rs/indicatif"
+    },
+    "Delgan/loguru": {
+      "forkCount": 668,
+      "name": "loguru",
+      "nameWithOwner": "Delgan/loguru",
+      "owner": "Delgan",
+      "primaryLanguage": { "color": "#3572A5", "name": "Python" },
+      "shortDescriptionHTML": "Python logging made (stupidly) simple",
+      "stargazerCount": 18092,
+      "url": "https://github.com/Delgan/loguru"
+    },
+    "tokio-rs/tokio": {
+      "forkCount": 2246,
+      "name": "tokio",
+      "nameWithOwner": "tokio-rs/tokio",
+      "owner": "tokio-rs",
+      "primaryLanguage": { "color": "#dea584", "name": "Rust" },
+      "shortDescriptionHTML": "A runtime for writing reliable asynchronous applications with Rust. Provides I/O, networking, scheduling, timers, ...",
+      "stargazerCount": 24691,
+      "url": "https://github.com/tokio-rs/tokio"
+    },
+    "clap-rs/clap": {
+      "forkCount": 992,
+      "name": "clap",
+      "nameWithOwner": "clap-rs/clap",
+      "owner": "clap-rs",
+      "primaryLanguage": { "color": "#dea584", "name": "Rust" },
+      "shortDescriptionHTML": "A full featured, fast Command Line Argument Parser for Rust",
+      "stargazerCount": 13301,
+      "url": "https://github.com/clap-rs/clap"
+    },
+    "conda/conda": {
+      "forkCount": 1525,
+      "name": "conda",
+      "nameWithOwner": "conda/conda",
+      "owner": "conda",
+      "primaryLanguage": { "color": "#3572A5", "name": "Python" },
+      "shortDescriptionHTML": "A system-level, binary package and environment manager running on all major operating systems and platforms.",
+      "stargazerCount": 6088,
+      "url": "https://github.com/conda/conda"
+    },
+    "rizsotto/Bear": {
+      "forkCount": 297,
+      "name": "Bear",
+      "nameWithOwner": "rizsotto/Bear",
+      "owner": "rizsotto",
+      "primaryLanguage": { "color": "#f34b7d", "name": "C++" },
+      "shortDescriptionHTML": "Bear is a tool that generates a compilation database for clang tooling.",
+      "stargazerCount": 4449,
+      "url": "https://github.com/rizsotto/Bear"
+    },
+    "ttroy50/cmake-examples": {
+      "forkCount": 2471,
+      "name": "cmake-examples",
+      "nameWithOwner": "ttroy50/cmake-examples",
+      "owner": "ttroy50",
+      "primaryLanguage": { "color": "#DA3434", "name": "CMake" },
+      "shortDescriptionHTML": "Useful CMake Examples",
+      "stargazerCount": 11944,
+      "url": "https://github.com/ttroy50/cmake-examples"
+    },
+    "pandas-dev/pandas": {
+      "forkCount": 17339,
+      "name": "pandas",
+      "nameWithOwner": "pandas-dev/pandas",
+      "owner": "pandas-dev",
+      "primaryLanguage": { "color": "#3572A5", "name": "Python" },
+      "shortDescriptionHTML": "Flexible and powerful data analysis / manipulation library for Python, providing labeled data structures similar to R data.frame objects, statistical functions, and much more",
+      "stargazerCount": 41975,
+      "url": "https://github.com/pandas-dev/pandas"
+    },
+    "clap-rs/clap-verbosity-flag": {
+      "forkCount": 23,
+      "name": "clap-verbosity-flag",
+      "nameWithOwner": "clap-rs/clap-verbosity-flag",
+      "owner": "clap-rs",
+      "primaryLanguage": { "color": "#dea584", "name": "Rust" },
+      "shortDescriptionHTML": "Easily add a --verbose flag to CLIs using Clap",
+      "stargazerCount": 155,
+      "url": "https://github.com/clap-rs/clap-verbosity-flag"
+    },
+    "commitizen/cz-cli": {
+      "forkCount": 552,
+      "name": "cz-cli",
+      "nameWithOwner": "commitizen/cz-cli",
+      "owner": "commitizen",
+      "primaryLanguage": { "color": "#f1e05a", "name": "JavaScript" },
+      "shortDescriptionHTML": "The commitizen command line utility. #BlackLivesMatter",
+      "stargazerCount": 16391,
+      "url": "https://github.com/commitizen/cz-cli"
+    },
+    "typst/typst": {
+      "forkCount": 758,
+      "name": "typst",
+      "nameWithOwner": "typst/typst",
+      "owner": "typst",
+      "primaryLanguage": { "color": "#dea584", "name": "Rust" },
+      "shortDescriptionHTML": "A new markup-based typesetting system that is powerful and easy to learn.",
+      "stargazerCount": 28296,
+      "url": "https://github.com/typst/typst"
+    },
+    "vinta/awesome-python": {
+      "forkCount": 24479,
+      "name": "awesome-python",
+      "nameWithOwner": "vinta/awesome-python",
+      "owner": "vinta",
+      "primaryLanguage": { "color": "#3572A5", "name": "Python" },
+      "shortDescriptionHTML": "An opinionated list of awesome Python frameworks, libraries, software and resources.",
+      "stargazerCount": 205277,
+      "url": "https://github.com/vinta/awesome-python"
+    },
+    "darkreader/darkreader": {
+      "forkCount": 2284,
+      "name": "darkreader",
+      "nameWithOwner": "darkreader/darkreader",
+      "owner": "darkreader",
+      "primaryLanguage": { "color": "#3178c6", "name": "TypeScript" },
+      "shortDescriptionHTML": "Dark Reader Chrome and Firefox extension",
+      "stargazerCount": 18699,
+      "url": "https://github.com/darkreader/darkreader"
+    },
+    "python/typeshed": {
+      "forkCount": 1656,
+      "name": "typeshed",
+      "nameWithOwner": "python/typeshed",
+      "owner": "python",
+      "primaryLanguage": { "color": "#3572A5", "name": "Python" },
+      "shortDescriptionHTML": "Collection of library stubs for Python, with static types",
+      "stargazerCount": 4069,
+      "url": "https://github.com/python/typeshed"
+    },
+    "mholt/archiver": {
+      "forkCount": 372,
+      "name": "archiver",
+      "nameWithOwner": "mholt/archiver",
+      "owner": "mholt",
+      "primaryLanguage": { "color": "#00ADD8", "name": "Go" },
+      "shortDescriptionHTML": "Easily create &amp; extract archives, and compress &amp; decompress files of various formats",
+      "stargazerCount": 4235,
+      "url": "https://github.com/mholt/archiver"
+    },
+    "posquit0/Awesome-CV": {
+      "forkCount": 4671,
+      "name": "Awesome-CV",
+      "nameWithOwner": "posquit0/Awesome-CV",
+      "owner": "posquit0",
+      "primaryLanguage": { "color": "#3D6117", "name": "TeX" },
+      "shortDescriptionHTML": "📄 Awesome CV is LaTeX template for your outstanding job application",
+      "stargazerCount": 21790,
+      "url": "https://github.com/posquit0/Awesome-CV"
+    },
+    "996icu/996.ICU": {
+      "forkCount": 21261,
+      "name": "996.ICU",
+      "nameWithOwner": "996icu/996.ICU",
+      "owner": "996icu",
+      "primaryLanguage": null,
+      "shortDescriptionHTML": "Repo for counting stars and contributing. Press F to pay respect to glorious developers.",
+      "stargazerCount": 269067,
+      "url": "https://github.com/996icu/996.ICU"
+    },
+    "Textualize/rich": {
+      "forkCount": 1669,
+      "name": "rich",
+      "nameWithOwner": "Textualize/rich",
+      "owner": "Textualize",
+      "primaryLanguage": { "color": "#3572A5", "name": "Python" },
+      "shortDescriptionHTML": "Rich is a Python library for rich text and beautiful formatting in the terminal.",
+      "stargazerCount": 47095,
+      "url": "https://github.com/Textualize/rich"
+    },
+    "mamba-org/mamba": {
+      "forkCount": 336,
+      "name": "mamba",
+      "nameWithOwner": "mamba-org/mamba",
+      "owner": "mamba-org",
+      "primaryLanguage": { "color": "#f34b7d", "name": "C++" },
+      "shortDescriptionHTML": "The Fast Cross-Platform Package Manager",
+      "stargazerCount": 6258,
+      "url": "https://github.com/mamba-org/mamba"
+    },
+    "serde-rs/json": {
+      "forkCount": 518,
+      "name": "json",
+      "nameWithOwner": "serde-rs/json",
+      "owner": "serde-rs",
+      "primaryLanguage": { "color": "#dea584", "name": "Rust" },
+      "shortDescriptionHTML": "Strongly typed JSON library for Rust",
+      "stargazerCount": 4540,
+      "url": "https://github.com/serde-rs/json"
+    },
+    "practical-tutorials/project-based-learning": {
+      "forkCount": 22272,
+      "name": "project-based-learning",
+      "nameWithOwner": "practical-tutorials/project-based-learning",
+      "owner": "practical-tutorials",
+      "primaryLanguage": null,
+      "shortDescriptionHTML": "Curated list of project-based tutorials",
+      "stargazerCount": 168892,
+      "url": "https://github.com/practical-tutorials/project-based-learning"
+    },
+    "console-rs/console": {
+      "forkCount": 106,
+      "name": "console",
+      "nameWithOwner": "console-rs/console",
+      "owner": "console-rs",
+      "primaryLanguage": { "color": "#dea584", "name": "Rust" },
+      "shortDescriptionHTML": "A rust console and terminal abstraction",
+      "stargazerCount": 883,
+      "url": "https://github.com/console-rs/console"
+    },
+    "public-apis/public-apis": {
+      "forkCount": 31814,
+      "name": "public-apis",
+      "nameWithOwner": "public-apis/public-apis",
+      "owner": "public-apis",
+      "primaryLanguage": { "color": "#3572A5", "name": "Python" },
+      "shortDescriptionHTML": "A collective list of free APIs",
+      "stargazerCount": 292171,
+      "url": "https://github.com/public-apis/public-apis"
+    },
+    "microsoft/vscode": {
+      "forkCount": 27638,
+      "name": "vscode",
+      "nameWithOwner": "microsoft/vscode",
+      "owner": "microsoft",
+      "primaryLanguage": { "color": "#3178c6", "name": "TypeScript" },
+      "shortDescriptionHTML": "Visual Studio Code",
+      "stargazerCount": 158318,
+      "url": "https://github.com/microsoft/vscode"
+    },
+    "openai/openai-python": {
+      "forkCount": 2686,
+      "name": "openai-python",
+      "nameWithOwner": "openai/openai-python",
+      "owner": "openai",
+      "primaryLanguage": { "color": "#3572A5", "name": "Python" },
+      "shortDescriptionHTML": "The official Python library for the OpenAI API",
+      "stargazerCount": 19905,
+      "url": "https://github.com/openai/openai-python"
+    },
+    "chronotope/chrono": {
+      "forkCount": 507,
+      "name": "chrono",
+      "nameWithOwner": "chronotope/chrono",
+      "owner": "chronotope",
+      "primaryLanguage": { "color": "#dea584", "name": "Rust" },
+      "shortDescriptionHTML": "Date and time library for Rust",
+      "stargazerCount": 3132,
+      "url": "https://github.com/chronotope/chrono"
+    },
+    "jgm/pandoc": {
+      "forkCount": 3257,
+      "name": "pandoc",
+      "nameWithOwner": "jgm/pandoc",
+      "owner": "jgm",
+      "primaryLanguage": { "color": "#5e5086", "name": "Haskell" },
+      "shortDescriptionHTML": "Universal markup converter",
+      "stargazerCount": 32415,
+      "url": "https://github.com/jgm/pandoc"
+    },
+    "mvdan/sh": {
+      "forkCount": 327,
+      "name": "sh",
+      "nameWithOwner": "mvdan/sh",
+      "owner": "mvdan",
+      "primaryLanguage": { "color": "#00ADD8", "name": "Go" },
+      "shortDescriptionHTML": "A shell parser, formatter, and interpreter with bash support; includes shfmt",
+      "stargazerCount": 6775,
+      "url": "https://github.com/mvdan/sh"
+    },
+    "actions/upload-artifact": {
+      "forkCount": 651,
+      "name": "upload-artifact",
+      "nameWithOwner": "actions/upload-artifact",
+      "owner": "actions",
+      "primaryLanguage": { "color": "#3178c6", "name": "TypeScript" },
+      "shortDescriptionHTML": "",
+      "stargazerCount": 2887,
+      "url": "https://github.com/actions/upload-artifact"
+    },
+    "matplotlib/matplotlib": {
+      "forkCount": 7408,
+      "name": "matplotlib",
+      "nameWithOwner": "matplotlib/matplotlib",
+      "owner": "matplotlib",
+      "primaryLanguage": { "color": "#3572A5", "name": "Python" },
+      "shortDescriptionHTML": "matplotlib: plotting with Python",
+      "stargazerCount": 19272,
+      "url": "https://github.com/matplotlib/matplotlib"
+    }
+  },
+  "website": {
+    "https://anaconda.org/": {
+      "url": "https://anaconda.org/",
+      "title": null,
+      "image": null,
+      "description": null,
+      "favicon": "https://icons.bitwarden.net/anaconda.org/icon.png"
+    },
+    "https://pkg.go.dev/": {
+      "url": "https://pkg.go.dev/",
+      "title": "Go Packages - Go Packages",
+      "image": null,
+      "description": null,
+      "favicon": "https://icons.bitwarden.net/pkg.go.dev/icon.png"
+    },
+    "https://pypi.org/": {
+      "url": "https://pypi.org/",
+      "title": "PyPI · The Python Package Index",
+      "image": "https://pypi.org/static/images/twitter.abaf4b19.webp",
+      "description": "The Python Package Index (PyPI) is a repository of software for the Python programming language.",
+      "favicon": "https://icons.bitwarden.net/pypi.org/icon.png"
+    },
+    "https://llvm.org/docs/LangRef.html": {
+      "url": "https://llvm.org/docs/LangRef.html",
+      "title": "LLVM Language Reference Manual — LLVM 19.0.0git documentation",
+      "image": null,
+      "description": null,
+      "favicon": "https://icons.bitwarden.net/llvm.org/icon.png"
+    },
+    "https://vcpkg.io/en/": {
+      "url": "https://vcpkg.io/en/",
+      "title": "vcpkg - Open source C/C++ dependency manager from Microsoft",
+      "image": null,
+      "description": null,
+      "favicon": "https://icons.bitwarden.net/vcpkg.io/icon.png"
+    },
+    "https://llvm.org/doxygen/classes.html": {
+      "url": "https://llvm.org/doxygen/classes.html",
+      "title": "LLVM: Class Index",
+      "image": null,
+      "description": null,
+      "favicon": "https://icons.bitwarden.net/llvm.org/icon.png"
+    },
+    "https://en.cppreference.com/": {
+      "url": "https://en.cppreference.com/",
+      "title": "cppreference.com",
+      "image": null,
+      "description": null,
+      "favicon": "https://icons.bitwarden.net/en.cppreference.com/icon.png"
+    },
+    "https://google.com/": {
+      "url": "https://google.com/",
+      "title": "Google",
+      "image": null,
+      "description": null,
+      "favicon": "https://icons.bitwarden.net/google.com/icon.png"
+    },
+    "https://cdecl.org/": {
+      "url": "https://cdecl.org/",
+      "title": "cdecl: C gibberish ↔ English",
+      "image": null,
+      "description": null,
+      "favicon": "https://icons.bitwarden.net/cdecl.org/icon.png"
+    },
+    "https://docs.python.org/": {
+      "url": "https://docs.python.org/",
+      "title": "3.12.3 Documentation",
+      "image": null,
+      "description": null,
+      "favicon": "https://icons.bitwarden.net/docs.python.org/icon.png"
+    }
+  }
+}

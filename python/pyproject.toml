@@ -7,6 +7,8 @@ authors = [
   { email = "30631553+liblaf@users.noreply.github.com", name = "liblaf" },
 ]
 dependencies = [
+  "beautifulsoup4>=4.12.3",
+  "fake_useragent>=1.5.1",
   "githubkit>=0.11.4",
   "httpx[socks]>=0.27.0",
   "loguru>=0.7.2",
