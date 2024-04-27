@@ -36,6 +36,7 @@ const config: Config = {
     },
     docs: {
       sidebar: {
+        autoCollapseCategories: true,
         hideable: true,
       },
     },
@@ -48,6 +49,7 @@ const config: Config = {
       "classic",
       {
         docs: {
+          editUrl: "https://github.com/liblaf/awesome/tree/main/web/",
           routeBasePath: "/",
           sidebarPath: "./sidebars.ts",
           showLastUpdateAuthor: true,
