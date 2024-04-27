@@ -12,4 +12,5 @@ web/data/data.json: web/data/items.txt
 
 web/data/items.txt:
 	@ mkdir --parents --verbose "$(@D)"
+	@ cp --recursive --verbose "data" "web"
 	cd "web" && bun run build | grep "^{" > "$(abspath $@)"
