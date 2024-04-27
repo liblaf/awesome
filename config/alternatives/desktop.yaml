@@ -1,9 +1,0 @@
-Fonts:
-  - githubnext/monaspace
-  - notofonts/noto-cjk
-  - ryanoasis/nerd-fonts
-  - tonsky/FiraCode
-
-Terminal:
-  - kovidgoyal/kitty
-  - wez/wezterm
