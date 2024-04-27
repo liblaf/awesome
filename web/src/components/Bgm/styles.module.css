@@ -86,6 +86,13 @@
   font-size: 0.8rem;
 }
 
+.icon {
+  color: #facc15;
+  display: inline-block;
+  margin: -1px 2px 0 0;
+  vertical-align: middle;
+}
+
 .想看 {
   color: #faf5ff;
   background-color: #9333ea;

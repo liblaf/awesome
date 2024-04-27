@@ -4,6 +4,7 @@ import Badge from "./Badge";
 import { TYPES } from "./constants";
 import styles from "./styles.module.css";
 import { Image } from "@arco-design/web-react";
+import { Icon } from "@iconify/react/dist/iconify.js";
 
 type Collection = {
   subject_id: number;
@@ -59,7 +60,7 @@ export default function Bgm({ rate }: { rate: number }): JSX.Element {
                 <div> {name} </div>
               </figcaption>
               <div className={styles.info}>
-                {"⭐"}
+                <Icon className={styles.icon} icon="octicon:star-fill-16" />
                 {collection.subject.score.toFixed(1)}
                 {" / "}
                 {collection.subject.date}
