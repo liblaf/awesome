@@ -6,6 +6,7 @@ from typing import Any
 import githubkit
 import pydantic
 from githubkit import retry
+from loguru import logger
 
 
 class Language(pydantic.BaseModel):
@@ -63,7 +64,7 @@ class Response(pydantic.BaseModel):
     repository: Repository
 
 
-async def fetch_github(client: githubkit.GitHub, nameWithOwner: str) -> Repo:
+async def fetch_github(client: githubkit.GitHub[Any], nameWithOwner: str) -> Repo:
     _: Any
     owner: str
     name: str
@@ -74,7 +75,7 @@ async def fetch_github(client: githubkit.GitHub, nameWithOwner: str) -> Repo:
         )
     )
     repository: Response.Repository = response.repository
-    return Repo(
+    repo = Repo(
         forkCount=repository.forkCount,
         name=repository.name,
         nameWithOwner=repository.nameWithOwner,
@@ -84,6 +85,9 @@ async def fetch_github(client: githubkit.GitHub, nameWithOwner: str) -> Repo:
         stargazerCount=repository.stargazerCount,
         url=repository.url,
     )
+    if repo.nameWithOwner != nameWithOwner:
+        logger.warning("GitHub Rename: {} -> {}", nameWithOwner, repo.nameWithOwner)
+    return repo
 
 
 async def fetch_github_list(nameWithOwner: Iterable[str]) -> list[Repo]:
