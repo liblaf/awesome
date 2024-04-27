@@ -1,0 +1,16 @@
+.title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.icon {
+  display: inline-block;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+
+.name {
+  color: var(--ifm-color-primary);
+  font-weight: bolder;
+}

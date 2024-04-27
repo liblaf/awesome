@@ -1,0 +1,16 @@
+.language {
+  display: inline-block;
+  margin-right: 12px;
+}
+
+.languageColor {
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 50%;
+  display: inline-block;
+  height: 12px;
+  position: relative;
+  top: 1px;
+  width: 12px;
+
+  margin-right: 4px;
+}

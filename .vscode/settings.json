@@ -4,12 +4,5 @@
     "**/.venv": true,
     "**/node_modules": true
   },
-  "python.analysis.diagnosticMode": "workspace",
-  "python.analysis.diagnosticSeverityOverrides": {
-    "reportMissingTypeStubs": "none",
-    "reportUnknownArgumentType": "none",
-    "reportUnknownMemberType": "none",
-    "reportUnknownVariableType": "none"
-  },
-  "python.analysis.typeCheckingMode": "strict"
+  "python.analysis.diagnosticMode": "workspace"
 }

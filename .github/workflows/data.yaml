@@ -4,7 +4,6 @@ on:
   push:
   schedule:
     - cron: 0 12 * * *
-  workflow_call:
   workflow_dispatch:
 
 jobs:
@@ -23,14 +22,15 @@ jobs:
         uses: eifinger/setup-rye@v2
       - name: Install Dependencies
         run: rye sync --no-lock
+        working-directory: python
       - name: Fetch Data
-        run: make --jobs
+        run: make data
         env:
           GH_TOKEN: ${{ github.token }}
       - if: github.ref == 'refs/heads/main'
         name: Upload Data
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: docs/data
+          folder: web/data
           branch: data
           single-commit: true
