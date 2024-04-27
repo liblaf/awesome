@@ -3,6 +3,7 @@
     "bidi",
     "commitizen",
     "eifinger",
+    "httpx",
     "iconify",
     "levelno",
     "liblaf",
@@ -11,6 +12,7 @@
     "pyproject",
     "pyright",
     "taplo",
+    "typer",
     "venv"
   ],
   "ignorePaths": [
@@ -18,7 +20,7 @@
     "**/*.lock*",
     "**/*.mdx",
     "**/.cspell.json",
-    "**/config/**/**.yaml"
+    "**/config/**/*.yaml"
   ],
   "allowCompoundWords": true
 }

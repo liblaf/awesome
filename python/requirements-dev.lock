@@ -15,6 +15,8 @@ anyio==4.3.0
 certifi==2024.2.2
     # via httpcore
     # via httpx
+click==8.1.7
+    # via typer
 githubkit==0.11.4
     # via awesome
 h11==0.14.0
@@ -24,23 +26,42 @@ hishel==0.0.26
 httpcore==1.0.5
     # via httpx
 httpx==0.27.0
+    # via awesome
     # via githubkit
     # via hishel
+    # via httpx
 idna==3.7
     # via anyio
     # via httpx
 loguru==0.7.2
     # via awesome
+markdown-it-py==3.0.0
+    # via rich
+mdurl==0.1.2
+    # via markdown-it-py
 pydantic==2.7.1
     # via awesome
     # via githubkit
 pydantic-core==2.18.2
     # via pydantic
+pygments==2.17.2
+    # via rich
+rich==13.7.1
+    # via typer
+shellingham==1.5.4
+    # via typer
 sniffio==1.3.1
     # via anyio
     # via httpx
+socksio==1.0.0
+    # via httpx
+tenacity==8.2.3
+    # via awesome
+typer==0.12.3
+    # via awesome
 typing-extensions==4.11.0
     # via githubkit
     # via hishel
     # via pydantic
     # via pydantic-core
+    # via typer
