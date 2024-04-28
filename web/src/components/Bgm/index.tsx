@@ -60,7 +60,7 @@ export default function Bgm({ rate }: { rate: number }): JSX.Element {
                 <div> {name} </div>
               </figcaption>
               <div className={styles.info}>
-                <Icon className={styles.icon} icon="octicon:star-fill-16" />
+                <Icon className={styles.star} icon="octicon:star-fill-16" />
                 {collection.subject.score.toFixed(1)}
                 {" / "}
                 {collection.subject.date}
