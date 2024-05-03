@@ -16,8 +16,8 @@
   },
   "dependencies": {
     "@arco-design/web-react": "^2.62.0",
-    "@docusaurus/core": "3.3.0",
-    "@docusaurus/preset-classic": "3.3.0",
+    "@docusaurus/core": "3.3.2",
+    "@docusaurus/preset-classic": "3.3.2",
     "@iconify/react": "^4.1.1",
     "@mdx-js/react": "^3.0.0",
     "clsx": "^2.0.0",
@@ -26,9 +26,9 @@
     "react-dom": "^18.0.0"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "3.3.0",
-    "@docusaurus/tsconfig": "3.3.0",
-    "@docusaurus/types": "3.3.0",
+    "@docusaurus/module-type-aliases": "3.3.2",
+    "@docusaurus/tsconfig": "3.3.2",
+    "@docusaurus/types": "3.3.2",
     "typescript": "~5.2.2"
   },
   "browserslist": {
