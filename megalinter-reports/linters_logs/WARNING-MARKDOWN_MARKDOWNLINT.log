@@ -1,0 +1,13 @@
+Results of markdownlint linter (version 0.41.0)
+See documentation on https://megalinter.io/8.0.0/descriptors/markdown_markdownlint/
+-----------------------------------------------
+
+❌ [ERROR] for workspace /github/workspace
+Linter raw log:
+web/README.md:5 MD001/heading-increment Heading levels should only increment by one level at a time [Expected: h2; Actual: h3]
+web/README.md:7 MD040/fenced-code-language Fenced code blocks should have a language specified [Context: "```"]
+web/README.md:13 MD040/fenced-code-language Fenced code blocks should have a language specified [Context: "```"]
+web/README.md:21 MD040/fenced-code-language Fenced code blocks should have a language specified [Context: "```"]
+web/README.md:31 MD040/fenced-code-language Fenced code blocks should have a language specified [Context: "```"]
+web/README.md:37 MD040/fenced-code-language Fenced code blocks should have a language specified [Context: "```"]
+

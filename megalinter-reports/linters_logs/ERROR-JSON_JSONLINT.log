@@ -1,0 +1,12 @@
+Results of jsonlint linter (version 16.0.0)
+See documentation on https://megalinter.io/8.0.0/descriptors/json_jsonlint/
+-----------------------------------------------
+
+❌ [ERROR] for workspace /github/workspace
+Linter raw log:
+File: web/tsconfig.json
+Parse error on line 2, column 3:
+{  // This file is not ...
+---^
+Unexpected token "/"
+

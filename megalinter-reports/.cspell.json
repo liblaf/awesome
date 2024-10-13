@@ -1,0 +1,37 @@
+{
+    "allowCompoundWords": true,
+    "ignorePaths": [
+        "**/*-lock.*",
+        "**/*.lock*",
+        "**/*.mdx",
+        "**/.cspell.json",
+        "**/config/**/*.yaml"
+    ],
+    "words": [
+        "DEVSKIM",
+        "ISORT",
+        "KICS",
+        "MYPY",
+        "PYLINT",
+        "bidi",
+        "commitizen",
+        "devskim",
+        "eifinger",
+        "envrc",
+        "httpx",
+        "iconify",
+        "kics",
+        "levelno",
+        "liblaf",
+        "pycache",
+        "pydantic",
+        "pyproject",
+        "pyright",
+        "pyrightconfig",
+        "stefanzweifel",
+        "taplo",
+        "typer",
+        "venv",
+        "zotero"
+    ]
+}

@@ -1,0 +1,237 @@
+Results of pyright linter (version 1.1.376)
+See documentation on https://megalinter.io/8.0.0/descriptors/python_pyright/
+-----------------------------------------------
+
+❌ [ERROR] for workspace /github/workspace
+Linter raw log:
+
+added 1 package, and audited 2 packages in 5s
+
+found 0 vulnerabilities
+python/src/awesome/api/bgm.py
+  python/src/awesome/api/bgm.py:4:8 - error: Import "httpx" could not be resolved (reportMissingImports)
+  python/src/awesome/api/bgm.py:5:8 - error: Import "pydantic" could not be resolved (reportMissingImports)
+  python/src/awesome/api/bgm.py:6:8 - error: Import "tenacity" could not be resolved (reportMissingImports)
+  python/src/awesome/api/bgm.py:34:29 - error: Type of "BaseModel" is unknown (reportUnknownMemberType)
+  python/src/awesome/api/bgm.py:34:29 - error: Base class type is unknown, obscuring type of derived class (reportUntypedBaseClass)
+  python/src/awesome/api/bgm.py:35:17 - error: Type of "PositiveInt" is unknown (reportUnknownMemberType)
+  python/src/awesome/api/bgm.py:37:5 - error: Type of "type_" is partially unknown
+    Type of "type_" is "Unknown | CollectionType" (reportUnknownVariableType)
+  python/src/awesome/api/bgm.py:37:29 - error: Type of "Field" is unknown (reportUnknownMemberType)
+  python/src/awesome/api/bgm.py:39:23 - error: Type of "BaseModel" is unknown (reportUnknownMemberType)
+  python/src/awesome/api/bgm.py:39:23 - error: Base class type is unknown, obscuring type of derived class (reportUntypedBaseClass)
+  python/src/awesome/api/bgm.py:40:13 - error: Type of "PositiveInt" is unknown (reportUnknownMemberType)
+  python/src/awesome/api/bgm.py:45:22 - error: Type of "BaseModel" is unknown (reportUnknownMemberType)
+  python/src/awesome/api/bgm.py:45:22 - error: Base class type is unknown, obscuring type of derived class (reportUntypedBaseClass)
+  python/src/awesome/api/bgm.py:46:20 - error: Type of "HttpUrl" is unknown (reportUnknownMemberType)
+  python/src/awesome/api/bgm.py:47:21 - error: Type of "HttpUrl" is unknown (reportUnknownMemberType)
+  python/src/awesome/api/bgm.py:48:21 - error: Type of "HttpUrl" is unknown (reportUnknownMemberType)
+  python/src/awesome/api/bgm.py:49:20 - error: Type of "HttpUrl" is unknown (reportUnknownMemberType)
+  python/src/awesome/api/bgm.py:50:19 - error: Type of "HttpUrl" is unknown (reportUnknownMemberType)
+  python/src/awesome/api/bgm.py:53:16 - error: Type of "PositiveFloat" is unknown (reportUnknownMemberType)
+  python/src/awesome/api/bgm.py:58:27 - error: Type of "BaseModel" is unknown (reportUnknownMemberType)
+  python/src/awesome/api/bgm.py:58:27 - error: Base class type is unknown, obscuring type of derived class (reportUntypedBaseClass)
+  python/src/awesome/api/bgm.py:65:12 - error: Type of "BaseModel" is unknown (reportUnknownMemberType)
+  python/src/awesome/api/bgm.py:65:12 - error: Base class type is unknown, obscuring type of derived class (reportUntypedBaseClass)
+  python/src/awesome/api/bgm.py:69:2 - error: Type of "retry" is unknown (reportUnknownMemberType)
+  python/src/awesome/api/bgm.py:69:2 - error: Untyped function decorator obscures type of function; ignoring decorator (reportUntypedFunctionDecorator)
+  python/src/awesome/api/bgm.py:70:10 - error: Type of "stop_after_attempt" is unknown (reportUnknownMemberType)
+  python/src/awesome/api/bgm.py:70:47 - error: Type of "wait_random_exponential" is unknown (reportUnknownMemberType)
+  python/src/awesome/api/bgm.py:73:5 - error: Type of parameter "client" is unknown (reportUnknownParameterType)
+  python/src/awesome/api/bgm.py:73:13 - error: Type of "AsyncClient" is unknown (reportUnknownMemberType)
+  python/src/awesome/api/bgm.py:75:5 - error: Type of "response" is unknown (reportUnknownVariableType)
+  python/src/awesome/api/bgm.py:75:15 - error: Type of "Response" is unknown (reportUnknownMemberType)
+  python/src/awesome/api/bgm.py:75:38 - error: Type of "get" is unknown (reportUnknownMemberType)
+  python/src/awesome/api/bgm.py:78:5 - error: Type of "response" is unknown (reportUnknownVariableType)
+  python/src/awesome/api/bgm.py:78:16 - error: Type of "raise_for_status" is unknown (reportUnknownMemberType)
+  python/src/awesome/api/bgm.py:79:64 - error: Type of "json" is unknown (reportUnknownMemberType)
+  python/src/awesome/api/bgm.py:85:16 - error: Type of "AsyncClient" is unknown (reportUnknownMemberType)
+  python/src/awesome/api/bgm.py:85:73 - error: Type of "client" is unknown (reportUnknownVariableType)
+  python/src/awesome/api/bgm.py:88:17 - error: Argument type is unknown
+    Argument corresponds to parameter "client" in function "fetch_user_collection_paged" (reportUnknownArgumentType)
+python/src/awesome/api/github.py
+  python/src/awesome/api/github.py:6:8 - error: Import "githubkit" could not be resolved (reportMissingImports)
+  python/src/awesome/api/github.py:7:8 - error: Import "pydantic" could not be resolved (reportMissingImports)
+  python/src/awesome/api/github.py:8:6 - error: Import "githubkit" could not be resolved (reportMissingImports)
+  python/src/awesome/api/github.py:8:23 - error: Type of "retry" is unknown (reportUnknownVariableType)
+  python/src/awesome/api/github.py:9:6 - error: Import "loguru" could not be resolved (reportMissingImports)
+  python/src/awesome/api/github.py:9:20 - error: Type of "logger" is unknown (reportUnknownVariableType)
+  python/src/awesome/api/github.py:12:16 - error: Type of "BaseModel" is unknown (reportUnknownMemberType)
+  python/src/awesome/api/github.py:12:16 - error: Base class type is unknown, obscuring type of derived class (reportUntypedBaseClass)
+  python/src/awesome/api/github.py:17:12 - error: Type of "BaseModel" is unknown (reportUnknownMemberType)
+  python/src/awesome/api/github.py:17:12 - error: Base class type is unknown, obscuring type of derived class (reportUntypedBaseClass)
+  python/src/awesome/api/github.py:49:16 - error: Type of "BaseModel" is unknown (reportUnknownMemberType)
+  python/src/awesome/api/github.py:49:16 - error: Base class type is unknown, obscuring type of derived class (reportUntypedBaseClass)
+  python/src/awesome/api/github.py:50:22 - error: Type of "BaseModel" is unknown (reportUnknownMemberType)
+  python/src/awesome/api/github.py:50:22 - error: Base class type is unknown, obscuring type of derived class (reportUntypedBaseClass)
+  python/src/awesome/api/github.py:55:21 - error: Type of "BaseModel" is unknown (reportUnknownMemberType)
+  python/src/awesome/api/github.py:55:21 - error: Base class type is unknown, obscuring type of derived class (reportUntypedBaseClass)
+  python/src/awesome/api/github.py:67:24 - error: Type of parameter "client" is unknown (reportUnknownParameterType)
+  python/src/awesome/api/github.py:67:32 - error: Type of "GitHub" is unknown (reportUnknownMemberType)
+  python/src/awesome/api/github.py:73:17 - error: Type of "async_graphql" is unknown (reportUnknownMemberType)
+  python/src/awesome/api/github.py:77:5 - error: Type of "repository" is partially unknown
+    Type of "repository" is "Unknown | Repository" (reportUnknownVariableType)
+  python/src/awesome/api/github.py:77:39 - error: Type of "repository" is unknown (reportUnknownMemberType)
+  python/src/awesome/api/github.py:79:19 - error: Type of "forkCount" is partially unknown
+    Type of "forkCount" is "Unknown | int" (reportUnknownMemberType)
+  python/src/awesome/api/github.py:80:14 - error: Type of "name" is partially unknown
+    Type of "name" is "Unknown | str" (reportUnknownMemberType)
+  python/src/awesome/api/github.py:81:23 - error: Type of "nameWithOwner" is partially unknown
+    Type of "nameWithOwner" is "Unknown | str" (reportUnknownMemberType)
+  python/src/awesome/api/github.py:82:15 - error: Type of "owner" is unknown (reportUnknownMemberType)
+  python/src/awesome/api/github.py:82:15 - error: Type of "login" is unknown (reportUnknownMemberType)
+  python/src/awesome/api/github.py:83:25 - error: Type of "primaryLanguage" is partially unknown
+    Type of "primaryLanguage" is "Unknown | None" (reportUnknownMemberType)
+  python/src/awesome/api/github.py:84:30 - error: Type of "shortDescriptionHTML" is partially unknown
+    Type of "shortDescriptionHTML" is "Unknown | str" (reportUnknownMemberType)
+  python/src/awesome/api/github.py:85:24 - error: Type of "stargazerCount" is partially unknown
+    Type of "stargazerCount" is "Unknown | int" (reportUnknownMemberType)
+  python/src/awesome/api/github.py:86:13 - error: Type of "url" is partially unknown
+    Type of "url" is "Unknown | str" (reportUnknownMemberType)
+  python/src/awesome/api/github.py:89:9 - error: Type of "warning" is unknown (reportUnknownMemberType)
+  python/src/awesome/api/github.py:95:16 - error: Type of "GitHub" is unknown (reportUnknownMemberType)
+  python/src/awesome/api/github.py:96:27 - error: Type of "RetryRateLimit" is unknown (reportUnknownMemberType)
+  python/src/awesome/api/github.py:97:10 - error: Type of "client" is unknown (reportUnknownVariableType)
+  python/src/awesome/api/github.py:99:28 - error: Argument type is unknown
+    Argument corresponds to parameter "client" in function "fetch_github" (reportUnknownArgumentType)
+python/src/awesome/api/item.py
+  python/src/awesome/api/item.py:1:8 - error: Import "pydantic" could not be resolved (reportMissingImports)
+  python/src/awesome/api/item.py:3:6 - error: Import "awesome.api" could not be resolved (reportMissingImports)
+  python/src/awesome/api/item.py:3:35 - error: Type of "_github" is unknown (reportUnknownVariableType)
+  python/src/awesome/api/item.py:4:6 - error: Import "awesome.api" could not be resolved (reportMissingImports)
+  python/src/awesome/api/item.py:4:36 - error: Type of "_website" is unknown (reportUnknownVariableType)
+  python/src/awesome/api/item.py:7:12 - error: Type of "BaseModel" is unknown (reportUnknownMemberType)
+  python/src/awesome/api/item.py:7:12 - error: Base class type is unknown, obscuring type of derived class (reportUntypedBaseClass)
+  python/src/awesome/api/item.py:9:5 - error: Type of "website" is partially unknown
+    Type of "website" is "Unknown | None" (reportUnknownVariableType)
+  python/src/awesome/api/item.py:9:14 - error: Type of "HttpUrl" is unknown (reportUnknownMemberType)
+  python/src/awesome/api/item.py:12:12 - error: Type of "BaseModel" is unknown (reportUnknownMemberType)
+  python/src/awesome/api/item.py:12:12 - error: Base class type is unknown, obscuring type of derived class (reportUntypedBaseClass)
+  python/src/awesome/api/item.py:13:5 - error: Type of "github" is partially unknown
+    Type of "github" is "dict[str, Unknown]" (reportUnknownVariableType)
+  python/src/awesome/api/item.py:13:23 - error: Type of "Repo" is unknown (reportUnknownMemberType)
+  python/src/awesome/api/item.py:14:5 - error: Type of "website" is partially unknown
+    Type of "website" is "dict[Unknown, Unknown]" (reportUnknownVariableType)
+  python/src/awesome/api/item.py:14:19 - error: Type of "HttpUrl" is unknown (reportUnknownMemberType)
+  python/src/awesome/api/item.py:14:37 - error: Type of "Website" is unknown (reportUnknownMemberType)
+  python/src/awesome/api/item.py:18:5 - error: Type of "github_list" is partially unknown
+    Type of "github_list" is "Unknown | list[Unknown]" (reportUnknownVariableType)
+  python/src/awesome/api/item.py:18:23 - error: Type of "Repo" is unknown (reportUnknownMemberType)
+  python/src/awesome/api/item.py:18:45 - error: Type of "fetch_github_list" is unknown (reportUnknownMemberType)
+  python/src/awesome/api/item.py:21:5 - error: Type of "website_list" is partially unknown
+    Type of "website_list" is "Unknown | list[Unknown]" (reportUnknownVariableType)
+  python/src/awesome/api/item.py:21:24 - error: Type of "Website" is unknown (reportUnknownMemberType)
+  python/src/awesome/api/item.py:21:50 - error: Type of "fetch_website_list" is unknown (reportUnknownMemberType)
+  python/src/awesome/api/item.py:22:17 - error: Type of "website" is unknown (reportUnknownMemberType)
+  python/src/awesome/api/item.py:22:17 - error: Argument type is unknown
+    Argument corresponds to parameter "object" in function "__new__" (reportUnknownArgumentType)
+  python/src/awesome/api/item.py:22:52 - error: Type of "website" is partially unknown
+    Type of "website" is "Unknown | None" (reportUnknownMemberType)
+  python/src/awesome/api/item.py:25:17 - error: Type of "nameWithOwner" is unknown (reportUnknownMemberType)
+  python/src/awesome/api/item.py:25:46 - error: Type of "repo" is unknown (reportUnknownVariableType)
+  python/src/awesome/api/item.py:26:18 - error: Type of "url" is unknown (reportUnknownMemberType)
+  python/src/awesome/api/item.py:26:43 - error: Type of "website" is unknown (reportUnknownVariableType)
+python/src/awesome/api/website.py
+  python/src/awesome/api/website.py:5:8 - warning: Import "bs4" could not be resolved from source (reportMissingModuleSource)
+  python/src/awesome/api/website.py:6:8 - error: Import "fake_useragent" could not be resolved (reportMissingImports)
+  python/src/awesome/api/website.py:7:8 - error: Import "httpx" could not be resolved (reportMissingImports)
+  python/src/awesome/api/website.py:8:8 - error: Import "pydantic" could not be resolved (reportMissingImports)
+  python/src/awesome/api/website.py:9:6 - error: Import "loguru" could not be resolved (reportMissingImports)
+  python/src/awesome/api/website.py:9:20 - error: Type of "logger" is unknown (reportUnknownVariableType)
+  python/src/awesome/api/website.py:11:1 - error: Type of "UA" is unknown (reportUnknownVariableType)
+  python/src/awesome/api/website.py:11:6 - error: Type of "UserAgent" is unknown (reportUnknownMemberType)
+  python/src/awesome/api/website.py:14:15 - error: Type of "BaseModel" is unknown (reportUnknownMemberType)
+  python/src/awesome/api/website.py:14:15 - error: Base class type is unknown, obscuring type of derived class (reportUntypedBaseClass)
+  python/src/awesome/api/website.py:15:10 - error: Type of "HttpUrl" is unknown (reportUnknownMemberType)
+  python/src/awesome/api/website.py:17:5 - error: Type of "image" is partially unknown
+    Type of "image" is "Unknown | None" (reportUnknownVariableType)
+  python/src/awesome/api/website.py:17:12 - error: Type of "HttpUrl" is unknown (reportUnknownMemberType)
+  python/src/awesome/api/website.py:20:6 - error: Type of "computed_field" is unknown (reportUnknownMemberType)
+  python/src/awesome/api/website.py:20:6 - error: Untyped function decorator obscures type of function; ignoring decorator (reportUntypedFunctionDecorator)
+  python/src/awesome/api/website.py:23:56 - error: Type of "url" is unknown (reportUnknownMemberType)
+  python/src/awesome/api/website.py:23:56 - error: Argument type is unknown
+    Argument corresponds to parameter "object" in function "__new__" (reportUnknownArgumentType)
+  python/src/awesome/api/website.py:80:25 - error: Type of parameter "client" is unknown (reportUnknownParameterType)
+  python/src/awesome/api/website.py:80:33 - error: Type of "AsyncClient" is unknown (reportUnknownMemberType)
+  python/src/awesome/api/website.py:82:9 - error: Type of "response" is unknown (reportUnknownVariableType)
+  python/src/awesome/api/website.py:82:19 - error: Type of "Response" is unknown (reportUnknownMemberType)
+  python/src/awesome/api/website.py:82:42 - error: Type of "get" is unknown (reportUnknownMemberType)
+  python/src/awesome/api/website.py:83:9 - error: Type of "response" is unknown (reportUnknownVariableType)
+  python/src/awesome/api/website.py:83:20 - error: Type of "raise_for_status" is unknown (reportUnknownMemberType)
+  python/src/awesome/api/website.py:85:13 - error: Type of "text" is unknown (reportUnknownMemberType)
+  python/src/awesome/api/website.py:85:13 - error: Argument type is unknown
+    Argument corresponds to parameter "markup" in function "__init__" (reportUnknownArgumentType)
+  python/src/awesome/api/website.py:91:13 - error: Type of "response" is unknown (reportUnknownVariableType)
+  python/src/awesome/api/website.py:91:30 - error: Type of "get" is unknown (reportUnknownMemberType)
+  python/src/awesome/api/website.py:92:20 - error: Type of "is_success" is unknown (reportUnknownMemberType)
+  python/src/awesome/api/website.py:101:9 - error: Type of "error" is unknown (reportUnknownMemberType)
+  python/src/awesome/api/website.py:106:16 - error: Type of "AsyncClient" is unknown (reportUnknownMemberType)
+  python/src/awesome/api/website.py:109:10 - error: Type of "client" is unknown (reportUnknownVariableType)
+  python/src/awesome/api/website.py:110:53 - error: Argument type is unknown
+    Argument corresponds to parameter "client" in function "fetch_website" (reportUnknownArgumentType)
+python/src/awesome/cli/bgm.py
+  python/src/awesome/cli/bgm.py:4:8 - error: Import "typer" could not be resolved (reportMissingImports)
+  python/src/awesome/cli/bgm.py:6:6 - error: Import "awesome.api" could not be resolved (reportMissingImports)
+  python/src/awesome/cli/bgm.py:6:32 - error: Type of "_bgm" is unknown (reportUnknownVariableType)
+  python/src/awesome/cli/bgm.py:10:5 - error: Type of "collections" is partially unknown
+    Type of "collections" is "Unknown | list[Unknown]" (reportUnknownVariableType)
+  python/src/awesome/cli/bgm.py:10:23 - error: Type of "UserSubjectCollection" is unknown (reportUnknownMemberType)
+  python/src/awesome/cli/bgm.py:10:59 - error: Type of "fetch_user_collection" is unknown (reportUnknownMemberType)
+  python/src/awesome/cli/bgm.py:13:5 - error: Type of "data" is unknown (reportUnknownVariableType)
+  python/src/awesome/cli/bgm.py:13:12 - error: Type of "Data" is unknown (reportUnknownMemberType)
+  python/src/awesome/cli/bgm.py:14:11 - error: Type of "model_dump_json" is unknown (reportUnknownMemberType)
+  python/src/awesome/cli/bgm.py:14:11 - error: Argument type is unknown
+    Argument corresponds to parameter "values" in function "print" (reportUnknownArgumentType)
+  python/src/awesome/cli/bgm.py:17:31 - error: Type of "Argument" is unknown (reportUnknownMemberType)
+python/src/awesome/cli/item.py
+  python/src/awesome/cli/item.py:5:6 - error: Import "awesome" could not be resolved (reportMissingImports)
+  python/src/awesome/cli/item.py:5:28 - error: Type of "_log" is unknown (reportUnknownVariableType)
+  python/src/awesome/cli/item.py:6:6 - error: Import "awesome.api" could not be resolved (reportMissingImports)
+  python/src/awesome/cli/item.py:6:33 - error: Type of "_item" is unknown (reportUnknownVariableType)
+  python/src/awesome/cli/item.py:10:5 - error: Type of "items" is partially unknown
+    Type of "items" is "list[Unknown]" (reportUnknownVariableType)
+  python/src/awesome/cli/item.py:10:17 - error: Type of "Item" is unknown (reportUnknownMemberType)
+  python/src/awesome/cli/item.py:15:9 - error: Type of "item" is unknown (reportUnknownVariableType)
+  python/src/awesome/cli/item.py:15:16 - error: Type of "Item" is unknown (reportUnknownMemberType)
+  python/src/awesome/cli/item.py:16:9 - error: Type of "append" is partially unknown
+    Type of "append" is "(object: Unknown, /) -> None" (reportUnknownMemberType)
+  python/src/awesome/cli/item.py:16:22 - error: Argument type is unknown
+    Argument corresponds to parameter "object" in function "append" (reportUnknownArgumentType)
+  python/src/awesome/cli/item.py:17:5 - error: Type of "data" is unknown (reportUnknownVariableType)
+  python/src/awesome/cli/item.py:17:11 - error: Type of "Data" is unknown (reportUnknownMemberType)
+  python/src/awesome/cli/item.py:17:30 - error: Type of "fetch_items" is unknown (reportUnknownMemberType)
+  python/src/awesome/cli/item.py:18:11 - error: Type of "model_dump_json" is unknown (reportUnknownMemberType)
+  python/src/awesome/cli/item.py:18:11 - error: Argument type is unknown
+    Argument corresponds to parameter "values" in function "print" (reportUnknownArgumentType)
+  python/src/awesome/cli/item.py:22:5 - error: Type of "init" is unknown (reportUnknownMemberType)
+python/src/awesome/cli/main.py
+  python/src/awesome/cli/main.py:1:8 - error: Import "typer" could not be resolved (reportMissingImports)
+  python/src/awesome/cli/main.py:3:6 - error: Import "awesome" could not be resolved (reportMissingImports)
+  python/src/awesome/cli/main.py:3:28 - error: Type of "_log" is unknown (reportUnknownVariableType)
+  python/src/awesome/cli/main.py:4:6 - error: Import "awesome.cli" could not be resolved (reportMissingImports)
+  python/src/awesome/cli/main.py:4:32 - error: Type of "_bgm" is unknown (reportUnknownVariableType)
+  python/src/awesome/cli/main.py:5:6 - error: Import "awesome.cli" could not be resolved (reportMissingImports)
+  python/src/awesome/cli/main.py:5:33 - error: Type of "_item" is unknown (reportUnknownVariableType)
+  python/src/awesome/cli/main.py:7:1 - error: Type of "app" is unknown (reportUnknownVariableType)
+  python/src/awesome/cli/main.py:7:7 - error: Type of "Typer" is unknown (reportUnknownMemberType)
+  python/src/awesome/cli/main.py:8:1 - error: Type of "command" is unknown (reportUnknownMemberType)
+  python/src/awesome/cli/main.py:8:26 - error: Type of "main" is unknown (reportUnknownMemberType)
+  python/src/awesome/cli/main.py:9:1 - error: Type of "command" is unknown (reportUnknownMemberType)
+  python/src/awesome/cli/main.py:9:25 - error: Type of "main" is unknown (reportUnknownMemberType)
+  python/src/awesome/cli/main.py:13:5 - error: Type of "init" is unknown (reportUnknownMemberType)
+python/src/awesome/log.py
+  python/src/awesome/log.py:6:6 - error: Import "loguru" could not be resolved (reportMissingImports)
+  python/src/awesome/log.py:6:20 - error: Type of "logger" is unknown (reportUnknownVariableType)
+  python/src/awesome/log.py:14:13 - error: Type of "level" is partially unknown
+    Type of "level" is "Unknown | str | int" (reportUnknownVariableType)
+  python/src/awesome/log.py:14:21 - error: Type of "level" is unknown (reportUnknownMemberType)
+  python/src/awesome/log.py:14:21 - error: Type of "name" is unknown (reportUnknownMemberType)
+  python/src/awesome/log.py:24:9 - error: Type of "opt" is unknown (reportUnknownMemberType)
+  python/src/awesome/log.py:24:9 - error: Type of "log" is unknown (reportUnknownMemberType)
+  python/src/awesome/log.py:34:5 - error: Type of "remove" is unknown (reportUnknownMemberType)
+  python/src/awesome/log.py:35:5 - error: Type of "add" is unknown (reportUnknownMemberType)
+184 errors, 1 warning, 0 informations 
+WARNING: there is a new pyright version available (v1.1.376 -> v1.1.384).
+Please install the new version or set PYRIGHT_PYTHON_FORCE_VERSION to `latest`
+
+
