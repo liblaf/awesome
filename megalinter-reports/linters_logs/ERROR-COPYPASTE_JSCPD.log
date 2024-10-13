@@ -1,0 +1,39 @@
+Results of jscpd linter (version 4.0.5)
+See documentation on https://megalinter.io/8.0.0/descriptors/copypaste_jscpd/
+-----------------------------------------------
+
+❌ [ERROR] for workspace /github/workspace
+Linter raw log:
+Clone found (css):
+ - web/src/components/RepoCard/styles.module.css [1:1 - 12:2] (11 lines, 107 tokens)
+   web/src/components/WebsiteCard/styles.module.css [1:1 - 12:9]
+
+Clone found (css):
+ - web/src/components/AwesomeList/styles.module.css [7:1 - 17:5] (10 lines, 102 tokens)
+   web/src/components/WebsiteCard/styles.module.css [1:1 - 11:4]
+
+┌────────────┬────────────────┬─────────────┬──────────────┬──────────────┬──────────────────┬───────────────────┐
+│ Format     │ Files analyzed │ Total lines │ Total tokens │ Clones found │ Duplicated lines │ Duplicated tokens │
+├────────────┼────────────────┼─────────────┼──────────────┼──────────────┼──────────────────┼───────────────────┤
+│ css        │ 9              │ 331         │ 1941         │ 2            │ 21 (6.34%)       │ 209 (10.77%)      │
+├────────────┼────────────────┼─────────────┼──────────────┼──────────────┼──────────────────┼───────────────────┤
+│ javascript │ 10             │ 71          │ 794          │ 0            │ 0 (0%)           │ 0 (0%)            │
+├────────────┼────────────────┼─────────────┼──────────────┼──────────────┼──────────────────┼───────────────────┤
+│ tsx        │ 10             │ 293         │ 2798         │ 0            │ 0 (0%)           │ 0 (0%)            │
+├────────────┼────────────────┼─────────────┼──────────────┼──────────────┼──────────────────┼───────────────────┤
+│ typescript │ 7              │ 134         │ 887          │ 0            │ 0 (0%)           │ 0 (0%)            │
+├────────────┼────────────────┼─────────────┼──────────────┼──────────────┼──────────────────┼───────────────────┤
+│ python     │ 8              │ 413         │ 3424         │ 0            │ 0 (0%)           │ 0 (0%)            │
+├────────────┼────────────────┼─────────────┼──────────────┼──────────────┼──────────────────┼───────────────────┤
+│ Total:     │ 44             │ 1242        │ 9844         │ 2            │ 21 (1.69%)       │ 209 (2.12%)       │
+└────────────┴────────────────┴─────────────┴──────────────┴──────────────┴──────────────────┴───────────────────┘
+Found 2 clones.
+HTML report saved to megalinter-reports/copy-paste/html/
+ERROR: jscpd found too many duplicates (1.69%) over threshold (0%)
+Error: ERROR: jscpd found too many duplicates (1.69%) over threshold (0%)
+    at ThresholdReporter.report (/node-deps/node_modules/@jscpd/finder/dist/index.js:612:13)
+    at /node-deps/node_modules/@jscpd/finder/dist/index.js:110:18
+    at Array.forEach (<anonymous>)
+    at /node-deps/node_modules/@jscpd/finder/dist/index.js:109:22
+    at async /node-deps/node_modules/jscpd/dist/jscpd.js:351:5
+

@@ -1,0 +1,123 @@
+Results of cspell linter (version 8.14.1)
+See documentation on https://megalinter.io/8.0.0/descriptors/spell_cspell/
+-----------------------------------------------
+
+❌ [ERROR] for workspace /github/workspace
+Linter raw log:
+ 1/58 .envrc 1102.15ms
+ 2/58 .github/auto-label.yaml 111.09ms
+ 3/58 .github/blunderbuss.yml 12.70ms
+ 4/58 .github/megalinter/.checkov.yml 2.09ms
+ 5/58 .github/megalinter/.devskim.json 129.47ms
+ 6/58 .github/renovate.json 2.95ms
+ 7/58 .github/sync-repo-settings.yaml 1.72ms
+ 8/58 .github/workflows/data.yaml 10.31ms
+ 9/58 .github/workflows/docs.yaml 7.74ms
+10/58 .github/workflows/megalinter.yaml 169.64ms X
+.github/workflows/megalinter.yaml:179:15    - Unknown word (stefanzweifel) -- uses: stefanzweifel/git-auto-commit-action
+	 Suggestions: []
+11/58 .mega-linter.yaml 424.74ms X
+.mega-linter.yaml:34:12     - Unknown word (ISORT)      -- - PYTHON_ISORT
+	 Suggestions: [SORT, iost, IOST, IGOR, ISAR]
+.mega-linter.yaml:35:12     - Unknown word (MYPY)       -- - PYTHON_MYPY
+	 Suggestions: [MOPY, MYOPY, MACY, MANY, MAPS]
+.mega-linter.yaml:36:12     - Unknown word (PYLINT)     -- - PYTHON_PYLINT
+	 Suggestions: [PLYING, PINT, PAINT, PLANT, PLINK]
+.mega-linter.yaml:42:12     - Unknown word (DEVSKIM)    -- REPOSITORY_DEVSKIM_CONFIG_FILE: .github
+	 Suggestions: [DESK, DEVI, DKIM, DEISM, DENIM]
+.mega-linter.yaml:42:53     - Unknown word (devskim)    -- .github/megalinter/.devskim.json
+	 Suggestions: [desk, devi, dkim, deism, denim]
+.mega-linter.yaml:43:12     - Unknown word (KICS)       -- REPOSITORY_KICS_CONFIG_FILE: .github
+	 Suggestions: [KI'S, KICK, KIDS, KINS, KIPS]
+.mega-linter.yaml:43:49     - Unknown word (kics)       -- .github/megalinter/kics.config
+	 Suggestions: [ki's, kick, kids, kins, kips]
+12/58 .pre-commit-config.yaml 5.44ms
+13/58 .vscode/settings.json 2.14ms
+14/58 bf22a79f-1d1d-4c60-b230-1848d1be72f6-megalinter_file_names_cspell.txt 149.66ms X
+bf22a79f-1d1d-4c60-b230-1848d1be72f6-megalinter_file_names_cspell.txt:2:2       - Unknown word (envrc)      -- envrc
+	 Suggestions: [engr, envs, envy, evrg, entre]
+bf22a79f-1d1d-4c60-b230-1848d1be72f6-megalinter_file_names_cspell.txt:6:20      - Unknown word (devskim)    -- github megalinter devskim
+	 Suggestions: [desk, devi, dkim, deism, denim]
+bf22a79f-1d1d-4c60-b230-1848d1be72f6-megalinter_file_names_cspell.txt:18:1      - Unknown word (pyrightconfig) -- pyrightconfig
+	 Suggestions: []
+bf22a79f-1d1d-4c60-b230-1848d1be72f6-megalinter_file_names_cspell.txt:49:18     - Unknown word (zotero)        -- web docs desktop zotero
+	 Suggestions: [zero, zoner, zorro, zoners, zoster]
+15/58 data/bgm.json 1.63ms
+16/58 data/data.json 1.49ms
+17/58 Makefile 16.93ms
+18/58 pyrightconfig.json 1.76ms
+19/58 python/.gitignore 2.67ms
+20/58 python/Makefile 1.93ms
+21/58 python/README.md 79.14ms
+22/58 python/src/awesome/__init__.py 225.53ms
+23/58 python/src/awesome/__main__.py 1.11ms
+24/58 python/src/awesome/api/__init__.py 0.96ms
+25/58 python/src/awesome/api/bgm.py 16.10ms
+26/58 python/src/awesome/api/github.py 5.94ms
+27/58 python/src/awesome/api/item.py 10.44ms
+28/58 python/src/awesome/api/website.py 26.72ms
+29/58 python/src/awesome/cli/__init__.py 1.18ms
+30/58 python/src/awesome/cli/bgm.py 2.75ms
+31/58 python/src/awesome/cli/item.py 2.94ms
+32/58 python/src/awesome/cli/main.py 1.71ms
+33/58 python/src/awesome/log.py 3.44ms
+34/58 web/.gitignore 3.55ms
+35/58 web/babel.config.js 44.55ms
+36/58 web/docs/alternative/_category_.json 2.62ms
+37/58 web/docs/desktop/_category_.json 2.00ms
+38/58 web/docs/language/_category_.json 1.44ms
+39/58 web/docs/miscellaneous/_category_.json 1.36ms
+40/58 web/docusaurus.config.ts 3.86ms
+41/58 web/package.json 13.90ms
+42/58 web/README.md 4.53ms
+43/58 web/sidebars.ts 2.53ms
+44/58 web/src/components/AwesomeList/styles.module.css 22.76ms
+45/58 web/src/components/AwesomeList/types.ts 1.95ms
+46/58 web/src/components/Bgm/constants.ts 8.73ms
+47/58 web/src/components/Bgm/styles.module.css 13.48ms
+48/58 web/src/components/RepoCard/Description/styles.module.css 1.70ms
+49/58 web/src/components/RepoCard/Language/styles.module.css 1.64ms
+50/58 web/src/components/RepoCard/Meta/styles.module.css 1.44ms
+51/58 web/src/components/RepoCard/styles.module.css 2.08ms
+52/58 web/src/components/RepoCard/Title/styles.module.css 5.29ms
+53/58 web/src/components/RepoCard/types.ts 2.47ms
+54/58 web/src/components/WebsiteCard/Description/styles.module.css 1.98ms
+55/58 web/src/components/WebsiteCard/styles.module.css 4.19ms
+56/58 web/src/components/WebsiteCard/types.ts 4.76ms
+57/58 web/src/theme/MDXComponents.ts 2.00ms
+58/58 web/tsconfig.json 1.86ms
+CSpell: Files checked: 58, Issues found: 12 in 3 files.
+
+
+You can skip this misspellings by defining the following .cspell.json file at the root of your repository
+Of course, please correct real typos before :)
+
+{
+    "version": "0.2",
+    "language": "en",
+    "ignorePaths": [
+        "**/node_modules/**",
+        "**/vscode-extension/**",
+        "**/.git/**",
+        "**/.pnpm-lock.json",
+        ".vscode",
+        "package-lock.json",
+        "megalinter-reports"
+    ],
+    "words": [
+        "DEVSKIM",
+        "ISORT",
+        "KICS",
+        "MYPY",
+        "PYLINT",
+        "devskim",
+        "envrc",
+        "kics",
+        "pyrightconfig",
+        "stefanzweifel",
+        "zotero"
+    ]
+}
+
+
+You can also copy-paste megalinter-reports/.cspell.json at the root of your repository

@@ -1,0 +1,702 @@
+{
+  "statistics": {
+    "detectionDate": "2024-10-13T00:44:19.717Z",
+    "formats": {
+      "css": {
+        "sources": {
+          "web/src/components/WebsiteCard/Description/styles.module.css": {
+            "lines": 10,
+            "tokens": 71,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "web/src/components/RepoCard/Title/styles.module.css": {
+            "lines": 15,
+            "tokens": 77,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "web/src/components/RepoCard/Meta/styles.module.css": {
+            "lines": 15,
+            "tokens": 78,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "web/src/components/RepoCard/Language/styles.module.css": {
+            "lines": 14,
+            "tokens": 88,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "web/src/components/RepoCard/Description/styles.module.css": {
+            "lines": 10,
+            "tokens": 71,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "web/src/components/WebsiteCard/styles.module.css": {
+            "lines": 55,
+            "tokens": 346,
+            "sources": 1,
+            "clones": 2,
+            "duplicatedLines": 21,
+            "duplicatedTokens": 209,
+            "percentage": 38.18,
+            "percentageTokens": 60.4,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "web/src/components/RepoCard/styles.module.css": {
+            "lines": 22,
+            "tokens": 178,
+            "sources": 1,
+            "clones": 1,
+            "duplicatedLines": 11,
+            "duplicatedTokens": 107,
+            "percentage": 50,
+            "percentageTokens": 60.11,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "web/src/components/Bgm/styles.module.css": {
+            "lines": 118,
+            "tokens": 605,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "web/src/components/AwesomeList/styles.module.css": {
+            "lines": 72,
+            "tokens": 427,
+            "sources": 1,
+            "clones": 1,
+            "duplicatedLines": 10,
+            "duplicatedTokens": 102,
+            "percentage": 13.89,
+            "percentageTokens": 23.89,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          }
+        },
+        "total": {
+          "lines": 331,
+          "tokens": 1941,
+          "sources": 9,
+          "clones": 2,
+          "duplicatedLines": 21,
+          "duplicatedTokens": 209,
+          "percentage": 6.34,
+          "percentageTokens": 10.77,
+          "newDuplicatedLines": 0,
+          "newClones": 0
+        }
+      },
+      "javascript": {
+        "sources": {
+          "web/src/components/WebsiteCard/Description/index.tsx": {
+            "lines": 0,
+            "tokens": 5,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "web/src/components/RepoCard/Title/index.tsx": {
+            "lines": 2,
+            "tokens": 38,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "web/src/components/RepoCard/Meta/index.tsx": {
+            "lines": 1,
+            "tokens": 24,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "web/src/components/RepoCard/Language/index.tsx": {
+            "lines": 3,
+            "tokens": 30,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "web/src/components/RepoCard/Description/index.tsx": {
+            "lines": 1,
+            "tokens": 15,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "web/src/components/WebsiteCard/index.tsx": {
+            "lines": 28,
+            "tokens": 223,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "web/src/components/RepoCard/index.tsx": {
+            "lines": 9,
+            "tokens": 121,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "web/src/components/Bgm/index.tsx": {
+            "lines": 21,
+            "tokens": 234,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "web/src/components/Bgm/Badge.tsx": {
+            "lines": 1,
+            "tokens": 27,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "web/src/components/AwesomeList/index.tsx": {
+            "lines": 5,
+            "tokens": 77,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          }
+        },
+        "total": {
+          "lines": 71,
+          "tokens": 794,
+          "sources": 10,
+          "clones": 0,
+          "duplicatedLines": 0,
+          "duplicatedTokens": 0,
+          "percentage": 0,
+          "percentageTokens": 0,
+          "newDuplicatedLines": 0,
+          "newClones": 0
+        }
+      },
+      "tsx": {
+        "sources": {
+          "web/src/components/WebsiteCard/Description/index.tsx": {
+            "lines": 11,
+            "tokens": 93,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "web/src/components/RepoCard/Title/index.tsx": {
+            "lines": 10,
+            "tokens": 121,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "web/src/components/RepoCard/Meta/index.tsx": {
+            "lines": 28,
+            "tokens": 215,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "web/src/components/RepoCard/Language/index.tsx": {
+            "lines": 20,
+            "tokens": 158,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "web/src/components/RepoCard/Description/index.tsx": {
+            "lines": 9,
+            "tokens": 79,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "web/src/components/WebsiteCard/index.tsx": {
+            "lines": 45,
+            "tokens": 379,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "web/src/components/RepoCard/index.tsx": {
+            "lines": 28,
+            "tokens": 283,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "web/src/components/Bgm/index.tsx": {
+            "lines": 73,
+            "tokens": 709,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "web/src/components/Bgm/Badge.tsx": {
+            "lines": 12,
+            "tokens": 140,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "web/src/components/AwesomeList/index.tsx": {
+            "lines": 57,
+            "tokens": 621,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          }
+        },
+        "total": {
+          "lines": 293,
+          "tokens": 2798,
+          "sources": 10,
+          "clones": 0,
+          "duplicatedLines": 0,
+          "duplicatedTokens": 0,
+          "percentage": 0,
+          "percentageTokens": 0,
+          "newDuplicatedLines": 0,
+          "newClones": 0
+        }
+      },
+      "typescript": {
+        "sources": {
+          "web/src/components/WebsiteCard/types.ts": {
+            "lines": 13,
+            "tokens": 94,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "web/src/components/RepoCard/types.ts": {
+            "lines": 28,
+            "tokens": 186,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "web/src/components/Bgm/constants.ts": {
+            "lines": 14,
+            "tokens": 95,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "web/src/components/AwesomeList/types.ts": {
+            "lines": 3,
+            "tokens": 27,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "web/src/theme/MDXComponents.ts": {
+            "lines": 6,
+            "tokens": 35,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "web/sidebars.ts": {
+            "lines": 6,
+            "tokens": 58,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "web/docusaurus.config.ts": {
+            "lines": 64,
+            "tokens": 392,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          }
+        },
+        "total": {
+          "lines": 134,
+          "tokens": 887,
+          "sources": 7,
+          "clones": 0,
+          "duplicatedLines": 0,
+          "duplicatedTokens": 0,
+          "percentage": 0,
+          "percentageTokens": 0,
+          "newDuplicatedLines": 0,
+          "newClones": 0
+        }
+      },
+      "python": {
+        "sources": {
+          "python/src/awesome/cli/main.py": {
+            "lines": 13,
+            "tokens": 111,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "python/src/awesome/cli/item.py": {
+            "lines": 22,
+            "tokens": 192,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "python/src/awesome/cli/bgm.py": {
+            "lines": 17,
+            "tokens": 146,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "python/src/awesome/api/website.py": {
+            "lines": 109,
+            "tokens": 1098,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "python/src/awesome/api/item.py": {
+            "lines": 26,
+            "tokens": 292,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "python/src/awesome/api/github.py": {
+            "lines": 99,
+            "tokens": 603,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "python/src/awesome/api/bgm.py": {
+            "lines": 92,
+            "tokens": 652,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          },
+          "python/src/awesome/log.py": {
+            "lines": 35,
+            "tokens": 330,
+            "sources": 1,
+            "clones": 0,
+            "duplicatedLines": 0,
+            "duplicatedTokens": 0,
+            "percentage": 0,
+            "percentageTokens": 0,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          }
+        },
+        "total": {
+          "lines": 413,
+          "tokens": 3424,
+          "sources": 8,
+          "clones": 0,
+          "duplicatedLines": 0,
+          "duplicatedTokens": 0,
+          "percentage": 0,
+          "percentageTokens": 0,
+          "newDuplicatedLines": 0,
+          "newClones": 0
+        }
+      }
+    },
+    "total": {
+      "lines": 1242,
+      "tokens": 9844,
+      "sources": 44,
+      "clones": 2,
+      "duplicatedLines": 21,
+      "duplicatedTokens": 209,
+      "percentage": 1.69,
+      "percentageTokens": 2.12,
+      "newDuplicatedLines": 0,
+      "newClones": 0
+    }
+  },
+  "duplicates": [
+    {
+      "format": "css",
+      "lines": 12,
+      "fragment": ".card {\n  /* https://github.com/facebook/docusaurus/blob/main/packages/docusaurus-theme-classic/src/theme/DocCard/styles.module.css */\n  --ifm-link-color: var(--ifm-color-emphasis-800);\n  --ifm-link-hover-color: var(--ifm-color-emphasis-700);\n  --ifm-link-hover-decoration: none;\n\n  box-shadow: 0 1.5px 3px 0 rgb(0 0 0 / 15%);\n  border: 1px solid var(--ifm-color-emphasis-200);\n  transition: all var(--ifm-transition-fast) ease;\n  transition-property: border, box-shadow;\n  padding: 8px 12px;\n}",
+      "tokens": 0,
+      "firstFile": {
+        "name": "web/src/components/RepoCard/styles.module.css",
+        "start": 1,
+        "end": 12,
+        "startLoc": {
+          "line": 1,
+          "column": 1,
+          "position": 0
+        },
+        "endLoc": {
+          "line": 12,
+          "column": 2,
+          "position": 107
+        }
+      },
+      "secondFile": {
+        "name": "web/src/components/WebsiteCard/styles.module.css",
+        "start": 1,
+        "end": 12,
+        "startLoc": {
+          "line": 1,
+          "column": 1,
+          "position": 0
+        },
+        "endLoc": {
+          "line": 12,
+          "column": 9,
+          "position": 108
+        }
+      }
+    },
+    {
+      "format": "css",
+      "lines": 11,
+      "fragment": ".card {\n  /* https://github.com/facebook/docusaurus/blob/main/packages/docusaurus-theme-classic/src/theme/DocCard/styles.module.css */\n  --ifm-link-color: var(--ifm-color-emphasis-800);\n  --ifm-link-hover-color: var(--ifm-color-emphasis-700);\n  --ifm-link-hover-decoration: none;\n\n  box-shadow: 0 1.5px 3px 0 rgb(0 0 0 / 15%);\n  border: 1px solid var(--ifm-color-emphasis-200);\n  transition: all var(--ifm-transition-fast) ease;\n  transition-property: border, box-shadow;\n  padding: 12px",
+      "tokens": 0,
+      "firstFile": {
+        "name": "web/src/components/AwesomeList/styles.module.css",
+        "start": 7,
+        "end": 17,
+        "startLoc": {
+          "line": 7,
+          "column": 1,
+          "position": 38
+        },
+        "endLoc": {
+          "line": 17,
+          "column": 5,
+          "position": 140
+        }
+      },
+      "secondFile": {
+        "name": "web/src/components/WebsiteCard/styles.module.css",
+        "start": 1,
+        "end": 11,
+        "startLoc": {
+          "line": 1,
+          "column": 1,
+          "position": 0
+        },
+        "endLoc": {
+          "line": 11,
+          "column": 4,
+          "position": 102
+        }
+      }
+    }
+  ],
+  "filename": "/node-deps/node_modules/@jscpd/html-reporter/dist/templates/main.pug"
+}

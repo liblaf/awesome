@@ -1,0 +1,24 @@
+Results of stylelint linter (version 16.8.2)
+See documentation on https://megalinter.io/8.0.0/descriptors/css_stylelint/
+-----------------------------------------------
+
+❌ [ERROR] for workspace /github/workspace
+Linter raw log:
+
+web/src/components/Bgm/styles.module.css
+   59:1  ✖  Expected selector ".cover img" to come before selector ".card:hover img"  no-descending-specificity
+   96:1  ✖  Expected class selector ".想看" to be kebab-case                          selector-class-pattern
+  101:1  ✖  Expected class selector ".看过" to be kebab-case                          selector-class-pattern
+  106:1  ✖  Expected class selector ".在看" to be kebab-case                          selector-class-pattern
+  111:1  ✖  Expected class selector ".搁置" to be kebab-case                          selector-class-pattern
+  116:1  ✖  Expected class selector ".抛弃" to be kebab-case                          selector-class-pattern
+
+web/src/components/RepoCard/Language/styles.module.css
+  6:1  ✖  Expected class selector ".languageColor" to be kebab-case  selector-class-pattern
+
+web/src/components/WebsiteCard/styles.module.css
+  42:1  ✖  Expected selector ".detail" to come before selector ".image:hover .detail"  no-descending-specificity
+
+✖ 8 problems (8 errors, 0 warnings)
+
+

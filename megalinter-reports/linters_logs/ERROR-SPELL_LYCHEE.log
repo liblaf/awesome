@@ -1,0 +1,52 @@
+Results of lychee linter (version 0.15.1)
+See documentation on https://megalinter.io/8.0.0/descriptors/spell_lychee/
+-----------------------------------------------
+
+❌ [ERROR] for workspace /github/workspace
+Linter raw log:
+✗ [403] https://anaconda.org/ | Failed: Network error: Forbidden
+✗ [ERR] https://byr.pt/ | Failed: Network error: error sending request for url (https://byr.pt/)
+✗ [403] https://openai.com/ | Failed: Network error: Forbidden
+✗ [403] https://ip.skk.moe/ | Failed: Network error: Forbidden
+✗ [403] https://steamunlocked.net/ | Failed: Network error: Forbidden
+✗ [403] https://poe.com/ | Failed: Network error: Forbidden
+✗ [ERR] https://nav.yibook.org/ | Failed: Network error: error sending request for url (https://nav.yibook.org/)
+✗ [403] https://gpt.fomepay.com/ | Failed: Network error: Forbidden
+✗ [403] https://www.allacronyms.com/ | Failed: Network error: Forbidden
+✗ [403] https://www.similarweb.com/ | Failed: Network error: Forbidden
+✗ [403] https://www.agedm.org/ | Failed: Network error: Forbidden
+✗ [ERR] https://archive.org/ | Failed: Network error: error sending request for url (https://archive.org/)
+📝 Summary
+---------------------
+🔍 Total...........92
+✅ Successful......79
+⏳ Timeouts.........0
+🔀 Redirected.......0
+👻 Excluded.........1
+❓ Unknown..........0
+🚫 Errors..........12
+
+Errors in web/docs/language/python.mdx
+✗ [403] https://anaconda.org/ | Failed: Network error: Forbidden
+
+Errors in web/docs/miscellaneous/resource.mdx
+✗ [ERR] https://archive.org/ | Failed: Network error: error sending request for url (https://archive.org/)
+✗ [ERR] https://nav.yibook.org/ | Failed: Network error: error sending request for url (https://nav.yibook.org/)
+✗ [403] https://steamunlocked.net/ | Failed: Network error: Forbidden
+✗ [ERR] https://byr.pt/ | Failed: Network error: error sending request for url (https://byr.pt/)
+✗ [403] https://www.similarweb.com/ | Failed: Network error: Forbidden
+
+Errors in web/docs/miscellaneous/tools.mdx
+✗ [403] https://www.allacronyms.com/ | Failed: Network error: Forbidden
+
+Errors in web/docs/miscellaneous/network.mdx
+✗ [403] https://ip.skk.moe/ | Failed: Network error: Forbidden
+
+Errors in web/docs/acg.mdx
+✗ [403] https://www.agedm.org/ | Failed: Network error: Forbidden
+
+Errors in web/docs/miscellaneous/service.mdx
+✗ [403] https://gpt.fomepay.com/ | Failed: Network error: Forbidden
+✗ [403] https://openai.com/ | Failed: Network error: Forbidden
+✗ [403] https://poe.com/ | Failed: Network error: Forbidden
+
