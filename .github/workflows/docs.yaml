@@ -14,14 +14,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: Setup Bun
         uses: oven-sh/setup-bun@v2
       - name: Install Dependencies
         run: bun install --frozen-lockfile
         working-directory: web
       - name: Download Data
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           ref: data
           path: web/data
@@ -47,7 +47,7 @@ jobs:
       cancel-in-progress: true
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: Download Artifacts
         uses: actions/download-artifact@v5
         with:
