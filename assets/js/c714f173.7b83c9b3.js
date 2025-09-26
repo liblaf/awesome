@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkawesome=self.webpackChunkawesome||[]).push([[411],{8344:e=>{e.exports=JSON.parse('{"categoryGeneratedIndex":{"title":"Alternative","slug":"/category/alternative","permalink":"/category/alternative","sidebar":"defaultSidebar","navigation":{"previous":{"title":"ACG","permalink":"/acg"},"next":{"title":"CLI","permalink":"/alternative/cli"}}}}')}}]);
